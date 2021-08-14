@@ -1,0 +1,961 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+    <datagroup name="现状专题">
+        <theme name="地下水漏斗" defaultxzqdm="000000" ischina="true" layer-ref="地下水漏斗{yearfilter};基础底图影像{yearfilter}"
+               layout-ref="Config\DataOverView\chart\chart_layout\专题浏览\土地利用现状\地面沉降分析.json">
+
+            <datatable name="城镇村范围面积排名" unit="公顷" db="0" dbkey="">
+                select f_xzqhmc as 行政区,sum(COALESCE(mj,0.00)) as 面积 from view_sd_tdlyfl_sld where czcsxmc ='' group by
+                f_xzqhmc order by sum(COALESCE(mj,0.00)) desc
+            </datatable>
+            <datatable name="省级地区面积汇总" unit="公顷" db="0" dbkey="">
+                select ldm as 水漏斗名称,sum(mj) as mj from view_sd_tdlyfl_sld where czcsxmc ='' and f_xzqhmc
+                ='{xzqmcfilter}' group by ldm order by ldm
+            </datatable>
+            <datatable name="省级地区一级土地利用结构" unit="公顷" db="0" dbkey="">
+                select 地类,sum(地类面积) as 面积 from view_sd_ejtdlyfl_sld where position ('{xzqmcfilter}' in f_xzqhmc)>0 and
+                position ('{ldmfilter}' in ldm)>0 and 一级地类名='' group by 地类,地类编码 order by 地类编码
+            </datatable>
+            <datatable name="省级地区二级土地利用结构" unit="公顷" db="0" dbkey="">
+                select 地类,sum(地类面积) as 面积 from view_sd_ejtdlyfl_sld where position ('{xzqmcfilter}' in f_xzqhmc)>0 and
+                position ('{ldmfilter}' in ldm)>0 and 一级地类名='{childfilter}' group by 地类,地类编码 order by 地类编码
+            </datatable>
+            <datatable name="细化地类" unit="公顷" db="0" dbkey="">
+                select tbxhmc as 细化类型,sum(mj) as mj from view_sd_tdlyfl_sld where tbxhmc &lt;&gt; '' and czcsxmc ='' and
+                position ('{xzqmcfilter}' in f_xzqhmc)>0 and position ('{ldmfilter}' in ldm)>0 group by tbxhmc,tbxhmcxh
+                order by tbxhmcxh
+            </datatable>
+            <datatable name="细化地类详情" unit="公顷,公顷,公顷" db="0" dbkey="">
+                select tbxhmc as 细化类型,sum(水田) as 水田,sum(水浇地) as 水浇地,sum(旱地) as 旱地 from view_sd_tdlyfl_sld where tbxhmc
+                &lt;&gt; '' and czcsxmc ='' and position ('{xzqmcfilter}' in f_xzqhmc)>0 and position ('{ldmfilter}' in
+                ldm)>0 group by tbxhmc,tbxhmcxh order by tbxhmcxh
+            </datatable>
+            <datatable name="种植属性" unit="公顷" db="0" dbkey="">
+                select zzsxmc as 细化类型,sum(mj) as mj from view_sd_tdlyfl_sld where zzsxmc &lt;&gt; '' and czcsxmc ='' and
+                position ('{xzqmcfilter}' in f_xzqhmc)>0 and position ('{ldmfilter}' in ldm)>0 group by zzsxmc,zzsxmcxh
+                order by zzsxmcxh
+            </datatable>
+            <datatable name="种植属性详情" unit="公顷,公顷,公顷" db="0" dbkey="">
+                select zzsxmc as 细化类型,sum(水田) as 水田,sum(水浇地) as 水浇地,sum(旱地) as 旱地 from view_sd_tdlyfl_sld where zzsxmc
+                &lt;&gt; '' and czcsxmc ='' and position ('{xzqmcfilter}' in f_xzqhmc)>0 and position ('{ldmfilter}' in
+                ldm)>0 group by zzsxmc,zzsxmcxh order by zzsxmcxh
+            </datatable>
+
+            <datatable name="地下水漏斗范围城镇村范围面积汇总表" unit="公顷" db="0" dbkey="">
+                select
+                f_xzqhdm,f_xzqhmc,ldm,ldl,湿地,红树林地,森林沼泽,灌丛沼泽,沼泽草地,盐田,沿海滩涂,内陆滩涂,沼泽地,耕地,水田,水浇地,旱地,种植园用地,果园,茶园,橡胶园,其他园地,林地,乔木林地,竹林地,
+                灌木林地,其他林地,草地,天然牧草地,人工牧草地,其他草地,商业服务业用地,商业服务业设施用地,
+                物流仓储用地,工矿用地,工业用地,采矿用地,住宅用地,城镇住宅用地,农村宅基地,公共管理与公共服务用地,机关团体新闻出版用地,科教文卫用地,公用设施用地,公园与绿地,特殊用地,交通运输用地,铁路用地,轨道交通用地,公路用地,城镇村道路用地,交通服务场站用地,农村道路,机场用地,港口码头用地,
+                管道运输用地,水域及水利设施用地,河流水面,湖泊水面,水库水面,坑塘水面,沟渠,水工建筑用地,冰川及永久积雪,其他土地,空闲地,设施农用地,田坎,盐碱地,沙地,裸土地,裸岩石砾地
+                from view_sd_tdlyfl_sub_sld where czcsxmc ='' order by f_xzqhdm,ldm
+            </datatable>
+            <datatable name="地下水漏斗范围内耕地细化情况统计表" unit="公顷" db="0" dbkey="">
+                select
+                f_xzqhdm,f_xzqhmc,ldm,ldl,河道耕地,hdgd0101,hdgd0102,hdgd0103,湖区耕地,hqgd0101,hqgd0102,hqgd0103,林区耕地,lqgd0101,lqgd0102,lqgd0103,牧区耕地,mqgd0101,mqgd0102,mqgd0103,
+                沙荒耕地,shgd0101,shgd0102,shgd0103,石漠化耕地,smgd0101,smgd0102,smgd0103,盐碱耕地,yjgd0101,yjgd0102,yjgd0103 from
+                view_sd_tdlyxhdl_sub_sld where czcsxmc ='' order by f_xzqhdm,ldm
+            </datatable>
+            <datatable name="地下水漏斗范围内耕地种植属性情况统计" unit="公顷" db="0" dbkey="">
+                select f_xzqhdm,f_xzqhmc,ldm,ldl,(ls+fls+lyfl+xg+lljz+wg) as
+                bm01,ls,fls,lyfl,xg,lljz,wg,(ls0101+fls0101+lyfl0101+xg0101+lljz0101+wg0101) as
+                bm0101,ls0101,fls0101,lyfl0101,xg0101,lljz0101,wg0101,(ls0102+fls0102+lyfl0102+xg0102+lljz0102+wg0102)
+                as bm0102,
+                ls0102,fls0102,lyfl0102,xg0102,lljz0102,wg0102,(ls0103+fls0103+lyfl0103+xg0103+lljz0103+wg0103) as
+                bm0103,ls0103,fls0103,lyfl0103,xg0103,lljz0103,wg0103 from view_sd_tdlyzzsx_sub_sld
+                where czcsxmc ='' order by f_xzqhdm,ldm
+            </datatable>
+
+            <table name="全国各省地下水漏斗范围内土地利用现状分类面积汇总表" desc="" dataref="地下水漏斗范围城镇村范围面积汇总表" unitdesc="单位:公顷" rownum="2"
+                   columnnum="72" width="8000">
+                <headcell name="行政区域" row="1" rowspan="1" column="1" columnspan="2"/>
+                <headcell name="名称" row="2" rowspan="1" column="1" columnspan="1"/>
+                <headcell name="代码" row="2" rowspan="1" column="2" columnspan="1"/>
+                <headcell name="漏斗" row="1" rowspan="1" column="3" columnspan="2"/>
+                <headcell name="漏斗名" row="2" rowspan="1" column="3" columnspan="1"/>
+                <headcell name="漏斗类" row="2" rowspan="1" column="4" columnspan="1"/>
+                <headcell name="湿地(00)" row="1" rowspan="2" column="5" columnspan="1"/>
+                <headcell name="其中" row="1" rowspan="1" column="6" columnspan="8"/>
+                <headcell name="红树林地(0303)" row="2" rowspan="1" column="6" columnspan="1"/>
+                <headcell name="森林沼泽(0304)" row="2" rowspan="1" column="7" columnspan="1"/>
+                <headcell name="灌丛沼泽(0306)" row="2" rowspan="1" column="8" columnspan="1"/>
+                <headcell name="沼泽草地(0402)" row="2" rowspan="1" column="9" columnspan="1"/>
+                <headcell name="盐田(0603)" row="2" rowspan="1" column="10" columnspan="1"/>
+                <headcell name="沿海滩涂(1105)" row="2" rowspan="1" column="11" columnspan="1"/>
+                <headcell name="内陆滩涂(1106)" row="2" rowspan="1" column="12" columnspan="1"/>
+                <headcell name="沼泽地(1108)" row="2" rowspan="1" column="13" columnspan="1"/>
+                <headcell name="耕地(01)" row="1" rowspan="2" column="14" columnspan="1"/>
+                <headcell name="其中" row="1" rowspan="1" column="15" columnspan="3"/>
+                <headcell name="水田(0101)" row="2" rowspan="1" column="15" columnspan="1"/>
+                <headcell name="水浇地(0102)" row="2" rowspan="1" column="16" columnspan="1"/>
+                <headcell name="旱地(0103)" row="2" rowspan="1" column="17" columnspan="1"/>
+                <headcell name="种植园用地(02)" row="1" rowspan="2" column="18" columnspan="1"/>
+                <headcell name="其中" row="1" rowspan="1" column="19" columnspan="4"/>
+                <headcell name="果园(0201)" row="2" rowspan="1" column="19" columnspan="1"/>
+                <headcell name="茶园(0202)" row="2" rowspan="1" column="20" columnspan="1"/>
+                <headcell name="橡胶园(0203)" row="2" rowspan="1" column="21" columnspan="1"/>
+                <headcell name="其他园地(0204)" row="2" rowspan="1" column="22" columnspan="1"/>
+                <headcell name="林地(03)" row="1" rowspan="2" column="23" columnspan="1"/>
+                <headcell name="小计(03)" row="1" rowspan="1" column="24" columnspan="4"/>
+                <headcell name="乔木林地(0301)" row="2" rowspan="1" column="24" columnspan="1"/>
+                <headcell name="竹林地(0302)" row="2" rowspan="1" column="25" columnspan="1"/>
+                <headcell name="灌木林地(0305)" row="2" rowspan="1" column="26" columnspan="1"/>
+                <headcell name="其他林地(0307)" row="2" rowspan="1" column="27" columnspan="1"/>
+                <headcell name="草地(04)" row="1" rowspan="2" column="28" columnspan="1"/>
+                <headcell name="其中" row="1" rowspan="1" column="29" columnspan="3"/>
+                <headcell name="天然牧草地(0401)" row="2" rowspan="1" column="29" columnspan="1"/>
+                <headcell name="人工牧草地(0403)" row="2" rowspan="1" column="30" columnspan="1"/>
+                <headcell name="其他草地(0404)" row="2" rowspan="1" column="31" columnspan="1"/>
+                <headcell name="商业服务业用地(05)" row="1" rowspan="2" column="32" columnspan="1"/>
+                <headcell name="其中" row="1" rowspan="1" column="33" columnspan="2"/>
+                <headcell name="商业服务业设施用地(05H1)" row="2" rowspan="1" column="33" columnspan="1"/>
+                <headcell name="物流仓储用地(0508)" row="2" rowspan="1" column="34" columnspan="1"/>
+                <headcell name="工矿用地(06)" row="1" rowspan="2" column="35" columnspan="1"/>
+                <headcell name="其中" row="1" rowspan="1" column="36" columnspan="2"/>
+                <headcell name="工业用地(0601)" row="2" rowspan="1" column="36" columnspan="1"/>
+                <headcell name="采矿用地(0602)" row="2" rowspan="1" column="37" columnspan="1"/>
+                <headcell name="住宅用地(07)" row="1" rowspan="2" column="38" columnspan="1"/>
+                <headcell name="其中" row="1" rowspan="1" column="39" columnspan="2"/>
+                <headcell name="城镇住宅用地(0701)" row="2" rowspan="1" column="39" columnspan="1"/>
+                <headcell name="农村宅基地(0702)" row="2" rowspan="1" column="40" columnspan="1"/>
+                <headcell name="公共管理与公共服务用地(08)" row="1" rowspan="2" column="41" columnspan="1"/>
+                <headcell name="其中" row="1" rowspan="1" column="42" columnspan="4"/>
+                <headcell name="机关团体新闻出版用地(08H1)" row="2" rowspan="1" column="42" columnspan="1"/>
+                <headcell name="科教文卫用地(08H2)" row="2" rowspan="1" column="43" columnspan="1"/>
+                <headcell name="公共设施用地(0809)" row="2" rowspan="1" column="44" columnspan="1"/>
+                <headcell name="公园与绿地(0810)" row="2" rowspan="1" column="45" columnspan="1"/>
+                <headcell name="特殊用地(09)" row="1" rowspan="2" column="46" columnspan="1"/>
+                <headcell name="交通运输用地(10)" row="1" rowspan="2" column="47" columnspan="1"/>
+                <headcell name="其中" row="1" rowspan="1" column="48" columnspan="9"/>
+                <headcell name="铁路用地(1001)" row="2" rowspan="1" column="48" columnspan="1"/>
+                <headcell name="轨道交通用地(1002)" row="2" rowspan="1" column="49" columnspan="1"/>
+                <headcell name="公路用地(1003)" row="2" rowspan="1" column="50" columnspan="1"/>
+                <headcell name="城镇村道路用地(1004)" row="2" rowspan="1" column="51" columnspan="1"/>
+                <headcell name="交通服务场站用地(1005)" row="2" rowspan="1" column="52" columnspan="1"/>
+                <headcell name="农村道路(1006)" row="2" rowspan="1" column="53" columnspan="1"/>
+                <headcell name="机场用地(1007)" row="2" rowspan="1" column="54" columnspan="1"/>
+                <headcell name="港口码头用地(1008)" row="2" rowspan="1" column="55" columnspan="1"/>
+                <headcell name="管道运输用地(1009)" row="2" rowspan="1" column="56" columnspan="1"/>
+                <headcell name="水域及水利设施用地(11)" row="1" rowspan="2" column="57" columnspan="1"/>
+                <headcell name="其中" row="1" rowspan="1" column="58" columnspan="7"/>
+                <headcell name="河流水面(1101)" row="2" rowspan="1" column="58" columnspan="1"/>
+                <headcell name="湖泊水面(1102)" row="2" rowspan="1" column="59" columnspan="1"/>
+                <headcell name="水库水面(1103)" row="2" rowspan="1" column="60" columnspan="1"/>
+                <headcell name="坑塘水面(1104)" row="2" rowspan="1" column="61" columnspan="1"/>
+                <headcell name="沟渠(1107)" row="2" rowspan="1" column="62" columnspan="1"/>
+                <headcell name="水工建筑用地(1109)" row="2" rowspan="1" column="63" columnspan="1"/>
+                <headcell name="冰川及永久积雪(1110)" row="2" rowspan="1" column="64" columnspan="1"/>
+                <headcell name="其他土地(12)" row="1" rowspan="2" column="65" columnspan="1"/>
+                <headcell name="其中" row="1" rowspan="1" column="66" columnspan="7"/>
+                <headcell name="空闲地(1201)" row="2" rowspan="1" column="66" columnspan="1"/>
+                <headcell name="设施农用地(1202)" row="2" rowspan="1" column="67" columnspan="1"/>
+                <headcell name="田坎(1203)" row="2" rowspan="1" column="68" columnspan="1"/>
+                <headcell name="盐碱地(1204)" row="2" rowspan="1" column="69" columnspan="1"/>
+                <headcell name="沙地(1205)" row="2" rowspan="1" column="70" columnspan="1"/>
+                <headcell name="裸土地(1206)" row="2" rowspan="1" column="71" columnspan="1"/>
+                <headcell name="裸岩石砾地(1207)" row="2" rowspan="1" column="72" columnspan="1"/>
+            </table>
+            <table name="全国各省地下水漏斗范围内耕地细化分类面积汇总表" desc="" dataref="地下水漏斗范围内耕地细化情况统计表" unitdesc="单位:公顷" rownum="3"
+                   columnnum="32" width="3000">
+                <headcell name="行政区域" row="1" rowspan="2" column="1" columnspan="2"/>
+                <headcell name="名称" row="3" rowspan="1" column="1" columnspan="1"/>
+                <headcell name="代码" row="3" rowspan="1" column="2" columnspan="1"/>
+                <headcell name="漏斗" row="1" rowspan="2" column="3" columnspan="2"/>
+                <headcell name="漏斗名" row="3" rowspan="1" column="3" columnspan="1"/>
+                <headcell name="漏斗类" row="3" rowspan="1" column="4" columnspan="1"/>
+                <headcell name="耕地细化" row="1" rowspan="1" column="5" columnspan="28"/>
+                <headcell name="河道耕地(HDGD)" row="2" rowspan="1" column="5" columnspan="4"/>
+                <headcell name="湖区耕地(HQGD)" row="2" rowspan="1" column="9" columnspan="4"/>
+                <headcell name="林区耕地(LQGD)" row="2" rowspan="1" column="13" columnspan="4"/>
+                <headcell name="牧区耕地(MQGD)" row="2" rowspan="1" column="17" columnspan="4"/>
+                <headcell name="沙荒耕地(SHGD)" row="2" rowspan="1" column="21" columnspan="4"/>
+                <headcell name="石漠化耕地(SMGD)" row="2" rowspan="1" column="25" columnspan="4"/>
+                <headcell name="盐碱耕地(YJGD)" row="2" rowspan="1" column="29" columnspan="4"/>
+                <headcell name="耕地(01)" row="3" rowspan="1" column="5" columnspan="1"/>
+                <headcell name="水田(0101)" row="3" rowspan="1" column="6" columnspan="1"/>
+                <headcell name="水浇地(0102)" row="3" rowspan="1" column="7" columnspan="1"/>
+                <headcell name="旱地(0103)" row="3" rowspan="1" column="8" columnspan="1"/>
+                <headcell name="耕地(01)" row="3" rowspan="1" column="9" columnspan="1"/>
+                <headcell name="水田(0101)" row="3" rowspan="1" column="10" columnspan="1"/>
+                <headcell name="水浇地(0102)" row="3" rowspan="1" column="11" columnspan="1"/>
+                <headcell name="旱地(0103)" row="3" rowspan="1" column="12" columnspan="1"/>
+                <headcell name="耕地(01)" row="3" rowspan="1" column="13" columnspan="1"/>
+                <headcell name="水田(0101)" row="3" rowspan="1" column="14" columnspan="1"/>
+                <headcell name="水浇地(0102)" row="3" rowspan="1" column="15" columnspan="1"/>
+                <headcell name="旱地(0103)" row="3" rowspan="1" column="16" columnspan="1"/>
+                <headcell name="耕地(01)" row="3" rowspan="1" column="17" columnspan="1"/>
+                <headcell name="水田(0101)" row="3" rowspan="1" column="18" columnspan="1"/>
+                <headcell name="水浇地(0102)" row="3" rowspan="1" column="19" columnspan="1"/>
+                <headcell name="旱地(0103)" row="3" rowspan="1" column="20" columnspan="1"/>
+                <headcell name="耕地(01)" row="3" rowspan="1" column="21" columnspan="1"/>
+                <headcell name="水田(0101)" row="3" rowspan="1" column="22" columnspan="1"/>
+                <headcell name="水浇地(0102)" row="3" rowspan="1" column="23" columnspan="1"/>
+                <headcell name="旱地(0103)" row="3" rowspan="1" column="24" columnspan="1"/>
+                <headcell name="耕地(01)" row="3" rowspan="1" column="25" columnspan="1"/>
+                <headcell name="水田(0101)" row="3" rowspan="1" column="26" columnspan="1"/>
+                <headcell name="水浇地(0102)" row="3" rowspan="1" column="27" columnspan="1"/>
+                <headcell name="旱地(0103)" row="3" rowspan="1" column="28" columnspan="1"/>
+                <headcell name="耕地(01)" row="3" rowspan="1" column="29" columnspan="1"/>
+                <headcell name="水田(0101)" row="3" rowspan="1" column="30" columnspan="1"/>
+                <headcell name="水浇地(0102)" row="3" rowspan="1" column="31" columnspan="1"/>
+                <headcell name="旱地(0103)" row="3" rowspan="1" column="32" columnspan="1"/>
+            </table>
+            <table name="全国各省地下水漏斗范围内耕地种植类型分类面积汇总表" desc="" dataref="地下水漏斗范围内耕地种植属性情况统计" unitdesc="单位:公顷" rownum="2"
+                   columnnum="32" width="3500">
+                <headcell name="行政区域" row="1" rowspan="1" column="1" columnspan="2"/>
+                <headcell name="漏斗" row="1" rowspan="1" column="3" columnspan="2"/>
+                <headcell name="耕地(01)" row="1" rowspan="1" column="5" columnspan="7"/>
+                <headcell name="水田(0101)" row="1" rowspan="1" column="12" columnspan="7"/>
+                <headcell name="水浇地(0102)" row="1" rowspan="1" column="19" columnspan="7"/>
+                <headcell name="旱地(0103)" row="1" rowspan="1" column="26" columnspan="7"/>
+                <headcell name="名称" row="2" rowspan="1" column="1" columnspan="1"/>
+                <headcell name="代码" row="2" rowspan="1" column="2" columnspan="1"/>
+                <headcell name="漏斗名" row="2" rowspan="1" column="3" columnspan="1"/>
+                <headcell name="漏斗类" row="2" rowspan="1" column="4" columnspan="1"/>
+                <headcell name="小计" row="2" rowspan="1" column="5" columnspan="1"/>
+                <headcell name="种植粮食作物(LS)" row="2" rowspan="1" column="6" columnspan="1"/>
+                <headcell name="种植非粮食作物(FLS)" row="2" rowspan="1" column="7" columnspan="1"/>
+                <headcell name="粮与非粮轮作(LYFL)" row="2" rowspan="1" column="8" columnspan="1"/>
+                <headcell name="休耕(XG)" row="2" rowspan="1" column="9" columnspan="1"/>
+                <headcell name="林粮间作(LLJZ)" row="2" rowspan="1" column="10" columnspan="1"/>
+                <headcell name="未耕种(WG)" row="2" rowspan="1" column="11" columnspan="1"/>
+                <headcell name="小计" row="2" rowspan="1" column="12" columnspan="1"/>
+                <headcell name="种植粮食作物(LS)" row="2" rowspan="1" column="13" columnspan="1"/>
+                <headcell name="种植非粮食作物(FLS)" row="2" rowspan="1" column="14" columnspan="1"/>
+                <headcell name="粮与非粮轮作(LYFL)" row="2" rowspan="1" column="15" columnspan="1"/>
+                <headcell name="休耕(XG)" row="2" rowspan="1" column="16" columnspan="1"/>
+                <headcell name="林粮间作(LLJZ)" row="2" rowspan="1" column="17" columnspan="1"/>
+                <headcell name="未耕种(WG)" row="2" rowspan="1" column="18" columnspan="1"/>
+                <headcell name="小计" row="2" rowspan="1" column="19" columnspan="1"/>
+                <headcell name="种植粮食作物(LS)" row="2" rowspan="1" column="20" columnspan="1"/>
+                <headcell name="种植非粮食作物(FLS)" row="2" rowspan="1" column="21" columnspan="1"/>
+                <headcell name="粮与非粮轮作(LYFL)" row="2" rowspan="1" column="22" columnspan="1"/>
+                <headcell name="休耕(XG)" row="2" rowspan="1" column="23" columnspan="1"/>
+                <headcell name="林粮间作(LLJZ)" row="2" rowspan="1" column="24" columnspan="1"/>
+                <headcell name="未耕种(WG)" row="2" rowspan="1" column="25" columnspan="1"/>
+                <headcell name="小计" row="2" rowspan="1" column="26" columnspan="1"/>
+                <headcell name="种植粮食作物(LS)" row="2" rowspan="1" column="27" columnspan="1"/>
+                <headcell name="种植非粮食作物(FLS)" row="2" rowspan="1" column="28" columnspan="1"/>
+                <headcell name="粮与非粮轮作(LYFL)" row="2" rowspan="1" column="29" columnspan="1"/>
+                <headcell name="休耕(XG)" row="2" rowspan="1" column="30" columnspan="1"/>
+                <headcell name="林粮间作(LLJZ)" row="2" rowspan="1" column="31" columnspan="1"/>
+                <headcell name="未耕种(WG)" row="2" rowspan="1" column="32" columnspan="1"/>
+            </table>
+
+            <chart name="城镇村范围面积排名" layer-ref="地下水漏斗;地下水漏斗{yearfilter}_蒙版;基础底图影像{yearfilter}" title="地下水漏斗范围内面积汇总"
+                   indicatorchartref="土地利用现状构成;细化地类;细化地类详情;种植属性;种植属性详情" mb-filter-layer="地下水漏斗{yearfilter}_蒙版"
+                   mb-filter="{childname}" mb-filter-dickey="" dataref="城镇村范围面积排名" datafiltername="{xzqmcfilter}"
+                   datafiltervalue="" shortkey="xzqh" field-x="行政区" field-y="面积" unitoptions="[亩;公顷;平方千米;万亩;万公顷]"
+                   locate="true"
+                   tabletranspose="全国各省地下水漏斗范围内土地利用现状分类面积汇总表">
+                <chart name="{chartname}->{childname}" layer-ref="地下水漏斗;地下水漏斗{yearfilter}_蒙版;基础底图影像{yearfilter}"
+                       title="{xzqmcfilter}地下水漏斗范围内按漏斗名称面积汇总" indicatorchartref="土地利用现状构成;细化地类;细化地类详情;种植属性;种植属性详情"
+                       dataref="省级地区面积汇总" datafiltername="{ldmfilter}" datafiltervalue="" field-x="水漏斗名称" field-y="面积"
+                       unitoptions="[亩;公顷;平方千米;万亩;万公顷]"/>
+            </chart>
+
+            <chart name="土地利用现状构成" layer-ref="地下水漏斗{yearfilter}_蒙版;一级地类{yearfilter}_只包含城镇村@DLBM_YJFL;基础底图影像{yearfilter}"
+                   mb-filter-layer="地下水漏斗{yearfilter}_蒙版" title="{xzqmcfilter}地下水漏斗{ldmfilter}范围土地利用现状分类面积汇总"
+                   dataref="省级地区一级土地利用结构" field-x="地类" field-y="面积" unitoptions="[亩;公顷;平方千米;万亩;万公顷]"
+                   colorcategory="三调一级分类" colorfield="地类">
+                <chart name="{chartname}->{childname}"
+                       layer-ref="地下水漏斗{yearfilter}_蒙版;三调地类图斑{yearfilter}_{childname};基础底图影像{yearfilter}"
+                       mb-filter-layer="地下水漏斗{yearfilter}_蒙版"
+                       title="{xzqmcfilter}地下水漏斗{ldmfilter}范围{childname}利用现状分类面积汇总" layer-childname-index="2"
+                       dataref="省级地区二级土地利用结构" field-x="地类" field-y="面积" unitoptions="[亩;公顷;平方千米;万亩;万公顷]"
+                       colorcategory="三调土地利用现状分类" colorfield="地类"/>
+            </chart>
+
+            <chart name="细化地类" layer-ref="地下水漏斗{yearfilter}_蒙版;三调地类图斑{yearfilter}_耕地细化@TBXHDM_TBXH;基础底图影像{yearfilter}"
+                   title="{xzqmcfilter}地下水漏斗{ldmfilter}范围耕地细化面积汇总" dataref="细化地类" field-x="细化类型" field-y="面积"
+                   unitoptions="[亩;公顷;平方千米;万亩;万公顷]" colorcategory="三调图斑细化" colorfield="细化类型"
+                   tabletranspose="全国各省地下水漏斗范围内耕地细化分类面积汇总表"/>
+            <chart name="细化地类详情"
+                   layer-ref="地下水漏斗{yearfilter}_蒙版;全国耕地面积构成{yearfilter}_按细化类型@DLBM_QGGDMJGC;基础底图影像{yearfilter}"
+                   title="{xzqmcfilter}地下水漏斗{ldmfilter}范围耕地细化分类面积汇总" dataref="细化地类详情"
+                   layer-filter="Q_tbxhdm_S_IN={childname}" layer-filter-dickey="DIC_TBXHLX_3DGD"
+                   layer-filter-reverse="true" field-x="细化类型" field-y="水田,水浇地,旱地"
+                   unitoptions="[亩;公顷;平方千米;万亩;万公顷],[亩;公顷;平方千米;万亩;万公顷],[亩;公顷;平方千米;万亩;万公顷]"
+                   colors="rgb(248,208,114);rgb(252,234,158);rgb(255,251,177)"/>
+            <chart name="种植属性"
+                   layer-ref="地下水漏斗{yearfilter}_蒙版;三调地类图斑{yearfilter}_耕地种植类型@ZZSXDM_GDZZLX;基础底图影像{yearfilter}"
+                   title="{xzqmcfilter}地下水漏斗{ldmfilter}范围耕地种植类型面积汇总" dataref="种植属性" field-x="种植类型" field-y="面积"
+                   unitoptions="[亩;公顷;平方千米;万亩;万公顷]" colorcategory="三调耕地种植" colorfield="种植类型"
+                   tabletranspose="全国各省地下水漏斗范围内耕地种植类型分类面积汇总表"/>
+            <chart name="种植属性详情" layer-ref="地下水漏斗{yearfilter}_蒙版;全国耕地面积构成{yearfilter}@DLBM_QGGDMJGC;基础底图影像{yearfilter}"
+                   title="{xzqmcfilter}地下水漏斗{ldmfilter}范围耕地种植类型分类面积汇总" dataref="种植属性详情"
+                   layer-filter="Q_zzsxdm_S_IN={childname}" layer-filter-dickey="DIC_GDZZSX" layer-filter-reverse="true"
+                   field-x="种植类型" field-y="水田,水浇地,旱地"
+                   unitoptions="[亩;公顷;平方千米;万亩;万公顷],[亩;公顷;平方千米;万亩;万公顷],[亩;公顷;平方千米;万亩;万公顷]"
+                   colors="rgb(248,208,114);rgb(252,234,158);rgb(255,251,177)"/>
+
+        </theme>
+        <theme name="地面沉降分析" defaultxzqdm="000000" ischina="true"
+               layer-ref="地面沉降区{yearfilter}@CJFW_DMCJ;基础底图影像{yearfilter}"
+               layout-ref="Config\DataOverView\chart\chart_layout\专题浏览\土地利用现状\地面沉降分析.json">
+
+            <datatable name="全国各省地面沉降地区面积排名" unit="公顷" db="0" dbkey="">
+                select f_xzqhmc as 行政区,sum(COALESCE(mj,0.00)) as 面积 from view_sd_tdlyfl_dmcj where czcsxmc ='' group by
+                f_xzqhmc,f_xzqhdm order by sum(COALESCE(mj,0.00)) desc
+            </datatable>
+            <datatable name="省级地面沉降地区面积汇总" unit="公顷" db="0" dbkey="">
+                select cjzfw ,sum(mj) as mj from view_sd_tdlyfl_dmcj where czcsxmc ='' and f_xzqhmc ='{xzqmcfilter}'
+                group by cjzfw order by substr(cjzfw,1 ,position('～' in cjzfw)-1)::numeric
+            </datatable>
+            <datatable name="省级地面沉降地区一级土地利用结构" unit="公顷" db="0" dbkey="">
+                select 地类,sum(地类面积) as 面积 from view_sd_ejtdlyfl_dmcj where position ('{xzqmcfilter}' in f_xzqhmc)>0 and
+                position ('{cjzfwfilter}' in cjzfw)>0 and 一级地类名='' group by 地类,地类编码 order by 地类编码
+            </datatable>
+            <datatable name="省级地面沉降地区二级土地利用结构" unit="公顷" db="0" dbkey="">
+                select 地类,sum(地类面积) as 面积 from view_sd_ejtdlyfl_dmcj where position ('{xzqmcfilter}' in f_xzqhmc)>0 and
+                position ('{cjzfwfilter}' in cjzfw)>0 and 一级地类名='{childfilter}' group by 地类,地类编码 order by 地类编码
+            </datatable>
+            <datatable name="细化地类" unit="公顷" db="0" dbkey="">
+                select tbxhmc as 细化类型,sum(mj) as mj from view_sd_tdlyfl_dmcj where tbxhmc &lt;&gt; '' and czcsxmc =''
+                and position ('{xzqmcfilter}' in f_xzqhmc)>0 and position ('{cjzfwfilter}' in cjzfw)>0 group by
+                tbxhmc,tbxhmcxh order by tbxhmcxh
+            </datatable>
+            <datatable name="细化地类详情" unit="公顷,公顷,公顷" db="0" dbkey="">
+                select tbxhmc as 细化类型,sum(水田) as 水田,sum(水浇地) as 水浇地,sum(旱地) as 旱地 from view_sd_tdlyfl_dmcj where tbxhmc
+                &lt;&gt; '' and czcsxmc ='' and position ('{xzqmcfilter}' in f_xzqhmc)>0 and position ('{cjzfwfilter}'
+                in cjzfw)>0 group by tbxhmc,tbxhmcxh order by tbxhmcxh
+            </datatable>
+            <datatable name="种植属性" unit="公顷" db="0" dbkey="">
+                select zzsxmc as 细化类型,sum(mj) as mj from view_sd_tdlyfl_dmcj where zzsxmc &lt;&gt; '' and czcsxmc =''
+                and position ('{xzqmcfilter}' in f_xzqhmc)>0 and position ('{cjzfwfilter}' in cjzfw)>0 group by
+                zzsxmc,zzsxmcxh order by zzsxmcxh
+            </datatable>
+            <datatable name="种植属性详情" unit="公顷,公顷,公顷" db="0" dbkey="">
+                select zzsxmc as 细化类型,sum(水田) as 水田,sum(水浇地) as 水浇地,sum(旱地) as 旱地 from view_sd_tdlyfl_dmcj where zzsxmc
+                &lt;&gt; '' and czcsxmc ='' and position ('{xzqmcfilter}' in f_xzqhmc)>0 and position ('{cjzfwfilter}'
+                in cjzfw)>0 group by zzsxmc,zzsxmcxh order by zzsxmcxh
+            </datatable>
+
+
+            <datatable name="地面沉降区城镇村范围面积汇总表" unit="公顷" db="0" dbkey="">
+                select
+                f_xzqhdm,f_xzqhmc,cjzfw,合计,湿地,红树林地,森林沼泽,灌丛沼泽,沼泽草地,盐田,沿海滩涂,内陆滩涂,沼泽地,耕地,水田,水浇地,旱地,种植园用地,果园,茶园,橡胶园,其他园地,林地,乔木林地,竹林地,
+                灌木林地,其他林地,草地,天然牧草地,人工牧草地,其他草地,商业服务业用地,商业服务业设施用地,
+                物流仓储用地,工矿用地,工业用地,采矿用地,住宅用地,城镇住宅用地,农村宅基地,公共管理与公共服务用地,机关团体新闻出版用地,科教文卫用地,公用设施用地,公园与绿地,特殊用地,交通运输用地,铁路用地,轨道交通用地,公路用地,城镇村道路用地,交通服务场站用地,农村道路,机场用地,港口码头用地,
+                管道运输用地,水域及水利设施用地,河流水面,湖泊水面,水库水面,坑塘水面,沟渠,水工建筑用地,冰川及永久积雪,其他土地,空闲地,设施农用地,田坎,盐碱地,沙地,裸土地,裸岩石砾地
+                from view_sd_tdlyfl_sub_dmcj where czcsxmc ='' order by f_xzqhdm,substr(cjzfw,1 ,position('～' in
+                cjzfw)-1)::numeric
+            </datatable>
+            <datatable name="地面沉降范围内耕地细化情况统计表" unit="公顷" db="0" dbkey="">
+                select
+                f_xzqhdm,f_xzqhmc,cjzfw,河道耕地,hdgd0101,hdgd0102,hdgd0103,湖区耕地,hqgd0101,hqgd0102,hqgd0103,林区耕地,lqgd0101,lqgd0102,lqgd0103,牧区耕地,mqgd0101,mqgd0102,mqgd0103,
+                沙荒耕地,shgd0101,shgd0102,shgd0103,石漠化耕地,smgd0101,smgd0102,smgd0103,盐碱耕地,yjgd0101,yjgd0102,yjgd0103 from
+                view_sd_tdlyxhdl_sub_dmcj where czcsxmc ='' order by f_xzqhdm,substr(cjzfw,1 ,position('～' in
+                cjzfw)-1)::numeric
+            </datatable>
+            <datatable name="地面沉降范围内耕地种植属性情况统计" unit="公顷" db="0" dbkey="">
+                select f_xzqhdm,f_xzqhmc,cjzfw,(ls+fls+lyfl+xg+lljz+wg) as
+                bm01,ls,fls,lyfl,xg,lljz,wg,(ls0101+fls0101+lyfl0101+xg0101+lljz0101+wg0101) as
+                bm0101,ls0101,fls0101,lyfl0101,xg0101,lljz0101,wg0101,(ls0102+fls0102+lyfl0102+xg0102+lljz0102+wg0102)
+                as bm0102,
+                ls0102,fls0102,lyfl0102,xg0102,lljz0102,wg0102,(ls0103+fls0103+lyfl0103+xg0103+lljz0103+wg0103) as
+                bm0103,ls0103,fls0103,lyfl0103,xg0103,lljz0103,wg0103 from view_sd_tdlyzzsx_sub_dmcj
+                where czcsxmc ='' order by f_xzqhdm,substr(cjzfw,1 ,position('～' in cjzfw)-1)::numeric
+            </datatable>
+
+            <table name="全国各省地面沉降面积汇总表" desc="" dataref="地面沉降区城镇村范围面积汇总表" unitdesc="单位:公顷" rownum="2" columnnum="72"
+                   width="8000">
+                <headcell name="地面沉降" row="1" rowspan="1" column="1" columnspan="3"/>
+                <headcell name="省代码" row="2" rowspan="1" column="1" columnspan="1"/>
+                <headcell name="省名称" row="2" rowspan="1" column="2" columnspan="1"/>
+                <headcell name="范围" row="2" rowspan="1" column="3" columnspan="1"/>
+                <headcell name="总计" row="1" rowspan="2" column="4" columnspan="1"/>
+                <headcell name="湿地(00)" row="1" rowspan="1" column="5" columnspan="9"/>
+                <headcell name="小计(00)" row="2" rowspan="1" column="5" columnspan="1"/>
+                <headcell name="红树林地(0303)" row="2" rowspan="1" column="6" columnspan="1"/>
+                <headcell name="森林沼泽(0304)" row="2" rowspan="1" column="7" columnspan="1"/>
+                <headcell name="灌丛沼泽(0306)" row="2" rowspan="1" column="8" columnspan="1"/>
+                <headcell name="沼泽草地(0402)" row="2" rowspan="1" column="9" columnspan="1"/>
+                <headcell name="盐田(0603)" row="2" rowspan="1" column="10" columnspan="1"/>
+                <headcell name="沿海滩涂(1105)" row="2" rowspan="1" column="11" columnspan="1"/>
+                <headcell name="内陆滩涂(1106)" row="2" rowspan="1" column="12" columnspan="1"/>
+                <headcell name="沼泽地(1108)" row="2" rowspan="1" column="13" columnspan="1"/>
+                <headcell name="耕地(01)" row="1" rowspan="1" column="14" columnspan="4"/>
+                <headcell name="小计(01)" row="2" rowspan="1" column="14" columnspan="1"/>
+                <headcell name="水田(0101)" row="2" rowspan="1" column="15" columnspan="1"/>
+                <headcell name="水浇地(0102)" row="2" rowspan="1" column="16" columnspan="1"/>
+                <headcell name="旱地(0103)" row="2" rowspan="1" column="17" columnspan="1"/>
+                <headcell name="种植园用地(02)" row="1" rowspan="1" column="18" columnspan="5"/>
+                <headcell name="小计(02)" row="2" rowspan="1" column="18" columnspan="1"/>
+                <headcell name="果园(0201)" row="2" rowspan="1" column="19" columnspan="1"/>
+                <headcell name="茶园(0202)" row="2" rowspan="1" column="20" columnspan="1"/>
+                <headcell name="橡胶园(0203)" row="2" rowspan="1" column="21" columnspan="1"/>
+                <headcell name="其他园地(0204)" row="2" rowspan="1" column="22" columnspan="1"/>
+                <headcell name="林地(03)" row="1" rowspan="1" column="23" columnspan="5"/>
+                <headcell name="小计(03)" row="2" rowspan="1" column="23" columnspan="1"/>
+                <headcell name="乔木林地(0301)" row="2" rowspan="1" column="24" columnspan="1"/>
+                <headcell name="竹林地(0302)" row="2" rowspan="1" column="25" columnspan="1"/>
+                <headcell name="灌木林地(0305)" row="2" rowspan="1" column="26" columnspan="1"/>
+                <headcell name="其他林地(0307)" row="2" rowspan="1" column="27" columnspan="1"/>
+                <headcell name="草地(04)" row="1" rowspan="1" column="28" columnspan="4"/>
+                <headcell name="小计(04)" row="2" rowspan="1" column="28" columnspan="1"/>
+                <headcell name="天然牧草地(0401)" row="2" rowspan="1" column="29" columnspan="1"/>
+                <headcell name="人工牧草地(0403)" row="2" rowspan="1" column="30" columnspan="1"/>
+                <headcell name="其他草地(0404)" row="2" rowspan="1" column="31" columnspan="1"/>
+                <headcell name="商业服务业用地(05)" row="1" rowspan="1" column="32" columnspan="3"/>
+                <headcell name="小计(05)" row="2" rowspan="1" column="32" columnspan="1"/>
+                <headcell name="商业服务业设施用地(05H1)" row="2" rowspan="1" column="33" columnspan="1"/>
+                <headcell name="物流仓储用地(0508)" row="2" rowspan="1" column="34" columnspan="1"/>
+                <headcell name="工矿用地(06)" row="1" rowspan="1" column="35" columnspan="3"/>
+                <headcell name="小计(06)" row="2" rowspan="1" column="35" columnspan="1"/>
+                <headcell name="工业用地(0601)" row="2" rowspan="1" column="36" columnspan="1"/>
+                <headcell name="采矿用地(0602)" row="2" rowspan="1" column="37" columnspan="1"/>
+                <headcell name="住宅用地(07)" row="1" rowspan="1" column="38" columnspan="3"/>
+                <headcell name="小计(07)" row="2" rowspan="1" column="38" columnspan="1"/>
+                <headcell name="城镇住宅用地(0701)" row="2" rowspan="1" column="39" columnspan="1"/>
+                <headcell name="农村宅基地(0702)" row="2" rowspan="1" column="40" columnspan="1"/>
+                <headcell name="公共管理与公共服务用地(08)" row="1" rowspan="1" column="41" columnspan="5"/>
+                <headcell name="小计(08)" row="2" rowspan="1" column="41" columnspan="1"/>
+                <headcell name="机关团体新闻出版用地(08H1)" row="2" rowspan="1" column="42" columnspan="1"/>
+                <headcell name="科教文卫用地(08H2)" row="2" rowspan="1" column="43" columnspan="1"/>
+                <headcell name="公共设施用地(0809)" row="2" rowspan="1" column="44" columnspan="1"/>
+                <headcell name="公园与绿地(0810)" row="2" rowspan="1" column="45" columnspan="1"/>
+                <headcell name="特殊用地(09)" row="1" rowspan="2" column="46" columnspan="1"/>
+                <headcell name="交通运输用地(10)" row="1" rowspan="1" column="47" columnspan="10"/>
+                <headcell name="小计(10)" row="2" rowspan="1" column="47" columnspan="1"/>
+                <headcell name="铁路用地(1001)" row="2" rowspan="1" column="48" columnspan="1"/>
+                <headcell name="轨道交通用地(1002)" row="2" rowspan="1" column="49" columnspan="1"/>
+                <headcell name="公路用地(1003)" row="2" rowspan="1" column="50" columnspan="1"/>
+                <headcell name="城镇村道路用地(1004)" row="2" rowspan="1" column="51" columnspan="1"/>
+                <headcell name="交通服务场站用地(1005)" row="2" rowspan="1" column="52" columnspan="1"/>
+                <headcell name="农村道路(1006)" row="2" rowspan="1" column="53" columnspan="1"/>
+                <headcell name="机场用地(1007)" row="2" rowspan="1" column="54" columnspan="1"/>
+                <headcell name="港口码头用地(1008)" row="2" rowspan="1" column="55" columnspan="1"/>
+                <headcell name="管道运输用地(1009)" row="2" rowspan="1" column="56" columnspan="1"/>
+                <headcell name="水域及水利设施用地(11)" row="1" rowspan="1" column="57" columnspan="8"/>
+                <headcell name="小计(11)" row="2" rowspan="1" column="57" columnspan="1"/>
+                <headcell name="河流水面(1101)" row="2" rowspan="1" column="58" columnspan="1"/>
+                <headcell name="湖泊水面(1102)" row="2" rowspan="1" column="59" columnspan="1"/>
+                <headcell name="水库水面(1103)" row="2" rowspan="1" column="60" columnspan="1"/>
+                <headcell name="坑塘水面(1104)" row="2" rowspan="1" column="61" columnspan="1"/>
+                <headcell name="沟渠(1107)" row="2" rowspan="1" column="62" columnspan="1"/>
+                <headcell name="水工建筑用地(1109)" row="2" rowspan="1" column="63" columnspan="1"/>
+                <headcell name="冰川及永久积雪(1110)" row="2" rowspan="1" column="64" columnspan="1"/>
+                <headcell name="其他土地(12)" row="1" rowspan="1" column="65" columnspan="8"/>
+                <headcell name="小计(12)" row="2" rowspan="1" column="65" columnspan="1"/>
+                <headcell name="空闲地(1201)" row="2" rowspan="1" column="66" columnspan="1"/>
+                <headcell name="设施农用地(1202)" row="2" rowspan="1" column="67" columnspan="1"/>
+                <headcell name="田坎(1203)" row="2" rowspan="1" column="68" columnspan="1"/>
+                <headcell name="盐碱地(1204)" row="2" rowspan="1" column="69" columnspan="1"/>
+                <headcell name="沙地(1205)" row="2" rowspan="1" column="70" columnspan="1"/>
+                <headcell name="裸土地(1206)" row="2" rowspan="1" column="71" columnspan="1"/>
+                <headcell name="裸岩石砾地(1207)" row="2" rowspan="1" column="72" columnspan="1"/>
+            </table>
+            <table name="全国各省地面沉降区内耕地细化分类面积汇总表" desc="" dataref="地面沉降范围内耕地细化情况统计表" unitdesc="单位:公顷" rownum="3"
+                   columnnum="31" width="3000">
+                <headcell name="地面沉降" row="1" rowspan="1" column="1" columnspan="3"/>
+                <headcell name="耕地细化" row="1" rowspan="1" column="4" columnspan="28"/>
+                <headcell name="省代码" row="2" rowspan="2" column="1" columnspan="1"/>
+                <headcell name="省名称" row="2" rowspan="2" column="2" columnspan="1"/>
+                <headcell name="范围" row="2" rowspan="2" column="3" columnspan="1"/>
+                <headcell name="河道耕地(HDGD)" row="2" rowspan="1" column="4" columnspan="4"/>
+                <headcell name="湖区耕地(HQGD)" row="2" rowspan="1" column="8" columnspan="4"/>
+                <headcell name="林区耕地(LQGD)" row="2" rowspan="1" column="12" columnspan="4"/>
+                <headcell name="牧区耕地(MQGD)" row="2" rowspan="1" column="16" columnspan="4"/>
+                <headcell name="沙荒耕地(SHGD)" row="2" rowspan="1" column="20" columnspan="4"/>
+                <headcell name="石漠化耕地(SMGD)" row="2" rowspan="1" column="24" columnspan="4"/>
+                <headcell name="盐碱耕地(YJGD)" row="2" rowspan="1" column="28" columnspan="4"/>
+                <headcell name="耕地" row="3" rowspan="1" column="4" columnspan="1"/>
+                <headcell name="水田" row="3" rowspan="1" column="5" columnspan="1"/>
+                <headcell name="水浇地" row="3" rowspan="1" column="6" columnspan="1"/>
+                <headcell name="旱地" row="3" rowspan="1" column="7" columnspan="1"/>
+                <headcell name="耕地" row="3" rowspan="1" column="8" columnspan="1"/>
+                <headcell name="水田" row="3" rowspan="1" column="9" columnspan="1"/>
+                <headcell name="水浇地" row="3" rowspan="1" column="10" columnspan="1"/>
+                <headcell name="旱地" row="3" rowspan="1" column="11" columnspan="1"/>
+                <headcell name="耕地" row="3" rowspan="1" column="12" columnspan="1"/>
+                <headcell name="水田" row="3" rowspan="1" column="13" columnspan="1"/>
+                <headcell name="水浇地" row="3" rowspan="1" column="14" columnspan="1"/>
+                <headcell name="旱地" row="3" rowspan="1" column="15" columnspan="1"/>
+                <headcell name="耕地" row="3" rowspan="1" column="16" columnspan="1"/>
+                <headcell name="水田" row="3" rowspan="1" column="17" columnspan="1"/>
+                <headcell name="水浇地" row="3" rowspan="1" column="18" columnspan="1"/>
+                <headcell name="旱地" row="3" rowspan="1" column="19" columnspan="1"/>
+                <headcell name="耕地" row="3" rowspan="1" column="20" columnspan="1"/>
+                <headcell name="水田" row="3" rowspan="1" column="21" columnspan="1"/>
+                <headcell name="水浇地" row="3" rowspan="1" column="22" columnspan="1"/>
+                <headcell name="旱地" row="3" rowspan="1" column="23" columnspan="1"/>
+                <headcell name="耕地" row="3" rowspan="1" column="24" columnspan="1"/>
+                <headcell name="水田" row="3" rowspan="1" column="25" columnspan="1"/>
+                <headcell name="水浇地" row="3" rowspan="1" column="26" columnspan="1"/>
+                <headcell name="旱地" row="3" rowspan="1" column="27" columnspan="1"/>
+                <headcell name="耕地" row="3" rowspan="1" column="28" columnspan="1"/>
+                <headcell name="水田" row="3" rowspan="1" column="29" columnspan="1"/>
+                <headcell name="水浇地" row="3" rowspan="1" column="30" columnspan="1"/>
+                <headcell name="旱地" row="3" rowspan="1" column="31" columnspan="1"/>
+            </table>
+            <table name="全国各省地面沉降区内耕地种植类型分类面积汇总表" desc="" dataref="地面沉降范围内耕地种植属性情况统计" unitdesc="单位:公顷" rownum="2"
+                   columnnum="31" width="3500">
+                <headcell name="地面沉降" row="1" rowspan="1" column="1" columnspan="3"/>
+                <headcell name="耕地(01)" row="1" rowspan="1" column="4" columnspan="7"/>
+                <headcell name="水田(0101)" row="1" rowspan="1" column="11" columnspan="7"/>
+                <headcell name="水浇地(0102)" row="1" rowspan="1" column="18" columnspan="7"/>
+                <headcell name="旱地(0103)" row="1" rowspan="1" column="25" columnspan="7"/>
+                <headcell name="省代码" row="2" rowspan="1" column="1" columnspan="1"/>
+                <headcell name="省名称" row="2" rowspan="1" column="2" columnspan="1"/>
+                <headcell name="范围" row="2" rowspan="1" column="3" columnspan="1"/>
+                <headcell name="小计" row="2" rowspan="1" column="4" columnspan="1"/>
+                <headcell name="种植粮食作物(LS)" row="2" rowspan="1" column="5" columnspan="1"/>
+                <headcell name="种植非粮食作物(FLS)" row="2" rowspan="1" column="6" columnspan="1"/>
+                <headcell name="粮与非粮轮作(LYFL)" row="2" rowspan="1" column="7" columnspan="1"/>
+                <headcell name="休耕(XG)" row="2" rowspan="1" column="8" columnspan="1"/>
+                <headcell name="林粮间作(LLJZ)" row="2" rowspan="1" column="9" columnspan="1"/>
+                <headcell name="未耕种(WG)" row="2" rowspan="1" column="10" columnspan="1"/>
+                <headcell name="小计" row="2" rowspan="1" column="11" columnspan="1"/>
+                <headcell name="种植粮食作物(LS)" row="2" rowspan="1" column="12" columnspan="1"/>
+                <headcell name="种植非粮食作物(FLS)" row="2" rowspan="1" column="13" columnspan="1"/>
+                <headcell name="粮与非粮轮作(LYFL)" row="2" rowspan="1" column="14" columnspan="1"/>
+                <headcell name="休耕(XG)" row="2" rowspan="1" column="15" columnspan="1"/>
+                <headcell name="林粮间作(LLJZ)" row="2" rowspan="1" column="16" columnspan="1"/>
+                <headcell name="未耕种(WG)" row="2" rowspan="1" column="17" columnspan="1"/>
+                <headcell name="小计" row="2" rowspan="1" column="18" columnspan="1"/>
+                <headcell name="种植粮食作物(LS)" row="2" rowspan="1" column="19" columnspan="1"/>
+                <headcell name="种植非粮食作物(FLS)" row="2" rowspan="1" column="20" columnspan="1"/>
+                <headcell name="粮与非粮轮作(LYFL)" row="2" rowspan="1" column="21" columnspan="1"/>
+                <headcell name="休耕(XG)" row="2" rowspan="1" column="22" columnspan="1"/>
+                <headcell name="林粮间作(LLJZ)" row="2" rowspan="1" column="23" columnspan="1"/>
+                <headcell name="未耕种(WG)" row="2" rowspan="1" column="24" columnspan="1"/>
+                <headcell name="小计" row="2" rowspan="1" column="25" columnspan="1"/>
+                <headcell name="种植粮食作物(LS)" row="2" rowspan="1" column="26" columnspan="1"/>
+                <headcell name="种植非粮食作物(FLS)" row="2" rowspan="1" column="27" columnspan="1"/>
+                <headcell name="粮与非粮轮作(LYFL)" row="2" rowspan="1" column="28" columnspan="1"/>
+                <headcell name="休耕(XG)" row="2" rowspan="1" column="29" columnspan="1"/>
+                <headcell name="林粮间作(LLJZ)" row="2" rowspan="1" column="30" columnspan="1"/>
+                <headcell name="未耕种(WG)" row="2" rowspan="1" column="31" columnspan="1"/>
+            </table>
+
+
+            <chart name="城镇村范围面积排名" layer-ref="地面沉降区;地面沉降区{yearfilter}_蒙版;基础底图影像{yearfilter}" title="地面沉降区面积汇总"
+                   indicatorchartref="土地利用现状构成;细化地类;细化地类详情;种植属性;种植属性详情" mb-filter-useref="true" dataref="全国各省地面沉降地区面积排名"
+                   mb-filter-layer="地面沉降区{yearfilter}_蒙版" mb-filter="Q_smc_S_EQ={childname}"
+                   mb-filter-dickey="DIC_SMC_FILTER" datafiltername="{xzqmcfilter}" shortkey="xzqh" field-x="行政区"
+                   field-y="面积" unitoptions="[亩;公顷;平方千米;万亩;万公顷]" locate="true"
+                   tabletranspose="全国各省地面沉降面积汇总表">
+                <chart name="城镇村范围面积排名->{childname}" layer-ref="地面沉降区;地面沉降区{yearfilter}_蒙版;基础底图影像{yearfilter}"
+                       mb-filter-layer="地面沉降区{yearfilter}_蒙版" mb-filter="Q_smc_S_EQ={childname}"
+                       mb-filter-dickey="DIC_SMC_FILTER" title="{xzqmcfilter}地面沉降区在不同沉降值范围面积汇总"
+                       indicatorchartref="土地利用现状构成;细化地类;细化地类详情;种植属性;种植属性详情" dataref="省级地面沉降地区面积汇总"
+                       datafiltername="{cjzfwfilter}" field-x="范围" field-y="面积" unitoptions="[亩;公顷;平方千米;万亩;万公顷]"/>
+            </chart>
+
+            <chart name="土地利用现状构成" layer-ref="地面沉降区{yearfilter}_蒙版;一级地类{yearfilter}@DLBM_YJFL;基础底图影像{yearfilter}"
+                   mb-filter-layer="地面沉降区{yearfilter}_蒙版" mb-filter="{childname}" mb-showline="true"
+                   mb-filter-dickey="DIC_SMC_FILTER" title="{xzqmcfilter}地面沉降区{cjzfwfilter}范围内土地利用现状分类面积汇总"
+                   dataref="省级地面沉降地区一级土地利用结构" field-x="地类" field-y="面积" unitoptions="[亩;公顷;平方千米;万亩;万公顷]"
+                   colorcategory="三调一级分类" colorfield="地类">
+                <chart name="{chartname}->{childname}"
+                       layer-ref="地面沉降区{yearfilter}_蒙版;三调地类图斑{yearfilter}_{childname};基础底图影像{yearfilter}"
+                       mb-filter-layer="地面沉降区{yearfilter}_蒙版" mb-filter="{childname}" mb-showline="true"
+                       mb-filter-dickey="DIC_DMCJ_CJFW_Filter" mb-filter-useref="true" mb-filter-ref="{cjzfwfilter}"
+                       layer-childname-index="2" title="{xzqmcfilter}地面沉降区{cjzfwfilter}范围内{childname}利用现状分类面积汇总"
+                       dataref="省级地面沉降地区二级土地利用结构" field-x="地类" field-y="面积" unitoptions="[亩;公顷;平方千米;万亩;万公顷]"
+                       colorcategory="三调土地利用现状分类" colorfield="地类"/>
+            </chart>
+
+            <chart name="细化地类" layer-ref="地面沉降区{yearfilter}_蒙版;三调地类图斑{yearfilter}_耕地细化@TBXHDM_TBXH;基础底图影像{yearfilter}"
+                   title="{xzqmcfilter}地面沉降区{cjzfwfilter}范围内耕地细化面积汇总" dataref="细化地类" field-x="细化类型" field-y="面积"
+                   unitoptions="[亩;公顷;平方千米;万亩;万公顷]" colorcategory="三调图斑细化" colorfield="细化类型"
+                   tabletranspose="全国各省地面沉降区内耕地细化分类面积汇总表"/>
+            <chart name="细化地类详情"
+                   layer-ref="地面沉降区{yearfilter}_蒙版;全国耕地面积构成{yearfilter}_按细化类型@DLBM_QGGDMJGC;基础底图影像{yearfilter}"
+                   title="{xzqmcfilter}地面沉降区{cjzfwfilter}范围内耕地细化分类面积汇总" dataref="细化地类详情" field-x="细化类型"
+                   layer-filter="Q_tbxhdm_S_IN={childname}" layer-filter-dickey="DIC_TBXHLX_3DGD"
+                   layer-filter-reverse="true" field-y="水田,水浇地,旱地"
+                   unitoptions="[亩;公顷;平方千米;万亩;万公顷],[亩;公顷;平方千米;万亩;万公顷],[亩;公顷;平方千米;万亩;万公顷]"
+                   colors="rgb(248,208,114);rgb(252,234,158);rgb(255,251,177)"/>
+            <chart name="种植属性"
+                   layer-ref="地面沉降区{yearfilter}_蒙版;三调地类图斑{yearfilter}_耕地种植类型@ZZSXDM_GDZZLX;基础底图影像{yearfilter}"
+                   title="{xzqmcfilter}地面沉降区{cjzfwfilter}范围内耕地种植类型面积汇总" dataref="种植属性" field-x="种植类型" field-y="面积"
+                   unitoptions="[亩;公顷;平方千米;万亩;万公顷]" colorcategory="三调耕地种植" colorfield="种植类型"
+                   tabletranspose="全国各省地面沉降区内耕地种植类型分类面积汇总表"/>
+            <chart name="种植属性详情" layer-ref="地面沉降区{yearfilter}_蒙版;全国耕地面积构成{yearfilter}@DLBM_QGGDMJGC;基础底图影像{yearfilter}"
+                   title="{xzqmcfilter}地面沉降区{cjzfwfilter}范围内耕地种植类型分类面积汇总" dataref="种植属性详情"
+                   layer-filter="Q_zzsxdm_S_IN={childname}" layer-filter-dickey="DIC_GDZZSX" layer-filter-reverse="true"
+                   field-x="种植类型" field-y="水田,水浇地,旱地"
+                   unitoptions="[亩;公顷;平方千米;万亩;万公顷],[亩;公顷;平方千米;万亩;万公顷],[亩;公顷;平方千米;万亩;万公顷]"
+                   colors="rgb(248,208,114);rgb(252,234,158);rgb(255,251,177)"/>
+
+        </theme>
+        <theme name="永久基本农田" layer-ref="全国永久基本农田二级地类{yearfilter};基础底图影像{yearfilter}"
+               layout-ref="Config\DataOverView\chart\chart_layout\专题浏览\土地利用现状\永久基本农田.json">
+            <datatable name="永久基本农田面积" unit="公顷,%" db="0" dbkey="">
+                select a.hj as "{xzqh}永久基本农田图斑面积",round(a.bm01*100/case when b.bm01 = 0 then 1 else b.bm01 end,2) as
+                "{xzqh}永久基本农田范围内耕地占全部耕地的比例",a.f_xzqhdm,a.f_year from tbhztj_sd_yjjbntxztjb_result a left join
+                tbhztj_sd_yjflhzb_result b on a.f_xzqhdm=b.f_xzqhdm
+                and a.f_year=b.f_year where a.f_year ={yearfilter} and a.f_xzqhdm ='{xzqhfilter}'
+            </datatable>
+            <datatable name="永久基本农田土地利用现状按工作分类" unit="公顷,%" db="0" dbkey="">
+                with a as (select hj, bm01,f_xzqhdm,f_year from tbhztj_sd_yjjbntxztjb_result where f_year ={yearfilter}
+                and f_xzqhdm ='{xzqhfilter}')
+                select '耕地' as 地类,bm01 as 面积,round(bm01/hj*100,2) as 占比,f_xzqhdm,f_year from a
+                union all select '非耕地' as 地类,(hj - bm01) as 面积,100 - round(bm01/hj*100,2) as 占比,f_xzqhdm,f_year from a
+            </datatable>
+            <datatable name="永久基本农田土地利用现状按工作分类耕地面积" unit="公顷,%" db="0" dbkey="">
+                SELECT 地类,一级地类名,面积,占比 FROM view_sd_yjjbntgzfltjb where f_xzqhdm = '{xzqhfilter}' and f_year
+                ={yearfilter} and 一级地类名 = '{childfilter}'
+            </datatable>
+            <datatable name="永久基本农田土地利用现状按工作分类非耕地面积" unit="公顷,%" db="0" dbkey="">
+                SELECT * FROM view_sd_yjjbntgzfltjb where f_xzqhdm = '{xzqhfilter}' and f_year ={yearfilter} and 一级地类名 =
+                '非耕地'
+            </datatable>
+            <datatable name="永久基本农田土地利用现状按工作分类一级地类面积" unit="公顷" db="0" dbkey="">
+                <!-- SELECT 地类,面积 FROM view_sd_yjjbntgzfltjb where f_xzqhdm = '{xzqhfilter}' and f_year ={yearfilter} -->
+                with a as (select bm00,bm01,bm02,bm03,bm04,bm05,bm06,bm07,bm08,bm09,bm10,bm11,bm12,f_xzqhdm,f_year FROM
+                tbhztj_sd_yjjbntxztjb_result where f_year ={yearfilter} and f_xzqhdm ='{xzqhfilter}')
+                SELECT '湿地' as 地类, bm00 as 面积,f_xzqhdm,f_year FROM a
+                union all SELECT '耕地' as 地类, bm01 as 面积,f_xzqhdm,f_year FROM a
+                union all SELECT '种植园用地' as 地类, bm02 as 面积,f_xzqhdm,f_year FROM a
+                union all SELECT '林地' as 地类, bm03 as 面积,f_xzqhdm,f_year FROM a
+                union all SELECT '草地' as 地类, bm04 as 面积,f_xzqhdm,f_year FROM a
+                union all SELECT '商业服务业用地' as 地类, bm05 as 面积,f_xzqhdm,f_year FROM a
+                union all SELECT '工矿用地' as 地类, bm06 as 面积,f_xzqhdm,f_year FROM a
+                union all SELECT '住宅用地' as 地类, bm07 as 面积,f_xzqhdm,f_year FROM a
+                union all SELECT '公共管理与公共服务用地' as 地类, bm08 as 面积,f_xzqhdm,f_year FROM a
+                union all SELECT '特殊用地' as 地类, bm09 as 面积,f_xzqhdm,f_year FROM a
+                union all SELECT '交通运输用地' as 地类, bm10 as 面积,f_xzqhdm,f_year FROM a
+                union all SELECT '水域及水利设施用地' as 地类, bm11 as 面积,f_xzqhdm,f_year FROM a
+                union all SELECT '其他土地' as 地类,bm12 as 面积,f_xzqhdm,f_year FROM a
+            </datatable>
+            <datatable name="永久基本农田土地利用现状按工作分类二级地类面积详情" unit="公顷" db="0" dbkey="">
+                SELECT * FROM view_sd_yjjbntejfltjb_result where f_xzqhdm = '{xzqhfilter}' and f_year ={yearfilter} and
+                一级地类名 = '{childfilter}'
+            </datatable>
+            <datatable name="永久基本农田土地利用现状按工作分类耕地分类面积" unit="公顷" db="0" dbkey="">
+                SELECT 地类,面积 FROM view_sd_yjjbntgzfltjb where f_xzqhdm = '{xzqhfilter}' and f_year ={yearfilter} and
+                一级地类名='耕地'
+            </datatable>
+            <datatable name="永久基本农田土地利用现状按工作分类非耕地分类面积" unit="公顷" db="0" dbkey="">
+                with a as (select bm00,bm02,bm03,bm04,bm05,bm06,bm07,bm08,bm09,bm10,bm11,bm12,f_xzqhdm,f_year FROM
+                tbhztj_sd_yjjbntxztjb_result where f_year ={yearfilter} and f_xzqhdm ='{xzqhfilter}')
+                SELECT '湿地' as 地类, bm00 as 面积,f_xzqhdm,f_year FROM a
+                union all SELECT '种植园用地' as 地类, bm02 as 面积,f_xzqhdm,f_year FROM a
+                union all SELECT '林地' as 地类, bm03 as 面积,f_xzqhdm,f_year FROM a
+                union all SELECT '草地' as 地类, bm04 as 面积,f_xzqhdm,f_year FROM a
+                union all SELECT '商业服务业用地' as 地类, bm05 as 面积,f_xzqhdm,f_year FROM a
+                union all SELECT '工矿用地' as 地类, bm06 as 面积,f_xzqhdm,f_year FROM a
+                union all SELECT '住宅用地' as 地类, bm07 as 面积,f_xzqhdm,f_year FROM a
+                union all SELECT '公共管理与公共服务用地' as 地类, bm08 as 面积,f_xzqhdm,f_year FROM a
+                union all SELECT '特殊用地' as 地类, bm09 as 面积,f_xzqhdm,f_year FROM a
+                union all SELECT '交通运输用地' as 地类, bm10 as 面积,f_xzqhdm,f_year FROM a
+                union all SELECT '水域及水利设施用地' as 地类, bm11 as 面积,f_xzqhdm,f_year FROM a
+                union all SELECT '其他土地' as 地类,bm12 as 面积,f_xzqhdm,f_year FROM a
+            </datatable>
+            <datatable name="永久基本农田土地利用现状按工作分类详情" unit="公顷" db="0" dbkey="">
+                with a as (select 一级地类名,面积,地类 from view_sd_yjjbntgzfltjb where f_xzqhdm = '{xzqhfilter}' and f_year
+                ={yearfilter})
+                select 一级地类名 as id,'0' as parent,一级地类名 as 地类,sum(面积) as 面积 from a group by 一级地类名
+                union all select 地类 as id,一级地类名 as parent,地类, 面积 from a
+            </datatable>
+            <datatable name="永久基本农田现状情况统计表" unit="公顷" db="0" dbkey="">
+                select 下级名称,下级代码,合计,耕地,round(耕地*100/合计,2)::text || '%',水田,水浇地,旱地,合计 - 耕地,(100-round(耕地*100/合计,2))::text
+                || '%',湿地,种植园用地,林地,草地,商业服务业用地,工矿用地,住宅用地,公共管理与公共服务用地,特殊用地,
+                交通运输用地,水域及水利设施用地,其他土地 from view_sd_yjjbntxztjb_result_sub_{jb} where f_xzqhdm = '{xzqhfilter}' and
+                f_year ={yearfilter} order by 下级代码
+            </datatable>
+            <datatable name="永久基本农田土地利用现状按三大类" unit="公顷,%" db="0" dbkey="">
+                with a as (select
+                gdmj,qtnydmj,czcjgkydmj,jtysydmj,qtjsydmj,wlydmj,gdmjbl,qtnydmjbl,czcjgkydmjbl,jtysydmjbl,qtjsydmjbl,wlydmjbl,f_xzqhdm,f_year
+                from tbhztj_sd_fj2_yjjbntnew_result where f_year ={yearfilter} and f_xzqhdm ='{xzqhfilter}')
+                select '农用地' as 类别,gdmj + qtnydmj as 面积,round((gdmjbl+qtnydmjbl)*100,2) as 占比,f_xzqhdm,f_year from a
+                union all select '建设用地' as 类别,czcjgkydmj + jtysydmj + qtjsydmj as
+                面积,round((czcjgkydmjbl+jtysydmjbl+qtjsydmjbl)*100,2) as 占比,f_xzqhdm,f_year from a
+                union all select '未利用地' as 类别,wlydmj as 面积,round(wlydmjbl*100,2) as 占比,f_xzqhdm,f_year from a
+            </datatable>
+            <datatable name="永久基本农田土地利用现状按三大类二级地类面积" unit="公顷,%" db="0" dbkey="">
+                SELECT 地类 as 类别,面积,占比 FROM view_sd_yjjbntsdltjb where f_xzqhdm = '{xzqhfilter}' and f_year ={yearfilter}
+                and 一级地类名 = '{childfilter}'
+            </datatable>
+            <datatable name="永久基本农田土地利用现状按三大类一级地类面积" unit="公顷" db="0" dbkey="">
+                SELECT 地类,面积 FROM view_sd_yjjbntsdltjb where f_xzqhdm = '{xzqhfilter}' and f_year ={yearfilter}
+            </datatable>
+            <datatable name="永久基本农田土地利用现状按三大类详情" unit="公顷" db="0" dbkey="">
+                with a as (select 地类,一级地类名,面积 from view_sd_yjjbntsdltjb where f_xzqhdm = '{xzqhfilter}' and f_year
+                ={yearfilter})
+                select case when 一级地类名 ='未利用地' then '未利用地1' else 一级地类名 end as id,'0' as parent,一级地类名 as 地类,sum(面积) as 面积
+                from a group by 一级地类名
+                union all select 地类 as id,case when 一级地类名 ='未利用地' then '未利用地1' else 一级地类名 end as parent,地类, 面积 from a
+            </datatable>
+            <datatable name="永久基本农田内耕地坡度分级面积" unit="公顷,%" db="0" dbkey="">
+                with a as (select gdmj,pdmj,hj2,hj6,hj15,hj25,f_xzqhdm,f_year from view_sd_yjjbntgdpdfj_{jb} where
+                f_year ={yearfilter} and f_xzqhdm ='{xzqhfilter}')
+                select '≤2°' as 坡度级,pdmj as 面积,round(pdmj/gdmj*100,2) as 占比,f_xzqhdm,f_year from a
+                union all select '2°~6°' as 坡度级,hj2 as 面积,round(hj2/gdmj*100,2) as 占比,f_xzqhdm,f_year from a
+                union all select '6°~15°' as 坡度级,hj6 as 面积,round(hj6/gdmj*100,2) as 占比,f_xzqhdm,f_year from a
+                union all select '15°~25°' as 坡度级,hj15 as 面积,round(hj15/gdmj*100,2) as 占比,f_xzqhdm,f_year from a
+                union all select '>25°' as 坡度级,hj25 as 面积,round(hj25/gdmj*100,2) as 占比,f_xzqhdm,f_year from a
+            </datatable>
+            <datatable name="永久基本农田内各耕地坡度分级面积" unit="公顷,公顷,公顷" db="0" dbkey="">
+                with a as (select pdmj,p2,t2,p6,t6,p15,t15,p25,t25 from view_sd_yjjbntgdpdfj_{jb} where f_year
+                ={yearfilter} and f_xzqhdm ='{xzqhfilter}')
+                select '≤2°' as 坡度级,pdmj as 平地,0 as 坡地,0 as 梯田 from a
+                union all select '2°~6°' as 坡度级,0 as 平地,p2 as 坡地,t2 as 梯田 from a
+                union all select '6°~15°' as 坡度级,0 as 平地,p6 as 坡地,t6 as 梯田 from a
+                union all select '15°~25°' as 坡度级,0 as 平地,p15 as 坡地,t15 as 梯田 from a
+                union all select '>25°' as 坡度级,0 as 平地,p25 as 坡地,t25 as 梯田 from a
+            </datatable>
+            <datatable name="永久基本农田内各行政区耕地坡度分级面积" unit="" db="0" dbkey="">
+                select 下级名称,gdmj,pdmj,hj2,t2,p2,hj6,t6,p6,hj15,t15,p15,hj25,t25,p25 from view_sd_yjjbntgdpdfj_sub_{jb}
+                where f_xzqhdm ='{xzqhfilter}' and f_year={yearfilter} order by 下级代码
+            </datatable>
+            <datatable name="永久基本农田内耕地质量等别" unit="万公顷,%" db="0" dbkey="">
+                select '优' as 等别,900 as 面积,60 as 占比
+                union all select '高' as 等别,150 as 面积,10 as 占比
+                union all select '中' as 等别,345 as 面积,23 as 占比
+                union all select '低' as 等别,105 as 面积,7 as 占比
+            </datatable>
+            <datatable name="永久基本农田内各耕地质量等别" unit="万公顷,%" db="0" dbkey="">
+                select '1' as 等别,400 as 面积,26.67 as 占比
+                union all select '2' as 等别,150 as 面积,10.00 as 占比
+                union all select '3' as 等别,245 as 面积,16.33 as 占比
+                union all select '4' as 等别,105 as 面积,7.00 as 占比
+                union all select '5' as 等别,40 as 面积,2.67 as 占比
+                union all select '6' as 等别,50 as 面积,3.33 as 占比
+                union all select '7' as 等别,15 as 面积,1.00 as 占比
+                union all select '8' as 等别,45 as 面积,3.00 as 占比
+                union all select '9' as 等别,45 as 面积,3.00 as 占比
+                union all select '10' as 等别,150 as 面积,10.00 as 占比
+                union all select '11' as 等别,70 as 面积,4.67 as 占比
+                union all select '12' as 等别,80 as 面积,5.33 as 占比
+                union all select '13' as 等别,35 as 面积,2.33 as 占比
+                union all select '14' as 等别,20 as 面积,1.34 as 占比
+                union all select '15' as 等别,50 as 面积,3.33 as 占比
+            </datatable>
+            <datatable name="永久基本农田范围内耕地质量等级汇总统计表" unit="公顷" db="0" dbkey="">
+                select
+                下级名称,下级代码,耕地,水田,水浇地,旱地,耕地,水田,水浇地,旱地,耕地,水田,水浇地,旱地,耕地,水田,水浇地,旱地,耕地,水田,水浇地,旱地,耕地,水田,水浇地,旱地,耕地,水田,水浇地,旱地,耕地,水田,水浇地,旱地,耕地,水田,水浇地,旱地,
+                耕地,水田,水浇地,旱地,耕地,水田,水浇地,旱地,耕地,水田,水浇地,旱地 from view_sd_yjjbntxztjb_result_sub_{jb} where f_xzqhdm =
+                '{xzqhfilter}' and f_year ={yearfilter} order by 下级代码
+            </datatable>
+            <datatable name="永久基本农田种植类型面积" unit="公顷,%" db="0" dbkey="">
+                with a as (select hj,ls,lyfl,fls,lljz,xg,wg,f_year,f_xzqhdm from view_sd_yjjbntzzsx_{jb} where f_year
+                ={yearfilter} and f_xzqhdm ='{xzqhfilter}')
+                select '种植粮食作物' as 类型,ls as 面积,round(ls/hj*100,2) as 占比,f_year,f_xzqhdm from a
+                union all select '粮与非粮轮作' as 类型,lyfl as 面积,round(lyfl/hj*100,2) as 占比,f_year,f_xzqhdm from a
+                union all select '种植非粮食作物' as 类型,fls as 面积,round(fls/hj*100,2) as 占比,f_year,f_xzqhdm from a
+                union all select '林粮间作' as 类型,lljz as 面积,round(lljz/hj*100,2) as 占比,f_year,f_xzqhdm from a
+                union all select '休耕' as 类型,xg as 面积,round(xg/hj*100,2) as 占比,f_year,f_xzqhdm from a
+                union all select '未耕种' as 类型,wg as 面积,round(wg/hj*100,2) as 占比,f_year,f_xzqhdm from a
+            </datatable>
+            <datatable name="永久基本农田各种植属性面积" unit="公顷,公顷,公顷" db="0" dbkey="">
+                with a as (select
+                ls0101,ls0102,ls0103,lyfl0101,lyfl0102,lyfl0103,fls0101,fls0102,fls0103,lljz0101,lljz0102,lljz0103,xg0101,xg0102,xg0103,wg0101,wg0102,wg0103,f_year,f_xzqhdm
+                from view_sd_yjjbntzzsx_{jb} where f_year ={yearfilter} and f_xzqhdm ='{xzqhfilter}')
+                select '种植粮食作物' as 种植属性,ls0101 as 水田,ls0102 as 水浇地,ls0103 as 旱地,f_year,f_xzqhdm from a
+                union all select '粮与非粮轮作' as 种植属性,lyfl0101 as 水田,lyfl0102 as 水浇地,lyfl0103 as 旱地,f_year,f_xzqhdm from a
+                union all select '种植非粮食作物' as 种植属性,fls0101 as 水田,fls0102 as 水浇地,fls0103 as 旱地,f_year,f_xzqhdm from a
+                union all select '林粮间作' as 种植属性,lljz0101 as 水田,lljz0102 as 水浇地,lljz0103 as 旱地,f_year,f_xzqhdm from a
+                union all select '休耕' as 种植属性,xg0101 as 水田,xg0102 as 水浇地,xg0103 as 旱地,f_year,f_xzqhdm from a
+                union all select '未耕种' as 种植属性,wg0101 as 水田,wg0102 as 水浇地,wg0103 as 旱地,f_year,f_xzqhdm from a
+            </datatable>
+            <datatable name="永久基本农田内行政区各种植类型面积" unit="公顷" db="0" dbkey="">
+                select
+                下级名称,hj,gdmj,round(gdmj/hj*100,2),ls,round(ls/hj*100,2),fls,round(fls/hj*100,2),lyfl,round(lyfl/hj*100,2),xg,round(xg/hj*100,2),lljz,round(lljz/hj*100,2),
+                wg,round(wg/hj*100,2),fgdmj,round(fgdmj/hj*100,2) from view_sd_yjjbntzzsx_sub_{jb} where f_year
+                ={yearfilter} and f_xzqhdm ='{xzqhfilter}' order by 下级代码
+            </datatable>
+            <datatable name="永久基本农田内可调整地类面积" unit="公顷" db="0" dbkey="">
+                with a as (select 可调整果园,可调整茶园,可调整橡胶园,可调整其他园地,可调整乔木林地,可调整竹林地,可调整其他林地,可调整人工牧草地,可调整养殖坑塘 from
+                view_sd_yjjbntktzdlhzb_{jb} where f_year ={yearfilter} and f_xzqhdm ='{xzqhfilter}')
+                select '可调整果园' as 地类,可调整果园 as 面积 from a
+                union all select '可调整茶园' as 地类,可调整茶园 as 面积 from a
+                union all select '可调整橡胶园' as 地类,可调整橡胶园 as 面积 from a
+                union all select '可调整其他园地' as 地类,可调整其他园地 as 面积 from a
+                union all select '可调整乔木林地' as 地类,可调整乔木林地 as 面积 from a
+                union all select '可调整竹林地' as 地类,可调整竹林地 as 面积 from a
+                union all select '可调整其他林地' as 地类,可调整其他林地 as 面积 from a
+                union all select '可调整人工牧草地' as 地类,可调整人工牧草地 as 面积 from a
+                union all select '可调整养殖坑塘' as 地类,可调整养殖坑塘 as 面积 from a
+            </datatable>
+            <datatable name="永久基本农田内各行政区可调整地类面积" unit="公顷" db="0" dbkey="">
+                select 下级名称,合计,可调整果园,可调整茶园,可调整橡胶园,可调整其他园地,可调整乔木林地,可调整竹林地,可调整其他林地,可调整人工牧草地,可调整养殖坑塘 from
+                view_sd_yjjbntktzdlhzb_sub_{jb}
+                where f_year ={yearfilter} and f_xzqhdm ='{xzqhfilter}' order by 下级代码
+            </datatable>
+            <datatable name="永久基本农田内即可恢复与工程恢复面积" unit="公顷,%" db="0" dbkey="">
+                with a as (select jkhf,gchf,f_year,f_xzqhdm from view_sd_yjjbntjkhfgchf_{jb} where f_year ={yearfilter}
+                and f_xzqhdm ='{xzqhfilter}')
+                select '即可恢复' as 地类,jkhf as 面积,f_year,f_xzqhdm from a
+                union all select '工程恢复' as 地类,gchf as 面积,f_year,f_xzqhdm from a
+            </datatable>
+            <datatable name="永久基本农田内即可恢复与工程恢复各一级地类面积" unit="公顷,公顷,公顷,公顷,公顷,公顷,公顷,公顷,公顷,公顷,公顷" db="0" dbkey="">
+                with a as (select
+                jkhf0201,jkhf0202,jkhf0203,jkhf0204,jkhf0301,jkhf0302,jkhf0305,jkhf0307,jkhf0403k,jkhf0404,jkhf1104,
+                gchf0201,gchf0202,gchf0203,gchf0204,gchf0301,gchf0302,gchf0305,gchf0307,gchf0403k,gchf0404,gchf1104,f_year,f_xzqhdm
+                from view_sd_yjjbntjkhfgchf_{jb} where f_year ={yearfilter} and f_xzqhdm ='{xzqhfilter}')
+                select '即可恢复' as 类型,jkhf0201 as 果园,jkhf0202 as 茶园,jkhf0203 as 橡胶园,jkhf0204 as 其他园地,jkhf0301 as
+                乔木林地,jkhf0302 as 竹林地,jkhf0305 as 灌木林地,jkhf0307 as 其他林地,jkhf0403k as
+                可调整人工牧草地,jkhf0404 as 其他草地,jkhf1104 as 坑塘水面 ,f_year,f_xzqhdm from a
+                union all select '工程恢复' as 类型,gchf0201 as 果园,gchf0202 as 茶园,gchf0203 as 橡胶园,gchf0204 as 其他园地,gchf0301 as
+                乔木林地,gchf0302 as 竹林地,gchf0305 as 灌木林地,gchf0307 as 其他林地,gchf0403k as
+                可调整人工牧草地,gchf0404 as 其他草地,gchf1104 as 坑塘水面 ,f_year,f_xzqhdm from a
+            </datatable>
+            <datatable name="永久基本农田内各行政区即可恢复与工程恢复种植属性面积" unit="公顷,公顷,公顷,公顷,公顷,公顷,公顷,公顷,公顷,公顷,公顷" db="0" dbkey="">
+                select
+                下级名称,hj,jkhf,jkhf0201,jkhf0201k,jkhf0202,jkhf0202k,jkhf0203,jkhf0203k,jkhf0204,jkhf0204k,jkhf0301,jkhf0301k,jkhf0302,jkhf0302k,jkhf0305,jkhf0307,jkhf0307k,jkhf0403k,jkhf0404,jkhf1104,jkhf1104k,
+                gchf,gchf0201,gchf0201k,gchf0202,gchf0202k,gchf0203,gchf0203k,gchf0204,gchf0204k,gchf0301,gchf0301k,gchf0302,gchf0302k,gchf0305,gchf0307,gchf0307k,gchf0403k,gchf0404,gchf1104,gchf1104k
+                from view_sd_yjjbntjkhfgchf_sub_{jb} where f_year ={yearfilter} and f_xzqhdm ='{xzqhfilter}' order by
+                下级代码
+            </datatable>
+            <datatable name="永久基本农田内耕地细化地类面积" unit="公顷" db="0" dbkey="">
+                with a as (select hdgd,hqgd,lqgd,mqgd,shgd,smgd,yjgd,f_year,f_xzqhdm from view_sd_yjjbntxhdl_{jb} where
+                f_year ={yearfilter} and f_xzqhdm ='{xzqhfilter}')
+                select '河道耕地' as 细化地类,hdgd as 面积,f_year,f_xzqhdm from a
+                union all select '湖区耕地' as 细化地类,hqgd as 面积,f_year,f_xzqhdm from a
+                union all select '林区耕地' as 细化地类,lqgd as 面积,f_year,f_xzqhdm from a
+                union all select '牧区耕地' as 细化地类,mqgd as 面积,f_year,f_xzqhdm from a
+                union all select '沙荒耕地' as 细化地类,shgd as 面积,f_year,f_xzqhdm from a
+                union all select '石漠化耕地' as 细化地类,smgd as 面积,f_year,f_xzqhdm from a
+                union all select '盐碱耕地' as 细化地类,yjgd as 面积,f_year,f_xzqhdm from a
+            </datatable>
+            <datatable name="永久基本农田内各行政区耕地细化面积" unit="公顷" db="0" dbkey="">
+                select
+                下级名称,hj,hdgd,hdgd0101,hdgd0102,hdgd0103,hqgd,hqgd0101,hqgd0102,hqgd0103,lqgd,lqgd0101,lqgd0102,lqgd0103,mqgd,mqgd0101,mqgd0102,mqgd0103,
+                shgd,shgd0101,shgd0102,shgd0103,smgd,smgd0101,smgd0102,smgd0103,yjgd,yjgd0101,yjgd0102,yjgd0103 from
+                view_sd_yjjbntxhdl_sub_{jb} where f_year ={yearfilter} and f_xzqhdm ='{xzqhfilter}' order by 下级代码
+            </datatable>
+            <datatable name="行政区永久基本农田面积" unit="公顷,%," db="0" dbkey="">
+                select 行政区,下级代码,是否耕地,面积,占比,f_xzqhdm,f_year from (
+                select 下级名称 as 行政区,下级代码,'耕地' as 是否耕地,耕地 as 面积,round(耕地*100/(case when 合计 =0 then 1 else 合计 end),2) as
+                占比,f_xzqhdm,f_year,row_number() OVER (ORDER BY 合计 DESC) AS rn FROM view_sd_yjjbntxztjb_result_sub_{jb}
+                where f_year ={yearfilter} and f_xzqhdm like '' || fn_delxzqhdm_endjbzero('{xzqhfilter}') || '%' and
+                下级代码 &lt;&gt; '{xzqhfilter}'
+                union all select 下级名称 as 行政区,下级代码,'非耕地' as 是否耕地,合计 - 耕地 as 面积,100-round(耕地*100/(case when 合计 =0 then 1
+                else 合计 end),2) as 占比,f_xzqhdm,f_year,row_number() OVER (ORDER BY 合计 DESC) AS rn FROM
+                view_sd_yjjbntxztjb_result_sub_{jb} where f_year ={yearfilter} and f_xzqhdm like '' ||
+                fn_delxzqhdm_endjbzero('{xzqhfilter}') || '%' and 下级代码 &lt;&gt; '{xzqhfilter}'
+                ) a order by rn,是否耕地
+            </datatable>
+            <datatable name="永久基本农田耕地与非耕地面积比例汇总统计表" unit="公顷,%," db="0" dbkey="">
+                select 下级名称 as 行政区, 合计,耕地 ,round(耕地*100/合计,2) as "耕地占比(%)",合计 - 耕地 as 非耕地,100-round(耕地*100/合计,2) as
+                "非耕地占比(%)" from
+                view_sd_yjjbntxztjb_result_sub_{jb} where f_year ={yearfilter} and f_xzqhdm ='{xzqhfilter}' order by
+                f_xzqhdm
+            </datatable>
+            <datatable name="永久基本农田耕地和非耕地详情" unit="公顷,%" db="0" dbkey="">
+                select 地类,一级地类名 as 类型,面积 from view_sd_yjjbntgzfltjb where f_year ={yearfilter} and f_xzqhmc =
+                '{childfilter}'
+            </datatable>
+            <chart name="永久基本农田面积" dataref="永久基本农田面积" field-x="" field-y="{xzqh}永久基本农田图斑面积,{xzqh}永久基本农田范围内耕地占全部耕地的比例"
+                   unitoptions="[亩;公顷;平方千米;万亩;万公顷],[%]" defaultunit="万公顷,%"/>
+            <chart name="永久基本农田土地利用现状" isdefault="true"
+                   layer-ref="全国永久基本农田土地利用现状{yearfilter}@DLBM_GDFGD;基础底图影像{yearfilter}" title="{xzqh}永久基本农田土地利用现状"
+                   dataref="永久基本农田土地利用现状按工作分类" field-x="地类" field-y="面积,占比" unitoptions="[亩;公顷;平方千米:1;万亩;万公顷],[%]"
+                   colorcategory="永久基本农田按工作分类" colorfield="地类" defaultunit="万公顷,%">
+
+                <chart name="永久基本农田土地利用现状->{childname}" layer-ref="全国永久基本农田{yearfilter}_{childname};基础底图影像{yearfilter}"
+                       title="{xzqh}永久基本农田土地利用现状" dataref="永久基本农田土地利用现状按工作分类耕地面积" field-x="地类" field-y="面积,占比"
+                       unitoptions="[亩;公顷;平方千米;万亩;万公顷],[%]" colorcategory="永久基本农田按工作分类" colorfield="地类"
+                       defaultunit="万公顷,%"/>
+                <!-- <chart name="永久基本农田土地利用现状->按工作分类->耕地" layer-ref="全国永久基本农田土地利用现状{yearfilter}_耕地_二级类@DLBM_YJJBNT;基础底图影像{yearfilter}" title="{xzqh}永久基本农田土地利用现状" dataref="永久基本农田土地利用现状按工作分类耕地面积" field-x="地类" field-y="面积,占比" unitoptions="[亩;公顷;平方千米;万亩;万公顷],[%]" colorcategory="永久基本农田按工作分类" colorfield="地类" defaultunit="万公顷,%">
+                </chart> -->
+            </chart>
+            <chart name="永久基本农田土地利用现状->{childname}" layer-ref="全国永久基本农田{yearfilter}_{childname};基础底图影像{yearfilter}"
+                   title="{xzqh}永久基本农田土地利用现状" dataref="永久基本农田土地利用现状按工作分类耕地面积" field-x="地类" field-y="面积,占比"
+                   unitoptions="[亩;公顷;平方千米;万亩;万公顷],[%]" colorcategory="永久基本农田按工作分类" colorfield="地类"
+                   defaultunit="万公顷,%"/>
+            <chart name="永久基本农田土地利用现状->最大化" layer-ref="全国永久基本农田土地利用现状{yearfilter}@DLBM_GDFGD;基础底图影像{yearfilter}"
+                   title="{xzqh}永久基本农田土地利用现状" dataref="永久基本农田土地利用现状按工作分类" field-x="地类" field-y="面积,占比"
+                   unitoptions="[亩;公顷;平方千米:1;万亩;万公顷],[%]" colorcategory="永久基本农田按工作分类" colorfield="地类"
+                   defaultunit="万公顷,%">
+            </chart>
+            <chart name="永久基本农田土地利用现状->一级地类" layer-ref="全国永久基本农田一级地类{yearfilter}@DLBM_YJJBNTYJFL;基础底图影像{yearfilter}"
+                   title="{xzqh}永久基本农田土地利用各一级地类" dataref="永久基本农田土地利用现状按工作分类一级地类面积" field-x="地类" field-y="面积"
+                   unitoptions="[亩;公顷;平方千米;万亩;万公顷]" colorcategory="三调一级分类" colorfield="地类" defaultunit="万公顷">
+                <chart name="永久基本农田土地利用现状->一级地类->{childname}" layer-childname-index="2"
+                       layer-ref="全国永久基本农田{yearfilter}_{childname};基础底图影像{yearfilter}"
+                       title="{xzqh}永久基本农田范围内{childname}情况汇总" dataref="永久基本农田土地利用现状按工作分类二级地类面积详情" field-x="地类"
+                       field-y="地类面积" unitoptions="[亩;公顷;平方千米;万亩;万公顷]" colorcategory="三调土地利用现状分类" colorfield="地类"
+                       defaultunit="万公顷"/>
+            </chart>
+            <chart name="永久基本农田土地利用现状->一级地类->非耕地"
+                   layer-ref="全国永久基本农田非耕地一级地类{yearfilter}@DLBM_YJJBNTYJFL;基础底图影像{yearfilter}"
+                   title="{xzqh}永久基本农田土地利用各一级地类" dataref="永久基本农田土地利用现状按工作分类非耕地分类面积" field-x="地类" field-y="面积"
+                   unitoptions="[亩;公顷;平方千米;万亩;万公顷]" colorcategory="三调一级分类" colorfield="地类" defaultunit="万公顷"/>
+            <chart name="永久基本农田土地利用现状->地类详情" title="{xzqh}永久基本农田土地利用现状" dataref="永久基本农田土地利用现状按工作分类详情" field-x="地类"
+                   field-y="面积" unitoptions="[亩;公顷;平方千米;万亩;万公顷]" colorcategory="永久基本农田按工作分类" colorfield="地类"
+                   defaultunit="万公顷"
+                   tabletranspose="{xzqh}永久基本农田范围内土地利用现状分类面积汇总统计表"/>
+            <chart name="永久基本农田土地利用现状->按三大类" title="{xzqh}永久基本农田土地利用现状" dataref="永久基本农田土地利用现状按三大类" field-x="类别"
+                   field-y="面积,占比" unitoptions="[亩;公顷;平方千米;万亩;万公顷],[%]" colorcategory="永久基本农田按三大类" colorfield="类别"
+                   defaultunit="万公顷,%">
+                <chart name="永久基本农田土地利用现状->按三大类->{childname}" title="{xzqh}永久基本农田土地利用现状"
+                       dataref="永久基本农田土地利用现状按三大类二级地类面积" field-x="类别" field-y="面积,占比"
+                       unitoptions="[亩;公顷;平方千米;万亩;万公顷],[%]" colorcategory="永久基本农田按三大类" colorfield="类别"
+                       defaultunit="万公顷,%">
+                </chart>
+            </chart>
+            <chart name="永久基本农田土地利用现状->按三大类->一级地类" title="{xzqh}永久基本农田土地利用各一级地类" dataref="永久基本农田土地利用现状按三大类一级地类面积"
+                   field-x="地类" field-y="面积" unitoptions="[亩;公顷;平方千米;万亩;万公顷]" colorcategory="永久基本农田按三大类" colorfield="地类"
+                   defaultunit="万公顷"/>
+            <chart name="永久基本农田土地利用现状->按三大类->地类详情" title="{xzqh}永久基本农田土地利用现状" dataref="永久基本农田土地利用现状按三大类详情" field-x="地类"
+                   field-y="面积" unitoptions="[亩;公顷;平方千米;万亩;万公顷]" colorcategory="永久基本农田按三大类" colorfield="地类"
+                   defaultunit="万公顷"/>
+            <chart name="永久基本农田内耕地坡度分级面积" layer-ref="全国永久基本农田耕地坡度级别{yearfilter}@GDPDJB_YJJBNTGDPDJB;基础底图影像{yearfilter}"
+                   title="{xzqh}永久基本农田内耕地坡度分级面积" dataref="永久基本农田内耕地坡度分级面积" field-x="坡度级" field-y="面积,占比"
+                   unitoptions="[亩;公顷;平方千米;万亩;万公顷],[%]" colorcategory="耕地坡度分类" colorfield="坡度级" defaultunit="万公顷,%"/>
+            <chart name="永久基本农田内耕地坡度分级面积_各耕地面积" layer-ref="全国永久基本农田耕地类型{yearfilter}@GDLX_YJJBNTGDLX;基础底图影像{yearfilter}"
+                   layer-filter="Q_gdpdjb_S_IN={childname}" layer-filter-dickey="DIC_GDPDFJ_FILITER"
+                   layer-filter-reverse="true" title="{xzqh}永久基本农田内耕地坡度分级面积" dataref="永久基本农田内各耕地坡度分级面积" field-x="坡度级"
+                   field-y="平地,坡地,梯田" unitoptions="[亩;公顷;平方千米;万亩;万公顷],[亩;公顷;平方千米;万亩;万公顷],[亩;公顷;平方千米;万亩;万公顷]"
+                   colors="rgb(220,233,156);rgb(160,218,67);rgb(49,181,115)" defaultunit="万公顷,万公顷,万公顷"
+                   tabletranspose="{xzqh}永久基本农田范围内耕地类型按坡度级别汇总统计表"/>
+            <chart name="永久基本农田内耕地质量等别" layer-ref="全国永久基本农田内耕地质量等别{yearfilter}@GDDB_YJJBNTGDDB;基础底图影像{yearfilter}"
+                   title="{xzqh}永久基本农田内耕地质量等别" dataref="永久基本农田内耕地质量等别" field-x="等别" field-y="面积,占比"
+                   unitoptions="[亩;公顷;平方千米;万亩;万公顷],[%]"
+                   colors="rgb(251,249,150);rgb(248,228,139);rgb(219,180,64);rgb(252,122,0)" defaultunit="万公顷,%"/>
+            <chart name="永久基本农田内耕地质量等别->各等别" title="{xzqh}永久基本农田内耕地质量等别" dataref="永久基本农田内各耕地质量等别" field-x="等别"
+                   field-y="面积,占比" unitoptions="[亩;公顷;平方千米;万亩;万公顷],[%]" colorcategory="永久基本农田耕地分等定级" colorfield="等别"
+                   defaultunit="万公顷,%"
+                   tabletranspose="{xzqh}永久基本农田范围内耕地质量等级汇总统计表"/>
+            <chart name="永久基本农田种植类型面积" layer-ref="全国永久基本农田种植类型面积{yearfilter}@ZZSXDM_YJJBNTZZSXDM;基础底图影像{yearfilter}"
+                   title="{xzqh}永久基本农田种植类型面积" dataref="永久基本农田种植类型面积" field-x="类型" field-y="面积,占比"
+                   unitoptions="[亩;公顷;平方千米;万亩;万公顷],[%]" colorcategory="三调种植属性分类" colorfield="类型" defaultunit="万公顷,%"/>
+            <chart name="永久基本农田种植类型面积->各种植属性" layer-ref="全国永久基本农田{yearfilter}_耕地@DLBM_YJJBNT;基础底图影像{yearfilter}"
+                   layer-filter="Q_zzsxdm_S_IN={childname}" layer-filter-dickey="DIC_GDZZSX" layer-filter-reverse="true"
+                   title="{xzqh}永久基本农田种植类型面积" dataref="永久基本农田各种植属性面积" field-x="种植属性" field-y="水田,水浇地,旱地"
+                   unitoptions="[亩;公顷;平方千米;万亩;万公顷],[亩;公顷;平方千米;万亩;万公顷],[亩;公顷;平方千米;万亩;万公顷]"
+                   colors="rgb(248,208,114);rgb(252,234,158);rgb(255,251,177)" defaultunit="万公顷,万公顷,万公顷"
+                   tabletranspose="{xzqh}永久基本农田内各种植类型面积"/>
+            <chart name="永久基本农田内可调整地类面积" layer-ref="永久基本农田内可调整地类面积{yearfilter}@DLBM_YJJBNTKTZ;基础底图影像{yearfilter}"
+                   title="{xzqh}永久基本农田内可调整地类面积" dataref="永久基本农田内可调整地类面积" field-x="地类" field-y="面积"
+                   unitoptions="[亩;公顷;平方千米;万亩;万公顷]" colorcategory="可调整地类" colorfield="地类" defaultunit="万公顷"
+                   tabletranspose="{xzqh}永久基本农田内可调整地类面积汇总表">
+                <chart name="永久基本农田内可调整地类面积" title="{xzqh}永久基本农田内可调整地类面积" dataref="永久基本农田土地利用现状按工作分类二级地类面积" field-x="地类"
+                       field-y="面积,占比" unitoptions="[亩;公顷;平方千米;万亩;万公顷],[%]" colorcategory="永久基本农田按工作分类" colorfield="地类"
+                       defaultunit="万公顷,%">
+                </chart>
+            </chart>
+            <chart name="永久基本农田内即可恢复与工程恢复面积" maxchartref="永久基本农田内即可恢复与工程恢复面积->各一级地类"
+                   layer-ref="全国永久基本农田内即可恢复与工程恢复面积{yearfilter}@ZZSXDM_YJJBNTHFSX;基础底图影像{yearfilter}"
+                   title="{xzqh}永久基本农田内即可恢复与工程恢复面积" dataref="永久基本农田内即可恢复与工程恢复面积" field-x="地类" field-y="面积"
+                   unitoptions="[亩;公顷;平方千米;万亩;万公顷]" colorcategory="三调恢复属性" colorfield="地类" defaultunit="万公顷"
+                   tabletranspose="{xzqh}永久基本农田内可调整地类面积汇总表">
+                <chart name="永久基本农田内即可恢复与工程恢复面积"
+                       layer-ref="全国永久基本农田内即可恢复与工程恢复面积{yearfilter}@ZZSXDM_YJJBNTHFSX;基础底图影像{yearfilter}"
+                       title="{xzqh}永久基本农田内即可恢复与工程恢复面积" dataref="永久基本农田内即可恢复与工程恢复面积" field-x="地类" field-y="面积"
+                       unitoptions="[亩;公顷;平方千米;万亩;万公顷],[%]" colorcategory="三调恢复属性" colorfield="地类" defaultunit="万公顷,%"/>
+            </chart>
+            <chart name="永久基本农田内即可恢复与工程恢复面积->各一级地类"
+                   layer-ref="全国永久基本农田内即可恢复与工程恢复面积{yearfilter}@ZZSXDM_YJJBNTFHSXEJFL2;基础底图影像{yearfilter}"
+                   layer-filter="Q_zzsxdm_S_IN={childname}" layer-filter-dickey="DIC_HFSX" layer-filter-reverse="true"
+                   title="{xzqh}永久基本农田内即可恢复与工程恢复面积" dataref="永久基本农田内即可恢复与工程恢复各一级地类面积" field-x="类型"
+                   field-y="果园,茶园,橡胶园,其他园地,乔木林地,竹林地,灌木林地,其他林地,可调整人工牧草地,其他草地,坑塘水面" unitoptions="[亩;公顷;平方千米;万亩;万公顷]"
+                   tabletranspose="{xzqh}永久基本农田内即可恢复与工程恢复种植属性汇总统计表"
+                   colors="rgb(214,167,201);rgb(213,167,176);rgb(231,204,226);rgb(231,204,226);rgb(49,173,105);rgb(49,173,105);rgb(100,185,104);rgb(151,207,178);rgb(154,206,127);rgb(200,227,160);rgb(144,170,207)"
+                   defaultunit="万公顷,万公顷,万公顷,万公顷,万公顷,万公顷,万公顷,万公顷,万公顷,万公顷,万公顷"/>
+            <chart name="永久基本农田内耕地细化地类面积" layer-ref="全国永久基本农田内耕地细化面积{yearfilter}@TBXHDM_YJJBNTGDXH;基础底图影像{yearfilter}"
+                   title="{xzqh}永久基本农田内耕地细化地类面积" dataref="永久基本农田内耕地细化地类面积" field-x="细化地类" field-y="面积"
+                   unitoptions="[亩;公顷;平方千米;万亩;万公顷]" defaultunit="万公顷" colorcategory="三调耕地细化" colorfield="细化地类"
+                   tabletranspose="{xzqh}永久基本农田内耕地细化调查情况统计表"/>
+            <chart name="行政区永久基本农田面积" title="{xzqh}{jb}永久基本农田面积" dataref="行政区永久基本农田面积" shortkey="xzqh" field-x="行政区"
+                   field-x-code="下级代码" field-y="面积,占比" field-z="是否耕地" unitoptions="[亩;公顷;平方千米;万亩;万公顷],[%],"
+                   colors="rgb(255,255,100);rgb(220,100,120)" defaultunit="万公顷,%"
+                   tabletranspose="{xzqh}永久基本农田耕地与非耕地面积比例汇总统计表" ischangexzq="true">
+            </chart>
+        </theme>
+    </datagroup>
+</root>

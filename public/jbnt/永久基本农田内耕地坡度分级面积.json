@@ -1,0 +1,146 @@
+{
+  "key": "永久基本农田内耕地坡度分级面积",
+  "name": "北京永久基本农田内耕地坡度分级面积",
+  "xAxis": [
+    "坡度级"
+  ],
+  "yAxis": [
+    "面积",
+    "占比"
+  ],
+  "zAxis": null,
+  "xCode": "",
+  "curLevel": null,
+  "subLevel": null,
+  "minLevel": null,
+  "selectedXzqdm": null,
+  "colors": null,
+  "units": [
+    {
+      "type": "area",
+      "dataUnit": "公顷",
+      "defaultUnit": "万亩",
+      "unitOptions": [
+        "亩",
+        "公顷",
+        "平方千米",
+        "万亩",
+        "万公顷"
+      ],
+      "unitOptionsExtend": [
+        {
+          "name": "亩",
+          "decimalDigits": 2
+        },
+        {
+          "name": "公顷",
+          "decimalDigits": 2
+        },
+        {
+          "name": "平方千米",
+          "decimalDigits": 2
+        },
+        {
+          "name": "万亩",
+          "decimalDigits": 2
+        },
+        {
+          "name": "万公顷",
+          "decimalDigits": 2
+        }
+      ]
+    },
+    {
+      "type": "percent",
+      "dataUnit": "%",
+      "defaultUnit": "%",
+      "unitOptions": [
+        "%"
+      ],
+      "unitOptionsExtend": [
+        {
+          "name": "%",
+          "decimalDigits": 2
+        }
+      ]
+    }
+  ],
+  "dictionary": {},
+  "unitaxis": "y",
+  "data": [
+    {
+      "坡度级": "≤2°",
+      "面积": 47728.37,
+      "占比": 85.90,
+      "F_XZQHDM": "110000",
+      "F_YEAR": 2019
+    },
+    {
+      "坡度级": "2°~6°",
+      "面积": 3980.11,
+      "占比": 7.16,
+      "F_XZQHDM": "110000",
+      "F_YEAR": 2019
+    },
+    {
+      "坡度级": "6°~15°",
+      "面积": 3449.75,
+      "占比": 6.21,
+      "F_XZQHDM": "110000",
+      "F_YEAR": 2019
+    },
+    {
+      "坡度级": "15°~25°",
+      "面积": 375.66,
+      "占比": 0.68,
+      "F_XZQHDM": "110000",
+      "F_YEAR": 2019
+    },
+    {
+      "坡度级": ">25°",
+      "面积": 30.59,
+      "占比": 0.06,
+      "F_XZQHDM": "110000",
+      "F_YEAR": 2019
+    }
+  ],
+  "xColors": [
+    {
+      "keys": {
+        "坡度级": "≤2°"
+      },
+      "color": "rgb(255,235,177)"
+    },
+    {
+      "keys": {
+        "坡度级": "2°~6°"
+      },
+      "color": "rgb(255,207,63)"
+    },
+    {
+      "keys": {
+        "坡度级": "6°~15°"
+      },
+      "color": "rgb(251,166,3)"
+    },
+    {
+      "keys": {
+        "坡度级": "15°~25°"
+      },
+      "color": "rgb(255,153,92)"
+    },
+    {
+      "keys": {
+        "坡度级": ">25°"
+      },
+      "color": "rgb(255,117,35)"
+    }
+  ],
+  "xDefaultCount": 0,
+  "table": null,
+  "canClick": false,
+  "hasNext": false,
+  "hasPrev": false,
+  "titleSelect": false,
+  "tipMessage": ""
+}

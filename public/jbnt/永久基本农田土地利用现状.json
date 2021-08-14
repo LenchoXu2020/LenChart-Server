@@ -1,0 +1,143 @@
+{
+  "key": "永久基本农田土地利用现状",
+  "name": "北京永久基本农田土地利用现状",
+  "xAxis": [
+    "地类"
+  ],
+  "yAxis": [
+    "面积",
+    "占比"
+  ],
+  "zAxis": null,
+  "xCode": "",
+  "curLevel": null,
+  "subLevel": null,
+  "minLevel": null,
+  "selectedXzqdm": null,
+  "colors": null,
+  "units": [
+    {
+      "type": "area",
+      "dataUnit": "公顷",
+      "defaultUnit": "万亩",
+      "unitOptions": [
+        "亩",
+        "公顷",
+        "平方千米",
+        "万亩",
+        "万公顷"
+      ],
+      "unitOptionsExtend": [
+        {
+          "name": "亩",
+          "decimalDigits": 2
+        },
+        {
+          "name": "公顷",
+          "decimalDigits": 2
+        },
+        {
+          "name": "平方千米",
+          "decimalDigits": 1
+        },
+        {
+          "name": "万亩",
+          "decimalDigits": 2
+        },
+        {
+          "name": "万公顷",
+          "decimalDigits": 2
+        }
+      ]
+    },
+    {
+      "type": "percent",
+      "dataUnit": "%",
+      "defaultUnit": "%",
+      "unitOptions": [
+        "%"
+      ],
+      "unitOptionsExtend": [
+        {
+          "name": "%",
+          "decimalDigits": 2
+        }
+      ]
+    }
+  ],
+  "dictionary": {},
+  "unitaxis": "y",
+  "data": [
+    {
+      "地类": "耕地",
+      "面积": 53928.84,
+      "占比": 52.40,
+      "F_XZQHDM": "110000",
+      "F_YEAR": 2019
+    },
+    {
+      "地类": "非耕地",
+      "面积": 48988.72,
+      "占比": 47.60,
+      "F_XZQHDM": "110000",
+      "F_YEAR": 2019
+    }
+  ],
+  "xColors": [
+    {
+      "keys": {
+        "地类": "耕地"
+      },
+      "color": "rgb(255,255,100)"
+    },
+    {
+      "keys": {
+        "地类": "非耕地"
+      },
+      "color": "rgb(220,100,120)"
+    },
+    {
+      "keys": {
+        "地类": "水田"
+      },
+      "color": "rgb(248,208,114)"
+    },
+    {
+      "keys": {
+        "地类": "水浇地"
+      },
+      "color": "rgb(252,234,158)"
+    },
+    {
+      "keys": {
+        "地类": "旱地"
+      },
+      "color": "rgb(255,251,177)"
+    },
+    {
+      "keys": {
+        "地类": "其他农用地"
+      },
+      "color": "rgb(232,221,6)"
+    },
+    {
+      "keys": {
+        "地类": "建设用地"
+      },
+      "color": "rgb(229,103,102)"
+    },
+    {
+      "keys": {
+        "地类": "未利用地"
+      },
+      "color": "rgb(215,200,185)"
+    }
+  ],
+  "xDefaultCount": 0,
+  "table": null,
+  "canClick": false,
+  "hasNext": false,
+  "hasPrev": false,
+  "titleSelect": true,
+  "tipMessage": ""
+}

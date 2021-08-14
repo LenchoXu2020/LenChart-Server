@@ -1,0 +1,159 @@
+{
+  "key": "永久基本农田种植类型面积",
+  "name": "北京永久基本农田种植类型面积",
+  "xAxis": [
+    "类型"
+  ],
+  "yAxis": [
+    "面积",
+    "占比"
+  ],
+  "zAxis": null,
+  "xCode": "",
+  "curLevel": null,
+  "subLevel": null,
+  "minLevel": null,
+  "selectedXzqdm": null,
+  "colors": null,
+  "units": [
+    {
+      "type": "area",
+      "dataUnit": "公顷",
+      "defaultUnit": "万亩",
+      "unitOptions": [
+        "亩",
+        "公顷",
+        "平方千米",
+        "万亩",
+        "万公顷"
+      ],
+      "unitOptionsExtend": [
+        {
+          "name": "亩",
+          "decimalDigits": 2
+        },
+        {
+          "name": "公顷",
+          "decimalDigits": 2
+        },
+        {
+          "name": "平方千米",
+          "decimalDigits": 2
+        },
+        {
+          "name": "万亩",
+          "decimalDigits": 2
+        },
+        {
+          "name": "万公顷",
+          "decimalDigits": 2
+        }
+      ]
+    },
+    {
+      "type": "percent",
+      "dataUnit": "%",
+      "defaultUnit": "%",
+      "unitOptions": [
+        "%"
+      ],
+      "unitOptionsExtend": [
+        {
+          "name": "%",
+          "decimalDigits": 2
+        }
+      ]
+    }
+  ],
+  "dictionary": {},
+  "unitaxis": "y",
+  "data": [
+    {
+      "类型": "种植粮食作物",
+      "面积": 32313.73,
+      "占比": 58.16,
+      "F_YEAR": 2019,
+      "F_XZQHDM": "110000"
+    },
+    {
+      "类型": "粮与非粮轮作",
+      "面积": 3599.40,
+      "占比": 6.48,
+      "F_YEAR": 2019,
+      "F_XZQHDM": "110000"
+    },
+    {
+      "类型": "种植非粮食作物",
+      "面积": 13602.35,
+      "占比": 24.48,
+      "F_YEAR": 2019,
+      "F_XZQHDM": "110000"
+    },
+    {
+      "类型": "林粮间作",
+      "面积": 159.44,
+      "占比": 0.29,
+      "F_YEAR": 2019,
+      "F_XZQHDM": "110000"
+    },
+    {
+      "类型": "休耕",
+      "面积": 13.07,
+      "占比": 0.02,
+      "F_YEAR": 2019,
+      "F_XZQHDM": "110000"
+    },
+    {
+      "类型": "未耕种",
+      "面积": 5876.49,
+      "占比": 10.58,
+      "F_YEAR": 2019,
+      "F_XZQHDM": "110000"
+    }
+  ],
+  "xColors": [
+    {
+      "keys": {
+        "类型": "种植粮食作物"
+      },
+      "color": "rgb(252,189,54)"
+    },
+    {
+      "keys": {
+        "类型": "种植非粮食作物"
+      },
+      "color": "rgb(159, 252, 88)"
+    },
+    {
+      "keys": {
+        "类型": "粮与非粮轮作"
+      },
+      "color": "rgb(214,248,47)"
+    },
+    {
+      "keys": {
+        "类型": "未耕种"
+      },
+      "color": "rgb(243,69,66)"
+    },
+    {
+      "keys": {
+        "类型": "休耕"
+      },
+      "color": "rgb(248,129,129)"
+    },
+    {
+      "keys": {
+        "类型": "林粮间作"
+      },
+      "color": "rgb(3,194,57)"
+    }
+  ],
+  "xDefaultCount": 0,
+  "table": null,
+  "canClick": false,
+  "hasNext": false,
+  "hasPrev": false,
+  "titleSelect": false,
+  "tipMessage": ""
+}

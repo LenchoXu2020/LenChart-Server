@@ -1,0 +1,1240 @@
+{
+  "key": "永久基本农田种植类型面积->各种植属性",
+  "name": "全国永久基本农田种植类型面积",
+  "xAxis": [
+    "种植属性"
+  ],
+  "yAxis": [
+    "水田",
+    "水浇地",
+    "旱地"
+  ],
+  "zAxis": null,
+  "xCode": "",
+  "curLevel": null,
+  "subLevel": null,
+  "minLevel": null,
+  "selectedXzqdm": null,
+  "colors": [
+    "rgb(248,208,114)",
+    "rgb(252,234,158)",
+    "rgb(255,251,177)"
+  ],
+  "units": [
+    {
+      "type": "area",
+      "dataUnit": "公顷",
+      "defaultUnit": "万亩",
+      "unitOptions": [
+        "亩",
+        "公顷",
+        "平方千米",
+        "万亩",
+        "万公顷"
+      ],
+      "unitOptionsExtend": [
+        {
+          "name": "亩",
+          "decimalDigits": 2
+        },
+        {
+          "name": "公顷",
+          "decimalDigits": 2
+        },
+        {
+          "name": "平方千米",
+          "decimalDigits": 2
+        },
+        {
+          "name": "万亩",
+          "decimalDigits": 2
+        },
+        {
+          "name": "万公顷",
+          "decimalDigits": 2
+        }
+      ]
+    },
+    {
+      "type": "area",
+      "dataUnit": "公顷",
+      "defaultUnit": "万亩",
+      "unitOptions": [
+        "亩",
+        "公顷",
+        "平方千米",
+        "万亩",
+        "万公顷"
+      ],
+      "unitOptionsExtend": [
+        {
+          "name": "亩",
+          "decimalDigits": 2
+        },
+        {
+          "name": "公顷",
+          "decimalDigits": 2
+        },
+        {
+          "name": "平方千米",
+          "decimalDigits": 2
+        },
+        {
+          "name": "万亩",
+          "decimalDigits": 2
+        },
+        {
+          "name": "万公顷",
+          "decimalDigits": 2
+        }
+      ]
+    },
+    {
+      "type": "area",
+      "dataUnit": "公顷",
+      "defaultUnit": "万亩",
+      "unitOptions": [
+        "亩",
+        "公顷",
+        "平方千米",
+        "万亩",
+        "万公顷"
+      ],
+      "unitOptionsExtend": [
+        {
+          "name": "亩",
+          "decimalDigits": 2
+        },
+        {
+          "name": "公顷",
+          "decimalDigits": 2
+        },
+        {
+          "name": "平方千米",
+          "decimalDigits": 2
+        },
+        {
+          "name": "万亩",
+          "decimalDigits": 2
+        },
+        {
+          "name": "万公顷",
+          "decimalDigits": 2
+        }
+      ]
+    }
+  ],
+  "dictionary": {},
+  "unitaxis": "y",
+  "data": [
+    {
+      "种植属性": "种植粮食作物",
+      "水田": 18886825.65,
+      "水浇地": 14389484.90,
+      "旱地": 29773864.67,
+      "F_YEAR": 2019,
+      "F_XZQHDM": "000000"
+    },
+    {
+      "种植属性": "粮与非粮轮作",
+      "水田": 3982724.19,
+      "水浇地": 3285408.99,
+      "旱地": 7325344.66,
+      "F_YEAR": 2019,
+      "F_XZQHDM": "000000"
+    },
+    {
+      "种植属性": "种植非粮食作物",
+      "水田": 711044.90,
+      "水浇地": 2136670.60,
+      "旱地": 2527503.16,
+      "F_YEAR": 2019,
+      "F_XZQHDM": "000000"
+    },
+    {
+      "种植属性": "林粮间作",
+      "水田": 4402.52,
+      "水浇地": 76917.63,
+      "旱地": 128908.85,
+      "F_YEAR": 2019,
+      "F_XZQHDM": "000000"
+    },
+    {
+      "种植属性": "休耕",
+      "水田": 3760.54,
+      "水浇地": 10733.56,
+      "旱地": 40269.93,
+      "F_YEAR": 2019,
+      "F_XZQHDM": "000000"
+    },
+    {
+      "种植属性": "未耕种",
+      "水田": 554932.35,
+      "水浇地": 237417.76,
+      "旱地": 1764229.51,
+      "F_YEAR": 2019,
+      "F_XZQHDM": "000000"
+    }
+  ],
+  "xColors": [],
+  "xDefaultCount": 0,
+  "table": {
+    "name": "全国永久基本农田内各种植类型面积",
+    "desc": null,
+    "unitDesc": "单位:公顷",
+    "units": [
+      {
+        "type": "area",
+        "dataUnit": "公顷",
+        "defaultUnit": "公顷",
+        "unitOptions": [
+          "亩",
+          "公顷",
+          "平方千米",
+          "万亩",
+          "万公顷"
+        ],
+        "unitOptionsExtend": [
+          {
+            "name": "亩",
+            "decimalDigits": 2
+          },
+          {
+            "name": "公顷",
+            "decimalDigits": 2
+          },
+          {
+            "name": "平方千米",
+            "decimalDigits": 2
+          },
+          {
+            "name": "万亩",
+            "decimalDigits": 2
+          },
+          {
+            "name": "万公顷",
+            "decimalDigits": 2
+          }
+        ]
+      }
+    ],
+    "head": {
+      "rowNum": 3,
+      "columnNum": 18,
+      "rowStyle": null,
+      "columnStyle": null,
+      "data": [
+        {
+          "name": "行政区",
+          "row": 1,
+          "rowSpan": 3,
+          "column": 1,
+          "columnSpan": 1,
+          "border": null
+        },
+        {
+          "name": "永久基本农田面积",
+          "row": 1,
+          "rowSpan": 3,
+          "column": 2,
+          "columnSpan": 1,
+          "border": null
+        },
+        {
+          "name": "耕地",
+          "row": 1,
+          "rowSpan": 2,
+          "column": 3,
+          "columnSpan": 2,
+          "border": null
+        },
+        {
+          "name": "其中",
+          "row": 1,
+          "rowSpan": 1,
+          "column": 5,
+          "columnSpan": 12,
+          "border": null
+        },
+        {
+          "name": "非耕地",
+          "row": 1,
+          "rowSpan": 2,
+          "column": 17,
+          "columnSpan": 2,
+          "border": null
+        },
+        {
+          "name": "种植粮食作物(LS)",
+          "row": 2,
+          "rowSpan": 1,
+          "column": 5,
+          "columnSpan": 2,
+          "border": null
+        },
+        {
+          "name": "种植非粮食作物(FLS)",
+          "row": 2,
+          "rowSpan": 1,
+          "column": 7,
+          "columnSpan": 2,
+          "border": null
+        },
+        {
+          "name": "粮与非粮轮作(LYFL)",
+          "row": 2,
+          "rowSpan": 1,
+          "column": 9,
+          "columnSpan": 2,
+          "border": null
+        },
+        {
+          "name": "休耕(XG)",
+          "row": 2,
+          "rowSpan": 1,
+          "column": 11,
+          "columnSpan": 2,
+          "border": null
+        },
+        {
+          "name": "林粮间作(LLJZ)",
+          "row": 2,
+          "rowSpan": 1,
+          "column": 13,
+          "columnSpan": 2,
+          "border": null
+        },
+        {
+          "name": "未耕种(WG)",
+          "row": 2,
+          "rowSpan": 1,
+          "column": 15,
+          "columnSpan": 2,
+          "border": null
+        },
+        {
+          "name": "面积",
+          "row": 3,
+          "rowSpan": 1,
+          "column": 3,
+          "columnSpan": 1,
+          "border": null
+        },
+        {
+          "name": "占永久基本农田比例",
+          "row": 3,
+          "rowSpan": 1,
+          "column": 4,
+          "columnSpan": 1,
+          "border": null
+        },
+        {
+          "name": "面积",
+          "row": 3,
+          "rowSpan": 1,
+          "column": 5,
+          "columnSpan": 1,
+          "border": null
+        },
+        {
+          "name": "占永久基本农田比例",
+          "row": 3,
+          "rowSpan": 1,
+          "column": 6,
+          "columnSpan": 1,
+          "border": null
+        },
+        {
+          "name": "面积",
+          "row": 3,
+          "rowSpan": 1,
+          "column": 7,
+          "columnSpan": 1,
+          "border": null
+        },
+        {
+          "name": "占永久基本农田比例",
+          "row": 3,
+          "rowSpan": 1,
+          "column": 8,
+          "columnSpan": 1,
+          "border": null
+        },
+        {
+          "name": "面积",
+          "row": 3,
+          "rowSpan": 1,
+          "column": 9,
+          "columnSpan": 1,
+          "border": null
+        },
+        {
+          "name": "占永久基本农田比例",
+          "row": 3,
+          "rowSpan": 1,
+          "column": 10,
+          "columnSpan": 1,
+          "border": null
+        },
+        {
+          "name": "面积",
+          "row": 3,
+          "rowSpan": 1,
+          "column": 11,
+          "columnSpan": 1,
+          "border": null
+        },
+        {
+          "name": "占永久基本农田比例",
+          "row": 3,
+          "rowSpan": 1,
+          "column": 12,
+          "columnSpan": 1,
+          "border": null
+        },
+        {
+          "name": "面积",
+          "row": 3,
+          "rowSpan": 1,
+          "column": 13,
+          "columnSpan": 1,
+          "border": null
+        },
+        {
+          "name": "占永久基本农田比例",
+          "row": 3,
+          "rowSpan": 1,
+          "column": 14,
+          "columnSpan": 1,
+          "border": null
+        },
+        {
+          "name": "面积",
+          "row": 3,
+          "rowSpan": 1,
+          "column": 15,
+          "columnSpan": 1,
+          "border": null
+        },
+        {
+          "name": "占永久基本农田比例",
+          "row": 3,
+          "rowSpan": 1,
+          "column": 16,
+          "columnSpan": 1,
+          "border": null
+        },
+        {
+          "name": "面积",
+          "row": 3,
+          "rowSpan": 1,
+          "column": 17,
+          "columnSpan": 1,
+          "border": null
+        },
+        {
+          "name": "占永久基本农田比例",
+          "row": 3,
+          "rowSpan": 1,
+          "column": 18,
+          "columnSpan": 1,
+          "border": null
+        }
+      ]
+    },
+    "fields": [
+      {
+        "field": "下级名称",
+        "type": "string",
+        "merge": false,
+        "parent": null,
+        "hide": false,
+        "unitType": null
+      },
+      {
+        "field": "HJ",
+        "type": "number",
+        "merge": false,
+        "parent": null,
+        "hide": false,
+        "unitType": "area"
+      },
+      {
+        "field": "GDMJ",
+        "type": "number",
+        "merge": false,
+        "parent": null,
+        "hide": false,
+        "unitType": "area"
+      },
+      {
+        "field": "ROUND",
+        "type": "number",
+        "merge": false,
+        "parent": null,
+        "hide": false,
+        "unitType": "area"
+      },
+      {
+        "field": "LS",
+        "type": "number",
+        "merge": false,
+        "parent": null,
+        "hide": false,
+        "unitType": "area"
+      },
+      {
+        "field": "ROUND1",
+        "type": "number",
+        "merge": false,
+        "parent": null,
+        "hide": false,
+        "unitType": "area"
+      },
+      {
+        "field": "FLS",
+        "type": "number",
+        "merge": false,
+        "parent": null,
+        "hide": false,
+        "unitType": "area"
+      },
+      {
+        "field": "ROUND2",
+        "type": "number",
+        "merge": false,
+        "parent": null,
+        "hide": false,
+        "unitType": "area"
+      },
+      {
+        "field": "LYFL",
+        "type": "number",
+        "merge": false,
+        "parent": null,
+        "hide": false,
+        "unitType": "area"
+      },
+      {
+        "field": "ROUND3",
+        "type": "number",
+        "merge": false,
+        "parent": null,
+        "hide": false,
+        "unitType": "area"
+      },
+      {
+        "field": "XG",
+        "type": "number",
+        "merge": false,
+        "parent": null,
+        "hide": false,
+        "unitType": "area"
+      },
+      {
+        "field": "ROUND4",
+        "type": "number",
+        "merge": false,
+        "parent": null,
+        "hide": false,
+        "unitType": "area"
+      },
+      {
+        "field": "LLJZ",
+        "type": "number",
+        "merge": false,
+        "parent": null,
+        "hide": false,
+        "unitType": "area"
+      },
+      {
+        "field": "ROUND5",
+        "type": "number",
+        "merge": false,
+        "parent": null,
+        "hide": false,
+        "unitType": "area"
+      },
+      {
+        "field": "WG",
+        "type": "number",
+        "merge": false,
+        "parent": null,
+        "hide": false,
+        "unitType": "area"
+      },
+      {
+        "field": "ROUND6",
+        "type": "number",
+        "merge": false,
+        "parent": null,
+        "hide": false,
+        "unitType": "area"
+      },
+      {
+        "field": "FGDMJ",
+        "type": "number",
+        "merge": false,
+        "parent": null,
+        "hide": false,
+        "unitType": "area"
+      },
+      {
+        "field": "ROUND7",
+        "type": "number",
+        "merge": false,
+        "parent": null,
+        "hide": false,
+        "unitType": "area"
+      }
+    ],
+    "data": [
+      {
+        "下级名称": "全国",
+        "HJ": 113055670.75,
+        "GDMJ": 85840444.37,
+        "ROUND": 75.93,
+        "LS": 63050175.22,
+        "ROUND1": 55.77,
+        "FLS": 5375218.66,
+        "ROUND2": 4.75,
+        "LYFL": 14593477.84,
+        "ROUND3": 12.91,
+        "XG": 54764.03,
+        "ROUND4": 0.05,
+        "LLJZ": 210229.00,
+        "ROUND5": 0.19,
+        "WG": 2556579.62,
+        "ROUND6": 2.26,
+        "FGDMJ": 27215226.38,
+        "ROUND7": 24.07
+      },
+      {
+        "下级名称": "北京市",
+        "HJ": 102917.56,
+        "GDMJ": 55564.48,
+        "ROUND": 53.99,
+        "LS": 32313.73,
+        "ROUND1": 31.40,
+        "FLS": 13602.35,
+        "ROUND2": 13.22,
+        "LYFL": 3599.40,
+        "ROUND3": 3.50,
+        "XG": 13.07,
+        "ROUND4": 0.01,
+        "LLJZ": 159.44,
+        "ROUND5": 0.15,
+        "WG": 5876.49,
+        "ROUND6": 5.71,
+        "FGDMJ": 47353.08,
+        "ROUND7": 46.01
+      },
+      {
+        "下级名称": "天津市",
+        "HJ": 231400.60,
+        "GDMJ": 196261.91,
+        "ROUND": 84.81,
+        "LS": 179731.31,
+        "ROUND1": 77.67,
+        "FLS": 9705.56,
+        "ROUND2": 4.19,
+        "LYFL": 4507.20,
+        "ROUND3": 1.95,
+        "XG": 0.0,
+        "ROUND4": 0.00,
+        "LLJZ": 0.0,
+        "ROUND5": 0.00,
+        "WG": 2317.84,
+        "ROUND6": 1.00,
+        "FGDMJ": 35138.69,
+        "ROUND7": 15.19
+      },
+      {
+        "下级名称": "河北省",
+        "HJ": 5453208.20,
+        "GDMJ": 4548158.34,
+        "ROUND": 83.40,
+        "LS": 4137299.53,
+        "ROUND1": 75.87,
+        "FLS": 211075.49,
+        "ROUND2": 3.87,
+        "LYFL": 125269.01,
+        "ROUND3": 2.30,
+        "XG": 116.03,
+        "ROUND4": 0.00,
+        "LLJZ": 437.97,
+        "ROUND5": 0.01,
+        "WG": 73960.31,
+        "ROUND6": 1.36,
+        "FGDMJ": 905049.86,
+        "ROUND7": 16.60
+      },
+      {
+        "下级名称": "山西省",
+        "HJ": 3700844.48,
+        "GDMJ": 2717661.66,
+        "ROUND": 73.43,
+        "LS": 2370125.08,
+        "ROUND1": 64.04,
+        "FLS": 62688.75,
+        "ROUND2": 1.69,
+        "LYFL": 55347.28,
+        "ROUND3": 1.50,
+        "XG": 3551.54,
+        "ROUND4": 0.10,
+        "LLJZ": 23659.48,
+        "ROUND5": 0.64,
+        "WG": 202289.53,
+        "ROUND6": 5.47,
+        "FGDMJ": 983182.82,
+        "ROUND7": 26.57
+      },
+      {
+        "下级名称": "内蒙古自治区",
+        "HJ": 6478132.52,
+        "GDMJ": 5932898.65,
+        "ROUND": 91.58,
+        "LS": 5117664.20,
+        "ROUND1": 79.00,
+        "FLS": 255488.10,
+        "ROUND2": 3.94,
+        "LYFL": 335527.20,
+        "ROUND3": 5.18,
+        "XG": 31161.59,
+        "ROUND4": 0.48,
+        "LLJZ": 11788.83,
+        "ROUND5": 0.18,
+        "WG": 181268.73,
+        "ROUND6": 2.80,
+        "FGDMJ": 545233.87,
+        "ROUND7": 8.42
+      },
+      {
+        "下级名称": "辽宁省",
+        "HJ": 3852953.91,
+        "GDMJ": 3527862.79,
+        "ROUND": 91.56,
+        "LS": 3376320.36,
+        "ROUND1": 87.63,
+        "FLS": 98255.93,
+        "ROUND2": 2.55,
+        "LYFL": 18676.86,
+        "ROUND3": 0.48,
+        "XG": 5.65,
+        "ROUND4": 0.00,
+        "LLJZ": 9817.83,
+        "ROUND5": 0.25,
+        "WG": 24786.16,
+        "ROUND6": 0.64,
+        "FGDMJ": 325091.12,
+        "ROUND7": 8.44
+      },
+      {
+        "下级名称": "吉林省",
+        "HJ": 5085071.86,
+        "GDMJ": 4852376.57,
+        "ROUND": 95.42,
+        "LS": 4805975.58,
+        "ROUND1": 94.51,
+        "FLS": 15999.78,
+        "ROUND2": 0.31,
+        "LYFL": 4664.93,
+        "ROUND3": 0.09,
+        "XG": 4.60,
+        "ROUND4": 0.00,
+        "LLJZ": 5291.36,
+        "ROUND5": 0.10,
+        "WG": 20440.32,
+        "ROUND6": 0.40,
+        "FGDMJ": 232695.29,
+        "ROUND7": 4.58
+      },
+      {
+        "下级名称": "黑龙江省",
+        "HJ": 11729883.37,
+        "GDMJ": 11038296.97,
+        "ROUND": 94.10,
+        "LS": 10925594.85,
+        "ROUND1": 93.14,
+        "FLS": 27509.79,
+        "ROUND2": 0.23,
+        "LYFL": 1190.23,
+        "ROUND3": 0.01,
+        "XG": 2549.46,
+        "ROUND4": 0.02,
+        "LLJZ": 4902.44,
+        "ROUND5": 0.04,
+        "WG": 76550.20,
+        "ROUND6": 0.65,
+        "FGDMJ": 691586.40,
+        "ROUND7": 5.90
+      },
+      {
+        "下级名称": "上海市",
+        "HJ": 169456.82,
+        "GDMJ": 117895.56,
+        "ROUND": 69.57,
+        "LS": 67962.81,
+        "ROUND1": 40.11,
+        "FLS": 22976.05,
+        "ROUND2": 13.56,
+        "LYFL": 22354.37,
+        "ROUND3": 13.19,
+        "XG": 0.0,
+        "ROUND4": 0.00,
+        "LLJZ": 0.40,
+        "ROUND5": 0.00,
+        "WG": 4601.93,
+        "ROUND6": 2.72,
+        "FGDMJ": 51561.26,
+        "ROUND7": 30.43
+      },
+      {
+        "下级名称": "江苏省",
+        "HJ": 4003635.95,
+        "GDMJ": 3143610.35,
+        "ROUND": 78.52,
+        "LS": 2479395.97,
+        "ROUND1": 61.93,
+        "FLS": 175645.72,
+        "ROUND2": 4.39,
+        "LYFL": 468232.42,
+        "ROUND3": 11.70,
+        "XG": 5.49,
+        "ROUND4": 0.00,
+        "LLJZ": 36.39,
+        "ROUND5": 0.00,
+        "WG": 20294.36,
+        "ROUND6": 0.51,
+        "FGDMJ": 860025.60,
+        "ROUND7": 21.48
+      },
+      {
+        "下级名称": "浙江省",
+        "HJ": 1792177.41,
+        "GDMJ": 1085024.22,
+        "ROUND": 60.54,
+        "LS": 417693.80,
+        "ROUND1": 23.31,
+        "FLS": 85788.61,
+        "ROUND2": 4.79,
+        "LYFL": 555027.70,
+        "ROUND3": 30.97,
+        "XG": 2.30,
+        "ROUND4": 0.00,
+        "LLJZ": 0.19,
+        "ROUND5": 0.00,
+        "WG": 26511.62,
+        "ROUND6": 1.48,
+        "FGDMJ": 707153.19,
+        "ROUND7": 39.46
+      },
+      {
+        "下级名称": "安徽省",
+        "HJ": 5226649.28,
+        "GDMJ": 4486524.21,
+        "ROUND": 85.84,
+        "LS": 3774869.28,
+        "ROUND1": 72.22,
+        "FLS": 112401.62,
+        "ROUND2": 2.15,
+        "LYFL": 582209.91,
+        "ROUND3": 11.14,
+        "XG": 237.50,
+        "ROUND4": 0.00,
+        "LLJZ": 2153.28,
+        "ROUND5": 0.04,
+        "WG": 14652.62,
+        "ROUND6": 0.28,
+        "FGDMJ": 740125.07,
+        "ROUND7": 14.16
+      },
+      {
+        "下级名称": "福建省",
+        "HJ": 1279871.56,
+        "GDMJ": 665200.04,
+        "ROUND": 51.97,
+        "LS": 202970.98,
+        "ROUND1": 15.86,
+        "FLS": 58213.53,
+        "ROUND2": 4.55,
+        "LYFL": 295377.24,
+        "ROUND3": 23.08,
+        "XG": 0.0,
+        "ROUND4": 0.00,
+        "LLJZ": 88.12,
+        "ROUND5": 0.01,
+        "WG": 108550.17,
+        "ROUND6": 8.48,
+        "FGDMJ": 614671.52,
+        "ROUND7": 48.03
+      },
+      {
+        "下级名称": "江西省",
+        "HJ": 2731158.69,
+        "GDMJ": 2063422.08,
+        "ROUND": 75.55,
+        "LS": 1563649.30,
+        "ROUND1": 57.25,
+        "FLS": 261257.05,
+        "ROUND2": 9.57,
+        "LYFL": 157172.88,
+        "ROUND3": 5.75,
+        "XG": 1.00,
+        "ROUND4": 0.00,
+        "LLJZ": 187.16,
+        "ROUND5": 0.01,
+        "WG": 81154.69,
+        "ROUND6": 2.97,
+        "FGDMJ": 667736.61,
+        "ROUND7": 24.45
+      },
+      {
+        "下级名称": "山东省",
+        "HJ": 7034788.02,
+        "GDMJ": 5261762.62,
+        "ROUND": 74.80,
+        "LS": 2695357.77,
+        "ROUND1": 38.31,
+        "FLS": 76667.26,
+        "ROUND2": 1.09,
+        "LYFL": 2440375.05,
+        "ROUND3": 34.69,
+        "XG": 0.0,
+        "ROUND4": 0.00,
+        "LLJZ": 0.0,
+        "ROUND5": 0.00,
+        "WG": 49362.54,
+        "ROUND6": 0.70,
+        "FGDMJ": 1773025.40,
+        "ROUND7": 25.20
+      },
+      {
+        "下级名称": "河南省",
+        "HJ": 7228449.77,
+        "GDMJ": 6070567.38,
+        "ROUND": 83.98,
+        "LS": 5213173.38,
+        "ROUND1": 72.12,
+        "FLS": 201517.67,
+        "ROUND2": 2.79,
+        "LYFL": 589717.36,
+        "ROUND3": 8.16,
+        "XG": 61.63,
+        "ROUND4": 0.00,
+        "LLJZ": 922.83,
+        "ROUND5": 0.01,
+        "WG": 65174.51,
+        "ROUND6": 0.90,
+        "FGDMJ": 1157882.39,
+        "ROUND7": 16.02
+      },
+      {
+        "下级名称": "湖北省",
+        "HJ": 4251047.50,
+        "GDMJ": 3248944.83,
+        "ROUND": 76.43,
+        "LS": 1961974.21,
+        "ROUND1": 46.15,
+        "FLS": 346345.36,
+        "ROUND2": 8.15,
+        "LYFL": 908221.36,
+        "ROUND3": 21.36,
+        "XG": 299.98,
+        "ROUND4": 0.01,
+        "LLJZ": 3117.93,
+        "ROUND5": 0.07,
+        "WG": 28985.99,
+        "ROUND6": 0.68,
+        "FGDMJ": 1002102.67,
+        "ROUND7": 23.57
+      },
+      {
+        "下级名称": "湖南省",
+        "HJ": 3706879.15,
+        "GDMJ": 2746484.33,
+        "ROUND": 74.09,
+        "LS": 2115895.63,
+        "ROUND1": 57.08,
+        "FLS": 241994.87,
+        "ROUND2": 6.53,
+        "LYFL": 347266.77,
+        "ROUND3": 9.37,
+        "XG": 534.60,
+        "ROUND4": 0.01,
+        "LLJZ": 1844.59,
+        "ROUND5": 0.05,
+        "WG": 38947.87,
+        "ROUND6": 1.05,
+        "FGDMJ": 960394.82,
+        "ROUND7": 25.91
+      },
+      {
+        "下级名称": "广东省",
+        "HJ": 2298051.41,
+        "GDMJ": 1363220.86,
+        "ROUND": 59.32,
+        "LS": 734547.91,
+        "ROUND1": 31.96,
+        "FLS": 219381.19,
+        "ROUND2": 9.55,
+        "LYFL": 164030.57,
+        "ROUND3": 7.14,
+        "XG": 107.28,
+        "ROUND4": 0.00,
+        "LLJZ": 0.0,
+        "ROUND5": 0.00,
+        "WG": 245153.91,
+        "ROUND6": 10.67,
+        "FGDMJ": 934830.55,
+        "ROUND7": 40.68
+      },
+      {
+        "下级名称": "广西壮族自治区",
+        "HJ": 4028354.89,
+        "GDMJ": 2664835.76,
+        "ROUND": 66.15,
+        "LS": 1362108.83,
+        "ROUND1": 33.81,
+        "FLS": 851427.42,
+        "ROUND2": 21.14,
+        "LYFL": 375187.91,
+        "ROUND3": 9.31,
+        "XG": 0.13,
+        "ROUND4": 0.00,
+        "LLJZ": 430.26,
+        "ROUND5": 0.01,
+        "WG": 75681.21,
+        "ROUND6": 1.88,
+        "FGDMJ": 1363519.13,
+        "ROUND7": 33.85
+      },
+      {
+        "下级名称": "海南省",
+        "HJ": 623550.84,
+        "GDMJ": 368730.69,
+        "ROUND": 59.13,
+        "LS": 124240.19,
+        "ROUND1": 19.92,
+        "FLS": 99955.26,
+        "ROUND2": 16.03,
+        "LYFL": 126129.59,
+        "ROUND3": 20.23,
+        "XG": 458.33,
+        "ROUND4": 0.07,
+        "LLJZ": 0.22,
+        "ROUND5": 0.00,
+        "WG": 17947.10,
+        "ROUND6": 2.88,
+        "FGDMJ": 254820.15,
+        "ROUND7": 40.87
+      },
+      {
+        "下级名称": "重庆市",
+        "HJ": 1921146.42,
+        "GDMJ": 1213771.54,
+        "ROUND": 63.18,
+        "LS": 662948.80,
+        "ROUND1": 34.51,
+        "FLS": 32839.45,
+        "ROUND2": 1.71,
+        "LYFL": 468343.21,
+        "ROUND3": 24.38,
+        "XG": 0.00,
+        "ROUND4": 0.00,
+        "LLJZ": 1967.97,
+        "ROUND5": 0.10,
+        "WG": 47672.11,
+        "ROUND6": 2.48,
+        "FGDMJ": 707374.88,
+        "ROUND7": 36.82
+      },
+      {
+        "下级名称": "四川省",
+        "HJ": 6194428.76,
+        "GDMJ": 3595482.52,
+        "ROUND": 58.04,
+        "LS": 1288838.25,
+        "ROUND1": 20.81,
+        "FLS": 87149.89,
+        "ROUND2": 1.41,
+        "LYFL": 2076221.68,
+        "ROUND3": 33.52,
+        "XG": 463.20,
+        "ROUND4": 0.01,
+        "LLJZ": 3029.21,
+        "ROUND5": 0.05,
+        "WG": 139780.29,
+        "ROUND6": 2.26,
+        "FGDMJ": 2598946.24,
+        "ROUND7": 41.96
+      },
+      {
+        "下级名称": "贵州省",
+        "HJ": 4892451.50,
+        "GDMJ": 2410292.12,
+        "ROUND": 49.27,
+        "LS": 731466.19,
+        "ROUND1": 14.95,
+        "FLS": 118494.83,
+        "ROUND2": 2.42,
+        "LYFL": 1457010.27,
+        "ROUND3": 29.78,
+        "XG": 38.69,
+        "ROUND4": 0.00,
+        "LLJZ": 19012.39,
+        "ROUND5": 0.39,
+        "WG": 84269.75,
+        "ROUND6": 1.72,
+        "FGDMJ": 2482159.38,
+        "ROUND7": 50.73
+      },
+      {
+        "下级名称": "云南省",
+        "HJ": 6337842.65,
+        "GDMJ": 3304561.46,
+        "ROUND": 52.14,
+        "LS": 1321315.52,
+        "ROUND1": 20.85,
+        "FLS": 368080.66,
+        "ROUND2": 5.81,
+        "LYFL": 1501297.19,
+        "ROUND3": 23.69,
+        "XG": 790.91,
+        "ROUND4": 0.01,
+        "LLJZ": 24072.92,
+        "ROUND5": 0.38,
+        "WG": 89004.26,
+        "ROUND6": 1.40,
+        "FGDMJ": 3033281.19,
+        "ROUND7": 47.86
+      },
+      {
+        "下级名称": "西藏自治区",
+        "HJ": 396986.36,
+        "GDMJ": 230236.17,
+        "ROUND": 58.00,
+        "LS": 166841.08,
+        "ROUND1": 42.03,
+        "FLS": 4865.45,
+        "ROUND2": 1.23,
+        "LYFL": 48640.67,
+        "ROUND3": 12.25,
+        "XG": 154.71,
+        "ROUND4": 0.04,
+        "LLJZ": 259.23,
+        "ROUND5": 0.07,
+        "WG": 9475.03,
+        "ROUND6": 2.39,
+        "FGDMJ": 166750.19,
+        "ROUND7": 42.00
+      },
+      {
+        "下级名称": "陕西省",
+        "HJ": 3287988.50,
+        "GDMJ": 1875951.80,
+        "ROUND": 57.05,
+        "LS": 1261286.52,
+        "ROUND1": 38.36,
+        "FLS": 77741.20,
+        "ROUND2": 2.36,
+        "LYFL": 252298.46,
+        "ROUND3": 7.67,
+        "XG": 1.10,
+        "ROUND4": 0.00,
+        "LLJZ": 1496.05,
+        "ROUND5": 0.05,
+        "WG": 283128.47,
+        "ROUND6": 8.61,
+        "FGDMJ": 1412036.70,
+        "ROUND7": 42.95
+      },
+      {
+        "下级名称": "甘肃省",
+        "HJ": 4521713.14,
+        "GDMJ": 3529836.89,
+        "ROUND": 78.06,
+        "LS": 2127170.45,
+        "ROUND1": 47.04,
+        "FLS": 322379.84,
+        "ROUND2": 7.13,
+        "LYFL": 669385.43,
+        "ROUND3": 14.80,
+        "XG": 7300.94,
+        "ROUND4": 0.16,
+        "LLJZ": 23967.32,
+        "ROUND5": 0.53,
+        "WG": 379632.91,
+        "ROUND6": 8.40,
+        "FGDMJ": 991876.25,
+        "ROUND7": 21.94
+      },
+      {
+        "下级名称": "青海省",
+        "HJ": 533211.96,
+        "GDMJ": 394374.03,
+        "ROUND": 73.96,
+        "LS": 198856.94,
+        "ROUND1": 37.29,
+        "FLS": 19207.60,
+        "ROUND2": 3.60,
+        "LYFL": 127658.93,
+        "ROUND3": 23.94,
+        "XG": 0.71,
+        "ROUND4": 0.00,
+        "LLJZ": 199.14,
+        "ROUND5": 0.04,
+        "WG": 48450.71,
+        "ROUND6": 9.09,
+        "FGDMJ": 138837.93,
+        "ROUND7": 26.04
+      },
+      {
+        "下级名称": "宁夏回族自治区",
+        "HJ": 1019675.74,
+        "GDMJ": 765378.16,
+        "ROUND": 75.06,
+        "LS": 618127.27,
+        "ROUND1": 60.62,
+        "FLS": 65975.89,
+        "ROUND2": 6.47,
+        "LYFL": 1403.46,
+        "ROUND3": 0.14,
+        "XG": 18.70,
+        "ROUND4": 0.00,
+        "LLJZ": 46.54,
+        "ROUND5": 0.00,
+        "WG": 79806.30,
+        "ROUND6": 7.83,
+        "FGDMJ": 254297.58,
+        "ROUND7": 24.94
+      },
+      {
+        "下级名称": "新疆维吾尔自治区",
+        "HJ": 2941741.93,
+        "GDMJ": 2365255.38,
+        "ROUND": 80.40,
+        "LS": 1014459.50,
+        "ROUND1": 34.48,
+        "FLS": 830586.49,
+        "ROUND2": 28.23,
+        "LYFL": 411133.30,
+        "ROUND3": 13.98,
+        "XG": 6884.89,
+        "ROUND4": 0.23,
+        "LLJZ": 71339.51,
+        "ROUND5": 2.43,
+        "WG": 30851.69,
+        "ROUND6": 1.05,
+        "FGDMJ": 576486.55,
+        "ROUND7": 19.60
+      }
+    ],
+    "width": -1
+  },
+  "canClick": false,
+  "hasNext": false,
+  "hasPrev": false,
+  "titleSelect": false,
+  "tipMessage": ""
+}

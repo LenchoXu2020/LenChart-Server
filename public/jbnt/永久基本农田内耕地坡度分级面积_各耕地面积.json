@@ -1,0 +1,168 @@
+{
+  "key": "永久基本农田内耕地坡度分级面积->各耕地面积",
+  "name": "全国永久基本农田内耕地坡度分级面积",
+  "xAxis": [
+    "坡度级"
+  ],
+  "yAxis": [
+    "平地",
+    "坡地",
+    "梯田"
+  ],
+  "zAxis": null,
+  "xCode": "",
+  "curLevel": null,
+  "subLevel": null,
+  "minLevel": null,
+  "selectedXzqdm": null,
+  "colors": [
+    "rgb(220,233,156)",
+    "rgb(160,218,67)",
+    "rgb(49,181,115)"
+  ],
+  "units": [
+    {
+      "type": "area",
+      "dataUnit": "公顷",
+      "defaultUnit": "万亩",
+      "unitOptions": [
+        "亩",
+        "公顷",
+        "平方千米",
+        "万亩",
+        "万公顷"
+      ],
+      "unitOptionsExtend": [
+        {
+          "name": "亩",
+          "decimalDigits": 2
+        },
+        {
+          "name": "公顷",
+          "decimalDigits": 2
+        },
+        {
+          "name": "平方千米",
+          "decimalDigits": 2
+        },
+        {
+          "name": "万亩",
+          "decimalDigits": 2
+        },
+        {
+          "name": "万公顷",
+          "decimalDigits": 2
+        }
+      ]
+    },
+    {
+      "type": "area",
+      "dataUnit": "公顷",
+      "defaultUnit": "万亩",
+      "unitOptions": [
+        "亩",
+        "公顷",
+        "平方千米",
+        "万亩",
+        "万公顷"
+      ],
+      "unitOptionsExtend": [
+        {
+          "name": "亩",
+          "decimalDigits": 2
+        },
+        {
+          "name": "公顷",
+          "decimalDigits": 2
+        },
+        {
+          "name": "平方千米",
+          "decimalDigits": 2
+        },
+        {
+          "name": "万亩",
+          "decimalDigits": 2
+        },
+        {
+          "name": "万公顷",
+          "decimalDigits": 2
+        }
+      ]
+    },
+    {
+      "type": "area",
+      "dataUnit": "公顷",
+      "defaultUnit": "万亩",
+      "unitOptions": [
+        "亩",
+        "公顷",
+        "平方千米",
+        "万亩",
+        "万公顷"
+      ],
+      "unitOptionsExtend": [
+        {
+          "name": "亩",
+          "decimalDigits": 2
+        },
+        {
+          "name": "公顷",
+          "decimalDigits": 2
+        },
+        {
+          "name": "平方千米",
+          "decimalDigits": 2
+        },
+        {
+          "name": "万亩",
+          "decimalDigits": 2
+        },
+        {
+          "name": "万公顷",
+          "decimalDigits": 2
+        }
+      ]
+    }
+  ],
+  "dictionary": {},
+  "unitaxis": "y",
+  "data": [
+    {
+      "坡度级": "≤2°",
+      "平地": 55000465.88,
+      "坡地": 0.0,
+      "梯田": 0.0
+    },
+    {
+      "坡度级": "2°~6°",
+      "平地": 0.0,
+      "坡地": 8768533.00,
+      "梯田": 3753963.30
+    },
+    {
+      "坡度级": "6°~15°",
+      "平地": 0.0,
+      "坡地": 6663978.03,
+      "梯田": 4288485.04
+    },
+    {
+      "坡度级": "15°~25°",
+      "平地": 0.0,
+      "坡地": 3400340.08,
+      "梯田": 1741175.96
+    },
+    {
+      "坡度级": ">25°",
+      "平地": 0.0,
+      "坡地": 1607642.59,
+      "梯田": 615860.49
+    }
+  ],
+  "xColors": [],
+  "xDefaultCount": 0,
+  "canClick": false,
+  "hasNext": false,
+  "hasPrev": false,
+  "titleSelect": false,
+  "tipMessage": ""
+}

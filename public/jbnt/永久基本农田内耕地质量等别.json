@@ -1,0 +1,105 @@
+{
+  "key": "永久基本农田内耕地质量等别",
+  "name": "北京永久基本农田内耕地质量等别",
+  "xAxis": [
+    "等别"
+  ],
+  "yAxis": [
+    "面积",
+    "占比"
+  ],
+  "zAxis": null,
+  "xCode": "",
+  "curLevel": null,
+  "subLevel": null,
+  "minLevel": null,
+  "selectedXzqdm": null,
+  "colors": [
+    "rgb(251,249,150)",
+    "rgb(248,228,139)",
+    "rgb(219,180,64)",
+    "rgb(252,122,0)"
+  ],
+  "units": [
+    {
+      "type": "area",
+      "dataUnit": "万公顷",
+      "defaultUnit": "万亩",
+      "unitOptions": [
+        "亩",
+        "公顷",
+        "平方千米",
+        "万亩",
+        "万公顷"
+      ],
+      "unitOptionsExtend": [
+        {
+          "name": "亩",
+          "decimalDigits": 2
+        },
+        {
+          "name": "公顷",
+          "decimalDigits": 2
+        },
+        {
+          "name": "平方千米",
+          "decimalDigits": 2
+        },
+        {
+          "name": "万亩",
+          "decimalDigits": 2
+        },
+        {
+          "name": "万公顷",
+          "decimalDigits": 2
+        }
+      ]
+    },
+    {
+      "type": "percent",
+      "dataUnit": "%",
+      "defaultUnit": "%",
+      "unitOptions": [
+        "%"
+      ],
+      "unitOptionsExtend": [
+        {
+          "name": "%",
+          "decimalDigits": 2
+        }
+      ]
+    }
+  ],
+  "dictionary": {},
+  "unitaxis": "y",
+  "data": [
+    {
+      "等别": "优",
+      "面积": 900,
+      "占比": 60
+    },
+    {
+      "等别": "高",
+      "面积": 150,
+      "占比": 10
+    },
+    {
+      "等别": "中",
+      "面积": 345,
+      "占比": 23
+    },
+    {
+      "等别": "低",
+      "面积": 105,
+      "占比": 7
+    }
+  ],
+  "xColors": [],
+  "xDefaultCount": 0,
+  "table": null,
+  "canClick": false,
+  "hasNext": false,
+  "hasPrev": false,
+  "titleSelect": false,
+  "tipMessage": ""
+}

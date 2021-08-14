@@ -1,0 +1,6823 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ColorConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Categorys>
+		<!-- 	code不是IN型 -->
+		<Category Name="影像分辨率" Code="CYJG" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code/>
+					<Name>5米以上</Name>
+					<Color>45,116,146</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code/>
+					<Name>优于5米</Name>
+					<Color>252,238,212</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code/>
+					<Name>优于2米</Name>
+					<Color>237,198,143</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code/>
+					<Name>优于1米</Name>
+					<Color>255,163,147</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code/>
+					<Name>优于0.5米</Name>
+					<Color>147,113,130</Color>
+				</ColorItem>
+
+			</ColorItems>
+		</Category> 
+		<!-- 	code不是IN型 -->
+		<Category Name="影像数据源" Code="SJY" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code/>
+					<Name>国内数据</Name>
+					<Color>0,191,255</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code/>
+					<Name>国外数据</Name>
+					<Color>139,209,0</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+		<!-- 	code不是IN型 -->
+		<Category Name="影像数据类型" Code="SJY" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code/>
+					<Name>卫片</Name>
+					<Color>139,209,0</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code/>
+					<Name>航片</Name>
+					<Color>0,191,255</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+
+		<Category Name="三调一级分类" Code="DLBM" desc="">
+			<ColorItems>
+
+				<ColorItem>
+					<Code>0303,0304,0306,0402,0603,1105,1106,1108</Code>
+					<Name>湿地</Name>
+					<Color>185,224,202</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>0101,0102,0103</Code>
+					<Name>耕地</Name>
+					<Color>255,251,177</Color>
+				</ColorItem>			
+				<ColorItem>
+					<Code>0201,0201K,0202,0202K,0203,0203K,0204,0204K</Code>
+					<Name>种植园用地</Name>
+					<Color>214,167,201</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>0301,0302,0305,0307,0301K,0302K,0307K</Code>
+					<Name>林地</Name>
+					<Color>49,173,105</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>0401,0403,0404,0403K</Code>
+					<Name>草地</Name>
+					<Color>131,194,56</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>05H1,0508</Code>
+					<Name>商业服务业用地</Name>
+					<Color>226,161,149</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>0601,0602</Code>
+					<Name>工矿用地</Name>
+					<Color>197,154,140</Color>
+				</ColorItem>      
+
+				<ColorItem>
+					<Code>0701,0702</Code>
+					<Name>住宅用地</Name>
+					<Color>229,103,102</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>08H1,08H2,0809,0810,08H2A,0810A</Code>
+					<Name>公共管理与公共服务用地</Name>
+					<Color>241,165,180</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>09</Code>
+					<Name>特殊用地</Name>
+					<Color>193,114,97</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>1001,1002,1003,1004,1005,1006,1007,1008,1009</Code>
+					<Name>交通运输用地</Name>
+					<Color>210,216,201</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>1101,1102,1103,1104,1107,1109,1110,1104A,1104K,1107A</Code>
+					<Name>水域及水利设施用地</Name>
+					<Color>163,214,245</Color>
+				</ColorItem>		
+
+				<ColorItem>
+					<Code>1201,1202,1203,1204,1205,1206,1207</Code>
+					<Name>其他土地</Name>
+					<Color>200,190,170</Color>
+				</ColorItem>
+
+			</ColorItems>
+		</Category>
+
+		<!-- 临时使用 -->
+		<Category Name="三调一级地类" Code="DLBM" desc="">
+			<ColorItems>
+
+				<ColorItem>
+					<Code>0303,0304,0306,0402,0603,1105,1106,1108</Code>
+					<Name>湿地</Name>
+					<Color>185,224,202</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>01</Code>
+					<Name>耕地</Name>
+					<Color>255,251,177</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>02</Code>
+					<Name>种植园用地</Name>
+					<Color>214,167,201</Color>
+				</ColorItem>			
+
+				<ColorItem>
+					<Code>03</Code>
+					<Name>林地</Name>
+					<Color>49,173,105</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>04</Code>
+					<Name>草地</Name>
+					<Color>170,190,30</Color>
+				</ColorItem>				
+
+				<ColorItem>
+					<Code>10</Code>
+					<Name>交通运输用地</Name>
+					<Color>210,216,201</Color>
+				</ColorItem>				
+
+				<ColorItem>
+					<Code>11</Code>
+					<Name>水域及水利设施用地</Name>
+					<Color>163,214,245</Color>
+				</ColorItem>			
+
+				<ColorItem>
+					<Code>12</Code>
+					<Name>其他土地</Name>
+					<Color>200,190,170</Color>
+				</ColorItem>				
+
+				<ColorItem>
+					<Code>20</Code>
+					<Name>城镇村及工矿用地</Name>
+					<Color>226,161,149</Color>
+				</ColorItem>										
+
+			</ColorItems>
+		</Category>
+
+
+		<Category Name="三调三大类" Code="DLBM" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>0101,0102,0103,0201,0201K,0202,0202K,0203,0203K,0204,0204K,0301,0301K,0302,0302K,0303,0304,0305,0306,0307,0307K,0401,0402,0403,0403K,1006,1103,1104,1104A,1104K,1107,1107A,1202,1203</Code>
+					<Name>农用地</Name>
+					<Color>0,153,102</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>05H1,0508,0601,0602,0603,0701,0702,08H1,08H2,08H2A,0809,0810,0810A,09,1001,1002,1003,1004,1005,1007,1008,1009,1109,1201</Code>
+					<Name>建设用地</Name>
+					<Color>255,102,0</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0404,1101,1102,1105,1106,1108,1110,1204,1205,1206,1207</Code>
+					<Name>未利用地</Name>
+					<Color>255,255,102</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+
+		<Category Name="三调湿地" Code="DLBM" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>0303</Code>
+					<Name>红树林地</Name>
+					<Color>49,173,105</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0304</Code>
+					<Name>森林沼泽</Name>
+					<Color>49,173,105</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0306</Code>
+					<Name>灌丛沼泽</Name>
+					<Color>100,185,104</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0402</Code>
+					<Name>沼泽草地</Name>
+					<Color>131,194,56</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0603</Code>
+					<Name>盐田</Name>
+					<Color>0,147,221</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1105</Code>
+					<Name>沿海滩涂</Name>
+					<Color>179,222,248</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1106</Code>
+					<Name>内陆滩涂</Name>
+					<Color>179,222,248</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1108</Code>
+					<Name>沼泽地</Name>
+					<Color>175,200,220</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+		<Category Name="三调耕地" Code="DLBM" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>01</Code>
+					<Name>耕地</Name>
+					<Color>255,251,177</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0101</Code>
+					<Name>水田</Name>
+					<Color>248,208,114</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0102</Code>
+					<Name>水浇地</Name>
+					<Color>252,234,158</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0103</Code>
+					<Name>旱地</Name>
+					<Color>255,251,177</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+		<Category Name="耕地保有量" Code="DLBM" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>0101</Code>
+					<Name>水田</Name>
+					<Color>206,36,62</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0102</Code>
+					<Name>水浇地</Name>
+					<Color>57,203,57</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0103</Code>
+					<Name>旱地</Name>
+					<Color>67,127,189</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+		<Category Name="三调种植园用地" Code="DLBM" desc="">
+			<ColorItems>				
+				<ColorItem>
+					<Code>0201,0201K</Code>
+					<Name>果园</Name>
+					<Color>214,167,201</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0202,0202K</Code>
+					<Name>茶园</Name>
+					<Color>213,167,176</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0203,0203K</Code>
+					<Name>橡胶园</Name>
+					<Color>231,204,226</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0204,0204K</Code>
+					<Name>其他园地</Name>
+					<Color>231,204,226</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+		<Category Name="三调林地" Code="DLBM" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>0301,0301K</Code>
+					<Name>乔木林地</Name>
+					<Color>49,173,105</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0302,0302K</Code>
+					<Name>竹林地</Name>
+					<Color>49,173,105</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0305</Code>
+					<Name>灌木林地</Name>
+					<Color>100,185,104</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0307,0307K</Code>
+					<Name>其他林地</Name>
+					<Color>151,207,178</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+		<Category Name="林地保有量" Code="DLBM" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>0301,0301K</Code>
+					<Name>乔木林地</Name>
+					<Color>0,177,90</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0302,0302K</Code>
+					<Name>竹林地</Name>
+					<Color>96,161,71</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0305</Code>
+					<Name>灌木林地</Name>
+					<Color>175,248,141</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0307,0307K</Code>
+					<Name>其他林地</Name>
+					<Color>228,249,218</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+		<Category Name="三调草地" Code="DLBM" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>0401</Code>
+					<Name>天然牧草地</Name>
+					<Color>131,194,56</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0403,0403K</Code>
+					<Name>人工牧草地</Name>
+					<Color>154,206,127</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0404</Code>
+					<Name>其他草地</Name>
+					<Color>200,227,160</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+		<Category Name="三调商业服务业用地" Code="DLBM" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>05H1</Code>
+					<Name>商业服务业设施用地</Name>
+					<Color>226,161,149</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0508</Code>
+					<Name>物流仓储用地</Name>
+					<Color>197,154,140</Color>
+				</ColorItem>		
+			</ColorItems>
+		</Category>
+		<Category Name="三调工矿用地" Code="DLBM" desc="">
+			<ColorItems>     
+				<ColorItem>
+					<Code>0601</Code>
+					<Name>工业用地</Name>
+					<Color>197,154,140</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0602</Code>
+					<Name>采矿用地</Name>
+					<Color>197,154,140</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+		<Category Name="三调住宅用地" Code="DLBM" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>0701</Code>
+					<Name>城镇住宅用地</Name>
+					<Color>229,103,102</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0702</Code>
+					<Name>农村宅基地</Name>
+					<Color>236,137,138</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+		<Category Name="三调公共管理与公共服务用地" Code="DLBM" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>08H1</Code>
+					<Name>机关团体新闻出版用地</Name>
+					<Color>241,165,180</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>08H2,08H2A</Code>
+					<Name>科教文卫用地</Name>
+					<Color>241,165,180</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0809</Code>
+					<Name>公用设施用地</Name>
+					<Color>241,165,180</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0810,0810A</Code>
+					<Name>公园与绿地</Name>
+					<Color>129,195,93</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+		<Category Name="三调特殊用地" Code="DLBM" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>09</Code>
+					<Name>特殊用地</Name>
+					<Color>193,114,97</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+		<Category Name="三调交通运输用地" Code="DLBM" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>1001</Code>
+					<Name>铁路用地</Name>
+					<Color>178,170,176</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1002</Code>
+					<Name>轨道交通用地</Name>
+					<Color>209,201,211</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1003</Code>
+					<Name>公路用地</Name>
+					<Color>210,216,201</Color>
+				</ColorItem>      
+				<ColorItem>
+					<Code>1004</Code>
+					<Name>城镇村道路用地</Name>
+					<Color>222,222,221</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1005</Code>
+					<Name>交通服务场站用地</Name>
+					<Color>170,169,169</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1006</Code>
+					<Name>农村道路</Name>
+					<Color>194,193,193</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1007</Code>
+					<Name>机场用地</Name>
+					<Color>235,137,126</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1008</Code>
+					<Name>港口码头用地</Name>
+					<Color>235,137,126</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1009</Code>
+					<Name>管道运输用地</Name>
+					<Color>235,137,126</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+		<Category Name="三调水域及水利设施用地" Code="DLBM" desc="">
+			<ColorItems>	
+				<ColorItem>
+					<Code>1101</Code>
+					<Name>河流水面</Name>
+					<Color>163,214,245</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1102</Code>
+					<Name>湖泊水面</Name>
+					<Color>163,214,245</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1103</Code>
+					<Name>水库水面</Name>
+					<Color>163,214,245</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1104,1104A,1104K</Code>
+					<Name>坑塘水面</Name>
+					<Color>144,170,207</Color>
+				</ColorItem>      
+				<ColorItem>
+					<Code>1107,1107A</Code>
+					<Name>沟渠</Name>
+					<Color>160,205,240</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1109</Code>
+					<Name>水工建筑用地</Name>
+					<Color>230,130,100</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1110</Code>
+					<Name>冰川及永久积雪</Name>
+					<Color>215,237,251</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+		<Category Name="三调其他土地" Code="DLBM" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>1201</Code>
+					<Name>空闲地</Name>
+					<Color>225,220,225</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1202</Code>
+					<Name>设施农用地</Name>
+					<Color>220,180,130</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1203</Code>
+					<Name>田坎</Name>
+					<Color>200,182,178</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1204</Code>
+					<Name>盐碱地</Name>
+					<Color>200,204,210</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1205</Code>
+					<Name>沙地</Name>
+					<Color>200,190,170</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1206</Code>
+					<Name>裸土地</Name>
+					<Color>215,200,185</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1207</Code>
+					<Name>裸岩石砾地</Name>
+					<Color>222,221,214</Color>
+				</ColorItem>		
+			</ColorItems>
+		</Category>
+
+		<Category Name="三调农用地" Code="DLBM" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>0303</Code>
+					<Name>红树林地</Name>
+					<Color>49,173,105</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0304</Code>
+					<Name>森林沼泽</Name>
+					<Color>49,173,105</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0306</Code>
+					<Name>灌丛沼泽</Name>
+					<Color>100,185,104</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0402</Code>
+					<Name>沼泽草地</Name>
+					<Color>131,194,56</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0101</Code>
+					<Name>水田</Name>
+					<Color>248,208,114</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0102</Code>
+					<Name>水浇地</Name>
+					<Color>252,234,158</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0103</Code>
+					<Name>旱地</Name>
+					<Color>255,251,177</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0201,0201K</Code>
+					<Name>果园</Name>
+					<Color>214,167,201</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0202,0202K</Code>
+					<Name>茶园</Name>
+					<Color>213,167,176</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0203,0203K</Code>
+					<Name>橡胶园</Name>
+					<Color>231,204,226</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0204,0204K</Code>
+					<Name>其他园地</Name>
+					<Color>231,204,226</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0301,0301K</Code>
+					<Name>乔木林地</Name>
+					<Color>49,173,105</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0302,0302K</Code>
+					<Name>竹林地</Name>
+					<Color>49,173,105</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0305</Code>
+					<Name>灌木林地</Name>
+					<Color>100,185,104</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0307,0307K</Code>
+					<Name>其他林地</Name>
+					<Color>151,207,178</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0401</Code>
+					<Name>天然牧草地</Name>
+					<Color>131,194,56</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0403,0403K</Code>
+					<Name>人工牧草地</Name>
+					<Color>154,206,127</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1006</Code>
+					<Name>农村道路</Name>
+					<Color>194,193,193</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1103</Code>
+					<Name>水库水面</Name>
+					<Color>163,214,245</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1104,1104A,1104K</Code>
+					<Name>坑塘水面</Name>
+					<Color>144,170,207</Color>
+				</ColorItem>      
+				<ColorItem>
+					<Code>1107,1107A</Code>
+					<Name>沟渠</Name>
+					<Color>160,205,240</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1202</Code>
+					<Name>设施农用地</Name>
+					<Color>220,180,130</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1203</Code>
+					<Name>田坎</Name>
+					<Color>200,182,178</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>	
+
+		<Category Name="三调建设用地" Code="DLBM" desc="">
+			<ColorItems>				
+
+				<ColorItem>
+					<Code>05H1</Code>
+					<Name>商业服务业设施用地</Name>
+					<Color>226,161,149</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0508</Code>
+					<Name>物流仓储用地</Name>
+					<Color>197,154,140</Color>
+				</ColorItem>		
+
+				<ColorItem>
+					<Code>0601</Code>
+					<Name>工业用地</Name>
+					<Color>197,154,140</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0602</Code>
+					<Name>采矿用地</Name>
+					<Color>197,154,140</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>0603</Code>
+					<Name>盐田</Name>
+					<Color>0,147,221</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>0701</Code>
+					<Name>城镇住宅用地</Name>
+					<Color>229,103,102</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0702</Code>
+					<Name>农村宅基地</Name>
+					<Color>236,137,138</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>08H1</Code>
+					<Name>机关团体新闻出版用地</Name>
+					<Color>241,165,180</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>08H2,08H2A</Code>
+					<Name>科教文卫用地</Name>
+					<Color>241,165,180</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0809</Code>
+					<Name>公用设施用地</Name>
+					<Color>241,165,180</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0810,0810A</Code>
+					<Name>公园与绿地</Name>
+					<Color>129,195,93</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>09</Code>
+					<Name>特殊用地</Name>
+					<Color>193,114,97</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>1001</Code>
+					<Name>铁路用地</Name>
+					<Color>178,170,176</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1002</Code>
+					<Name>轨道交通用地</Name>
+					<Color>209,201,211</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1003</Code>
+					<Name>公路用地</Name>
+					<Color>210,216,201</Color>
+				</ColorItem>      
+				<ColorItem>
+					<Code>1004</Code>
+					<Name>城镇村道路用地</Name>
+					<Color>222,222,221</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1005</Code>
+					<Name>交通服务场站用地</Name>
+					<Color>170,169,169</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>1007</Code>
+					<Name>机场用地</Name>
+					<Color>235,137,126</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1008</Code>
+					<Name>港口码头用地</Name>
+					<Color>235,137,126</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1009</Code>
+					<Name>管道运输用地</Name>
+					<Color>235,137,126</Color>
+				</ColorItem>	
+
+				<ColorItem>
+					<Code>1109</Code>
+					<Name>水工建筑用地</Name>
+					<Color>230,130,100</Color>
+				</ColorItem>		
+
+				<ColorItem>
+					<Code>1201</Code>
+					<Name>空闲地</Name>
+					<Color>225,220,225</Color>
+				</ColorItem>
+
+			</ColorItems>
+		</Category>
+		<Category Name="三调未利用地" Code="DLBM" desc="">
+			<ColorItems>
+
+				<ColorItem>
+					<Code>0404</Code>
+					<Name>其他草地</Name>
+					<Color>200,227,160</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1101</Code>
+					<Name>河流水面</Name>
+					<Color>163,214,245</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1102</Code>
+					<Name>湖泊水面</Name>
+					<Color>163,214,245</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>1105</Code>
+					<Name>沿海滩涂</Name>
+					<Color>179,222,248</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1106</Code>
+					<Name>内陆滩涂</Name>
+					<Color>179,222,248</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1108</Code>
+					<Name>沼泽地</Name>
+					<Color>175,200,220</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1110</Code>
+					<Name>冰川及永久积雪</Name>
+					<Color>215,237,251</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>1204</Code>
+					<Name>盐碱地</Name>
+					<Color>200,204,210</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1205</Code>
+					<Name>沙地</Name>
+					<Color>200,190,170</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1206</Code>
+					<Name>裸土地</Name>
+					<Color>215,200,185</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1207</Code>
+					<Name>裸岩石砾地</Name>
+					<Color>222,221,214</Color>
+				</ColorItem>
+
+			</ColorItems>
+		</Category>
+
+		<Category Name="三调土地利用现状分类" Code="DLBM" desc="">
+			<ColorItems>		
+				<ColorItem>
+					<Code>0303</Code>
+					<Name>红树林地</Name>
+					<Color>49,173,105</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0304</Code>
+					<Name>森林沼泽</Name>
+					<Color>49,173,105</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0306</Code>
+					<Name>灌丛沼泽</Name>
+					<Color>100,185,104</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0402</Code>
+					<Name>沼泽草地</Name>
+					<Color>131,194,56</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0603</Code>
+					<Name>盐田</Name>
+					<Color>0,147,221</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1105</Code>
+					<Name>沿海滩涂</Name>
+					<Color>179,222,248</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1106</Code>
+					<Name>内陆滩涂</Name>
+					<Color>179,222,248</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1108</Code>
+					<Name>沼泽地</Name>
+					<Color>175,200,220</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>0101</Code>
+					<Name>水田</Name>
+					<Color>248,208,114</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0102</Code>
+					<Name>水浇地</Name>
+					<Color>252,234,158</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0103</Code>
+					<Name>旱地</Name>
+					<Color>255,251,177</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>0201,0201K</Code>
+					<Name>果园</Name>
+					<Color>214,167,201</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0202,0202K</Code>
+					<Name>茶园</Name>
+					<Color>213,167,176</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0203,0203K</Code>
+					<Name>橡胶园</Name>
+					<Color>231,204,226</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0204,0204K</Code>
+					<Name>其他园地</Name>
+					<Color>231,204,226</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>0301,0301K</Code>
+					<Name>乔木林地</Name>
+					<Color>49,173,105</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0302,0302K</Code>
+					<Name>竹林地</Name>
+					<Color>49,173,105</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0305</Code>
+					<Name>灌木林地</Name>
+					<Color>100,185,104</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0307,0307K</Code>
+					<Name>其他林地</Name>
+					<Color>151,207,178</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>0401</Code>
+					<Name>天然牧草地</Name>
+					<Color>131,194,56</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0403,0403K</Code>
+					<Name>人工牧草地</Name>
+					<Color>154,206,127</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0404</Code>
+					<Name>其他草地</Name>
+					<Color>200,227,160</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>05H1</Code>
+					<Name>商业服务业设施用地</Name>
+					<Color>226,161,149</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0508</Code>
+					<Name>物流仓储用地</Name>
+					<Color>197,154,140</Color>
+				</ColorItem>		
+
+				<ColorItem>
+					<Code>0601</Code>
+					<Name>工业用地</Name>
+					<Color>197,154,140</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0602</Code>
+					<Name>采矿用地</Name>
+					<Color>197,154,140</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>0701</Code>
+					<Name>城镇住宅用地</Name>
+					<Color>229,103,102</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0702</Code>
+					<Name>农村宅基地</Name>
+					<Color>236,137,138</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>08H1</Code>
+					<Name>机关团体新闻出版用地</Name>
+					<Color>241,165,180</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>08H2,08H2A</Code>
+					<Name>科教文卫用地</Name>
+					<Color>241,165,180</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0809</Code>
+					<Name>公用设施用地</Name>
+					<Color>241,165,180</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0810,0810A</Code>
+					<Name>公园与绿地</Name>
+					<Color>129,195,93</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>09</Code>
+					<Name>特殊用地</Name>
+					<Color>193,114,97</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>1001</Code>
+					<Name>铁路用地</Name>
+					<Color>178,170,176</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1002</Code>
+					<Name>轨道交通用地</Name>
+					<Color>209,201,211</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1003</Code>
+					<Name>公路用地</Name>
+					<Color>210,216,201</Color>
+				</ColorItem>      
+				<ColorItem>
+					<Code>1004</Code>
+					<Name>城镇村道路用地</Name>
+					<Color>222,222,221</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1005</Code>
+					<Name>交通服务场站用地</Name>
+					<Color>170,169,169</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1006</Code>
+					<Name>农村道路</Name>
+					<Color>194,193,193</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1007</Code>
+					<Name>机场用地</Name>
+					<Color>235,137,126</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1008</Code>
+					<Name>港口码头用地</Name>
+					<Color>235,137,126</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1009</Code>
+					<Name>管道运输用地</Name>
+					<Color>235,137,126</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>1101</Code>
+					<Name>河流水面</Name>
+					<Color>163,214,245</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1102</Code>
+					<Name>湖泊水面</Name>
+					<Color>163,214,245</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1103</Code>
+					<Name>水库水面</Name>
+					<Color>163,214,245</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1104,1104A,1104K</Code>
+					<Name>坑塘水面</Name>
+					<Color>144,170,207</Color>
+				</ColorItem>      
+				<ColorItem>
+					<Code>1107,1107A</Code>
+					<Name>沟渠</Name>
+					<Color>160,205,240</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1109</Code>
+					<Name>水工建筑用地</Name>
+					<Color>230,130,100</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1110</Code>
+					<Name>冰川及永久积雪</Name>
+					<Color>215,237,251</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>1201</Code>
+					<Name>空闲地</Name>
+					<Color>225,220,225</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1202</Code>
+					<Name>设施农用地</Name>
+					<Color>220,180,130</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1203</Code>
+					<Name>田坎</Name>
+					<Color>200,182,178</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1204</Code>
+					<Name>盐碱地</Name>
+					<Color>200,204,210</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1205</Code>
+					<Name>沙地</Name>
+					<Color>200,190,170</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1206</Code>
+					<Name>裸土地</Name>
+					<Color>215,200,185</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1207</Code>
+					<Name>裸岩石砾地</Name>
+					<Color>222,221,214</Color>
+				</ColorItem>		
+			</ColorItems>
+		</Category>
+
+		<Category Name="三调图斑细化" Code="TBXHDM" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>HDGD</Code>
+					<Name>河道耕地</Name>
+					<Color>180,235,247</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>HQGD</Code>
+					<Name>湖区耕地</Name>
+					<Color>123,228,249</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>LQGD</Code>
+					<Name>林区耕地</Name>
+					<Color>3,166,5</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>MQGD</Code>
+					<Name>牧区耕地</Name>
+					<Color>191,254,97</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>SHGD</Code>
+					<Name>沙荒耕地</Name>
+					<Color>207,199,178</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>SMGD</Code>
+					<Name>石漠化耕地</Name>
+					<Color>191,191,189</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>LQYD</Code>
+					<Name>林区种植园用地</Name>
+					<Color>249,119,213</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>GCCD</Code>
+					<Name>灌丛草地</Name>
+					<Color>130,251,68</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>HDGY</Code>
+					<Name>火电工业用地</Name>
+					<Color>249,116,72</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>GTGY</Code>
+					<Name>钢铁工业用地</Name>
+					<Color>180,22,38</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>MTGY</Code>
+					<Name>煤炭工业用地</Name>
+					<Color>71,7,7</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>SNGY</Code>
+					<Name>水泥工业用地</Name>
+					<Color>112,110,110</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>BLGY</Code>
+					<Name>玻璃工业用地</Name>
+					<Color>142,173,252</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>DLGY</Code>
+					<Name>电解铝工业用地</Name>
+					<Color>230,251,247</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>FQ</Code>
+					<Name>废弃</Name>
+					<Color>255,0,0</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>LJTM</Code>
+					<Name>垃圾填埋</Name>
+					<Color>147,109,6</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+
+		<Category Name="三调耕地细化" Code="TBXHDM" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>HDGD</Code>
+					<Name>河道耕地</Name>
+					<Color>180,235,247</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>HQGD</Code>
+					<Name>湖区耕地</Name>
+					<Color>123,228,249</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>LQGD</Code>
+					<Name>林区耕地</Name>
+					<Color>3,166,5</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>MQGD</Code>
+					<Name>牧区耕地</Name>
+					<Color>191,254,97</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>SHGD</Code>
+					<Name>沙荒耕地</Name>
+					<Color>206,196,102</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>SMGD</Code>
+					<Name>石漠化耕地</Name>
+					<Color>243,221,221</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>YJGD</Code>
+					<Name>盐碱耕地</Name>
+					<Color>200,204,210</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+		<Category Name="三调耕地细化_河道耕地" Code="TBXHDM" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>HDGD</Code>
+					<Name>河道耕地</Name>
+					<Color>248,208,114</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>HQGD</Code>
+					<Name>河道范围</Name>
+					<Color>123,228,249</Color>
+				</ColorItem>
+
+			</ColorItems>
+		</Category>
+
+
+		<Category Name="三调林区种植园用地" Code="TBXHDM" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>LQYD</Code>
+					<Name>林区种植园用地</Name>
+					<Color>249,119,213</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+
+		<Category Name="三调灌丛草地" Code="TBXHDM" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>GCCD</Code>
+					<Name>灌丛草地</Name>
+					<Color>130,251,68</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+
+		<Category Name="三调工业细化" Code="TBXHDM" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>HDGY</Code>
+					<Name>火电工业用地</Name>
+					<Color>249,116,72</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>GTGY</Code>
+					<Name>钢铁工业用地</Name>
+					<Color>180,22,38</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>MTGY</Code>
+					<Name>煤炭工业用地</Name>
+					<Color>71,7,7</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>SNGY</Code>
+					<Name>水泥工业用地</Name>
+					<Color>112,110,110</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>BLGY</Code>
+					<Name>玻璃工业用地</Name>
+					<Color>142,173,252</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>DLGY</Code>
+					<Name>电解铝工业用地</Name>
+					<Color>230,251,247</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+
+		<Category Name="三调废弃" Code="TBXHDM" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>FQ</Code>
+					<Name>废弃</Name>
+					<Color>255,0,0</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+
+		<Category Name="垃圾填埋" Code="TBXHDM" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>FQ</Code>
+					<Name>废弃</Name>
+					<Color>255,0,0</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+
+		<Category Name="三调种植属性分类" Code="ZZSXDM" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>LS</Code>
+					<Name>种植粮食作物</Name>
+					<Color>252,189,54</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>FLS</Code>
+					<Name>种植非粮食作物</Name>
+					<Color>159, 252, 88</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>LYFL</Code>
+					<Name>粮与非粮轮作</Name>
+					<Color>214,248,47</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>WG</Code>
+					<Name>未耕种</Name>
+					<Color>243,69,66</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>XG</Code>
+					<Name>休耕</Name>
+					<Color>248,129,129</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>LLJZ</Code>
+					<Name>林粮间作</Name>
+					<Color>3,194,57</Color>
+				</ColorItem>
+
+			</ColorItems>
+		</Category>
+
+		<Category Name="三调耕地种植" Code="ZZSXDM" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>LS</Code>
+					<Name>种植粮食作物</Name>
+					<Color>249,240,56</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>FLS</Code>
+					<Name>种植非粮食作物</Name>
+					<Color>67,208,46</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>LYFL</Code>
+					<Name>粮与非粮轮作</Name>
+					<Color>188,255,147</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>WG</Code>
+					<Name>未耕种</Name>
+					<Color>245,255,177</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>XG</Code>
+					<Name>休耕</Name>
+					<Color>138,131,4</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>LLJZ</Code>
+					<Name>林粮间作</Name>
+					<Color>137,191,67</Color>
+				</ColorItem>
+
+			</ColorItems>
+		</Category>
+
+		<Category Name="三调恢复属性" Code="ZZSXDM" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>JKHF</Code>
+					<Name>即可恢复</Name>
+					<Color>214,255,53</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>GCHF</Code>
+					<Name>工程恢复</Name>
+					<Color>7,254,162</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+
+		<Category Name="三调城镇村属性分类" Code="CZCSXM" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>201</Code>
+					<Name>城市</Name>
+					<Color>218,0,0</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>202</Code>
+					<Name>建制镇</Name>
+					<Color>219,97,96</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>203</Code>
+					<Name>村庄</Name>
+					<Color>254,164,164</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>204</Code>
+					<Name>盐田及采矿用地</Name>
+					<Color>166,183,177</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>205</Code>
+					<Name>特殊用地</Name>
+					<Color>224,135,69</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+
+		<Category Name="三调城镇村分层设色" Code="CZCSXM" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>201</Code>
+					<Name>城市</Name>
+					<Color>252,5,3</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>202</Code>
+					<Name>建制镇</Name>
+					<Color>252,130,0</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>203</Code>
+					<Name>村庄</Name>
+					<Color>254,241,4</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>204</Code>
+					<Name>盐田及采矿用地</Name>
+					<Color>197,154,140</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>205</Code>
+					<Name>特殊用地</Name>
+					<Color>193,114,97</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+
+		<Category Name="可调整地类" Code="DLBM" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>0201K</Code>
+					<Name>可调整果园</Name>
+					<Color>214,146,213</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0202K</Code>
+					<Name>可调整茶园</Name>
+					<Color>197,96,148</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0203K</Code>
+					<Name>可调整橡胶园</Name>
+					<Color>214,184,209</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0204K</Code>
+					<Name>可调整其他园地</Name>
+					<Color>150,71,152</Color>
+				</ColorItem>	
+				<ColorItem>
+					<Code>0301K</Code>
+					<Name>可调整乔木林地</Name>
+					<Color>6,91,21</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0302K</Code>
+					<Name>可调整竹林地</Name>
+					<Color>51,146,106</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0307K</Code>
+					<Name>可调整其他林地</Name>
+					<Color>99,164,128</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0403K</Code>
+					<Name>可调整人工牧草地</Name>
+					<Color>154,206,127</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1104K</Code>
+					<Name>可调整养殖坑塘</Name>
+					<Color>103,137,210</Color>
+				</ColorItem> 
+			</ColorItems>
+		</Category>
+
+		<Category Name="永久基本农田其他地类" Code="DLBM" desc="">
+			<ColorItems>
+
+				<ColorItem>
+					<Code>0303,0304,0306,0402,0603,1105,1106,1108</Code>
+					<Name>湿地</Name>
+					<Color>142,180,227</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>0201,0201K,0202,0202K,0203,0203K,0204,0204K</Code>
+					<Name>种植园用地</Name>
+					<Color>204,193,218</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>0301,0302,0305,0307,0301K,0302K,0307K</Code>
+					<Name>林地</Name>
+					<Color>40,140,0</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>05H1,0508</Code>
+					<Name>商业服务业用地</Name>
+					<Color>226,161,149</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>0601,0602</Code>
+					<Name>工矿用地</Name>
+					<Color>197,154,140</Color>
+				</ColorItem>      
+
+				<ColorItem>
+					<Code>0701,0702</Code>
+					<Name>住宅用地</Name>
+					<Color>236,137,138</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>08H1,08H2,0809,0810,08H2A,0810A	</Code>
+					<Name>公共管理与公共服务用地</Name>
+					<Color>241,165,180</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>09</Code>
+					<Name>特殊用地</Name>
+					<Color>193,114,97</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>1001,1002,1003,1004,1005,1006,1007,1008,1009</Code>
+					<Name>交通运输用地</Name>
+					<Color>209,201,211</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>1101,1102,1103,1104,1107,1109,1110,1104A,1104K,1107A</Code>
+					<Name>水域及水利设施用地</Name>
+					<Color>150,240,255</Color>
+				</ColorItem>		
+
+				<ColorItem>
+					<Code>1201,1202,1203,1204,1205,1206,1207</Code>
+					<Name>其他土地</Name>
+					<Color>225,220,225</Color>
+				</ColorItem>
+
+			</ColorItems>
+		</Category>
+
+		<Category Name="批准农转用项目业务类型" Code="YWLX" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>GWYDDXZ</Code>
+					<Name>国务院批准单独选址项目</Name>
+					<Color>14,114,204</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>GWYFPC</Code>
+					<Name>国务院批准城市分批次项目</Name>
+					<Color>108,163,15</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>SZFSSFA</Code>
+					<Name>省政府批准城市用地实施方案项目</Name>
+					<Color>245,147,17</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>SZFDDXZ</Code>
+					<Name>省政府批准单独选址项目</Name>
+					<Color>237,196,85</Color>
+				</ColorItem>	
+				<ColorItem>
+					<Code>SZFFPC</Code>
+					<Name>省政府批准城市分批次项目</Name>
+					<Color>133,192,33</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>ZJGGJX</Code>
+					<Name>增减挂钩试点项目建新区</Name>
+					<Color>209,42,106</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>GKFQD</Code>
+					<Name>工矿废弃地复垦试点项目场地平整区</Name>
+					<Color>245,147,17</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>DQHP</Code>
+					<Name>低丘缓坡等未利用地开发试点项目建新区</Name>
+					<Color>22,175,204</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+
+		<Category Name="生态功能" Code="LXDM" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>11</Code>
+					<Name>水源涵养</Name>
+					<Color>0,168,225</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>12</Code>
+					<Name>生物多样性维护</Name>
+					<Color>153,204,0</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>13</Code>
+					<Name>水土保持</Name>
+					<Color>227,0,57</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>14</Code>
+					<Name>防风固沙</Name>
+					<Color>252,211,0</Color>
+				</ColorItem>	
+				<ColorItem>
+					<Code>15</Code>
+					<Name>其他生态功能</Name>
+					<Color>128,0,128</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+
+		<Category Name="生态环境敏感性" Code="LXDM" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>21</Code>
+					<Name>水土流失</Name>
+					<Color>0,153,78</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>22</Code>
+					<Name>土地沙化</Name>
+					<Color>255,102,0</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>23</Code>
+					<Name>石漠化</Name>
+					<Color>128,128,0</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>24</Code>
+					<Name>盐渍化</Name>
+					<Color>219,0,194</Color>
+				</ColorItem> 
+				<ColorItem>
+					<Code>25</Code>
+					<Name>其他敏感性</Name>
+					<Color>0,128,128</Color>
+				</ColorItem> 
+			</ColorItems>
+		</Category>
+
+		<Category Name="生态保护红线" Code="LXDM" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>11</Code>
+					<Name>水源涵养</Name>
+					<Color>0,168,225</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>12</Code>
+					<Name>生物多样性维护</Name>
+					<Color>153,204,0</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>13</Code>
+					<Name>水土保持</Name>
+					<Color>227,0,57</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>14</Code>
+					<Name>防风固沙</Name>
+					<Color>252,211,0</Color>
+				</ColorItem>	
+				<ColorItem>
+					<Code>15</Code>
+					<Name>其他生态功能</Name>
+					<Color>128,0,128</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>21</Code>
+					<Name>水土流失</Name>
+					<Color>0,153,78</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>22</Code>
+					<Name>土地沙化</Name>
+					<Color>255,102,0</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>23</Code>
+					<Name>石漠化</Name>
+					<Color>128,128,0</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>24</Code>
+					<Name>盐渍化</Name>
+					<Color>219,0,194</Color>
+				</ColorItem> 
+				<ColorItem>
+					<Code>25</Code>
+					<Name>其他敏感性</Name>
+					<Color>0,128,128</Color>
+				</ColorItem> 
+			</ColorItems>
+		</Category>
+
+		<Category Name="无居民海岛" Code="LYXZFLBM" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>i101</Code>
+					<Name>旅游娱乐用岛</Name>
+					<Color>226,161,149</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>i102</Code>
+					<Name>交通运输用岛</Name>
+					<Color>210,216,201</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>i103</Code>
+					<Name>工业仓储用岛</Name>
+					<Color>197,154,140</Color>
+				</ColorItem>	
+				<ColorItem>
+					<Code>i104</Code>
+					<Name>渔业用岛</Name>
+					<Color>163,214,245</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>i105</Code>
+					<Name>农林牧业用岛</Name>
+					<Color>131,194,56</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>i106</Code>
+					<Name>可再生能源用岛</Name>
+					<Color>111,248,6</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>i107</Code>
+					<Name>城乡建设用岛</Name>
+					<Color>229,103,102</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>i108</Code>
+					<Name>公共服务用岛</Name>
+					<Color>241,165,180</Color>
+				</ColorItem> 
+				<ColorItem>
+					<Code>i109</Code>
+					<Name>国防用岛</Name>
+					<Color>193,114,97</Color>
+				</ColorItem> 
+				<ColorItem>
+					<Code>i110</Code>
+					<Name>其他用岛</Name>
+					<Color>225,220,225</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>i201</Code>
+					<Name>植被覆盖区</Name>
+					<Color>49,173,105</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>i202</Code>
+					<Name>滨海湿地区</Name>
+					<Color>179,222,248</Color>
+				</ColorItem> 
+				<ColorItem>
+					<Code>i203</Code>
+					<Name>其他区域</Name>
+					<Color>200,190,170</Color>
+				</ColorItem> 
+			</ColorItems>
+		</Category>
+
+		<Category Name="开发园区" Code="KFYQLX" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>110</Code>
+					<Name>经济技术开发区</Name>
+					<Color>142,180,227</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>120</Code>
+					<Name>高新技术产业开发区</Name>
+					<Color>255,255,100</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>130</Code>
+					<Name>保税区</Name>
+					<Color>204,193,218</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>140</Code>
+					<Name>出口加工区</Name>
+					<Color>40,140,0</Color>
+				</ColorItem>	
+				<ColorItem>
+					<Code>150</Code>
+					<Name>边境经济合作区</Name>
+					<Color>150,210,50</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>160</Code>
+					<Name>其他类型的开发区</Name>
+					<Color>226,161,149</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>210</Code>
+					<Name>经济开发区</Name>
+					<Color>197,154,140</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>220</Code>
+					<Name>高新技术产业园区</Name>
+					<Color>236,137,138</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>230</Code>
+					<Name>特色工业园区</Name>
+					<Color>241,165,180</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>300</Code>
+					<Name>省级以下</Name>
+					<Color>193,114,97</Color>
+				</ColorItem> 
+			</ColorItems>
+		</Category>
+
+		<Category Name="临时用地用途" Code="YTFL" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>G</Code>
+					<Name>建设项目施工</Name>
+					<Color>0,168,225</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>D</Code>
+					<Name>地质勘查</Name>
+					<Color>153,204,0</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>Q</Code>
+					<Name>抢险救灾</Name>
+					<Color>227,0,57</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>C</Code>
+					<Name>采矿用地方式改革试点</Name>
+					<Color>252,211,0</Color>
+				</ColorItem>	
+			</ColorItems>
+		</Category>
+		<Category Name="临时用地具体项目用途" Code="JTXMYT" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>JT</Code>
+					<Name>公路、铁路、机场、港口码头等工程施工</Name>
+					<Color>0,168,225</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>SL</Code>
+					<Name>水库、河渠等水利工程施工</Name>
+					<Color>153,204,0</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>NY</Code>
+					<Name>火电、核电、石油天然气等能源项目施工</Name>
+					<Color>227,0,57</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>GX</Code>
+					<Name>管线工程项目施工</Name>
+					<Color>252,211,0</Color>
+				</ColorItem>	
+				<ColorItem>
+					<Code>CK</Code>
+					<Name>矿产开采工程项目施工</Name>
+					<Color>128,0,128</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+
+		<Category Name="耕地等别" Code="" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code/>
+					<Name>耕地等别</Name>
+					<Color>248,208,114</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+		<Category Name="重要项目用地" Code="" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code/>
+					<Name>重要项目用地</Name>
+					<Color>248,208,114</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+
+		<Category Name="光伏板区" Code="" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code/>
+					<Name>光伏板区</Name>
+					<Color>248,208,114</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+
+		<Category Name="推土区" Code="" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code/>
+					<Name>推土区</Name>
+					<Color>248,208,114</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+		<Category Name="拆除未尽区" Code="" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code/>
+					<Name>拆除未尽区</Name>
+					<Color>248,208,114</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+
+		<Category Name="路面范围" Code="DLBM" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>1001</Code>
+					<Name>铁路用地</Name>
+					<Color>178,170,176</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1003</Code>
+					<Name>公路用地</Name>
+					<Color>210,216,201</Color>
+				</ColorItem>   
+			</ColorItems>
+		</Category>
+		<Category Name="国家公园" Code="" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code/>
+					<Name>国家公园</Name>
+					<Color>248,208,114</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+		<Category Name="自然保护区" Code="" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code/>
+					<Name>自然保护区</Name>
+					<Color>248,208,114</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+
+		<Category Name="森林公园" Code="" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code/>
+					<Name>森林公园</Name>
+					<Color>248,208,114</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+
+		<Category Name="风景名胜区" Code="" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code/>
+					<Name>风景名胜区</Name>
+					<Color>248,208,114</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+		<Category Name="地质公园" Code="" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code/>
+					<Name>地质公园</Name>
+					<Color>248,208,114</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>	
+		<Category Name="世界自然遗产保护区" Code="" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code/>
+					<Name>世界自然遗产保护区</Name>
+					<Color>178,170,176</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+		<Category Name="湿地公园" Code="" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code/>
+					<Name>湿地公园</Name>
+					<Color>248,208,114</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+		<Category Name="饮用水水源地" Code="" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code/>
+					<Name>饮用水水源地</Name>
+					<Color>248,208,114</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+
+		<Category Name="水产种植资源保护区" Code="" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code/>
+					<Name>水产种植资源保护区</Name>
+					<Color>248,208,114</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+
+		<Category Name="其他类型禁止开发区" Code="" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code/>
+					<Name>其他类型禁止开发区</Name>
+					<Color>248,208,114</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+		<Category Name="城市开发边界" Code="" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code/>
+					<Name>城市开发边界</Name>
+					<Color>248,208,114</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>	
+
+		<Category Name="耕地坡度分类" Code="GDPDJB" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>1</Code>
+					<Name>≤2°</Name>
+					<Color>255,235,177</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>2</Code>
+					<Name>2°~6°</Name>
+					<Color>255,207,63</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>3</Code>
+					<Name>6°~15°</Name>
+					<Color>251,166,3</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>4</Code>
+					<Name>15°~25°</Name>
+					<Color>255,153,92</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>5</Code>
+					<Name>>25°</Name>
+					<Color>255,117,35</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+		<!-- 历史数据 -->
+		<Category Name="二调土地利用现状分类" Code="DLBM" desc="">
+			<ColorItems>
+
+				<ColorItem>
+					<Code>011</Code>
+					<Name>水田</Name>
+					<Color>255,255,100</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>012</Code>
+					<Name>水浇地</Name>
+					<Color>255,255,150</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>013</Code>
+					<Name>旱地</Name>
+					<Color>255,255,200</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>021</Code>
+					<Name>果园</Name>
+					<Color>245,210,40</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>022</Code>
+					<Name>茶园</Name>
+					<Color>255,200,80</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>023</Code>
+					<Name>其他园地</Name>
+					<Color>250,185,20</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>031</Code>
+					<Name>有林地</Name>
+					<Color>40,140,0</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>032</Code>
+					<Name>灌木林地</Name>
+					<Color>85,180,100</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>033</Code>
+					<Name>其他林地</Name>
+					<Color>140,215,130</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>041</Code>
+					<Name>天然牧草地</Name>
+					<Color>170,190,30</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>042</Code>
+					<Name>人工牧草地</Name>
+					<Color>150,210,50</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>043</Code>
+					<Name>其他草地</Name>
+					<Color>200,220,100</Color>
+				</ColorItem>
+
+
+				<ColorItem>
+					<Code>101</Code>
+					<Name>铁路用地</Name>
+					<Color>178,170,176</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>102</Code>
+					<Name>公路用地</Name>
+					<Color>170,85,80</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>103</Code>
+					<Name>街巷用地</Name>
+					<Color>180,80,30</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>104</Code>
+					<Name>农村道路</Name>
+					<Color>170,85,80</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>105</Code>
+					<Name>机场用地</Name>
+					<Color>235,130,130</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>106</Code>
+					<Name>港口码头用地</Name>
+					<Color>235,130,130</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>107</Code>
+					<Name>管道运输用地</Name>
+					<Color>235,130,130</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>111</Code>
+					<Name>河流水面</Name>
+					<Color>150,240,255</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>112</Code>
+					<Name>湖泊水面</Name>
+					<Color>150,240,255</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>113</Code>
+					<Name>水库水面</Name>
+					<Color>150,240,255</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>114</Code>
+					<Name>坑塘水面</Name>
+					<Color>160,205,240</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>115</Code>
+					<Name>沿海滩涂</Name>
+					<Color>215,255,255</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>116</Code>
+					<Name>内陆滩涂</Name>
+					<Color>215,255,255</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>117</Code>
+					<Name>沟渠</Name>
+					<Color>160,205,240</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>118</Code>
+					<Name>水工建筑用地</Name>
+					<Color>230,130,100</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>119</Code>
+					<Name>冰川及永久积雪</Name>
+					<Color>135,205,240</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>121</Code>
+					<Name>空闲地</Name>
+					<Color>225,220,225</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>122</Code>
+					<Name>设施农用地</Name>
+					<Color>220,180,130</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>123</Code>
+					<Name>田坎</Name>
+					<Color>0,0,0</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>124</Code>
+					<Name>盐碱地</Name>
+					<Color>200,205,200</Color>
+				</ColorItem>
+
+
+				<ColorItem>
+					<Code>125</Code>
+					<Name>沼泽地</Name>
+					<Color>185,185,190</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>126</Code>
+					<Name>沙地</Name>
+					<Color>200,190,170</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>127</Code>
+					<Name>裸地</Name>
+					<Color>215,200,185</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>201</Code>
+					<Name>城市</Name>
+					<Color>220,100,120</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>202</Code>
+					<Name>建制镇</Name>
+					<Color>220,100,120</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>203</Code>
+					<Name>村庄</Name>
+					<Color>230,140,160</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>204</Code>
+					<Name>采矿用地</Name>
+					<Color>230,120,130</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>205</Code>
+					<Name>风景名胜及特殊用地</Name>
+					<Color>230,120,130</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+
+		<Category Name="二调八大类" Code="DLBM" StyleID="DLTB_BDL" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>01</Code>
+					<Name>耕地</Name>
+					<Color>255,255,100</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>02</Code>
+					<Name>园地</Name>
+					<Color>245,210,40</Color>
+				</ColorItem>			
+
+				<ColorItem>
+					<Code>03</Code>
+					<Name>林地</Name>
+					<Color>40,140,0</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>04</Code>
+					<Name>草地</Name>
+					<Color>170,190,30</Color>
+				</ColorItem>				
+
+				<ColorItem>
+					<Code>10</Code>
+					<Name>交通运输用地</Name>
+					<Color>178,170,176</Color>
+				</ColorItem>				
+
+				<ColorItem>
+					<Code>11</Code>
+					<Name>水域及水利设施用地</Name>
+					<Color>150,240,255</Color>
+				</ColorItem>			
+
+				<ColorItem>
+					<Code>12</Code>
+					<Name>其他土地</Name>
+					<Color>225,220,225</Color>
+				</ColorItem>				
+
+				<ColorItem>
+					<Code>20</Code>
+					<Name>城镇村及工矿用地</Name>
+					<Color>220,100,120</Color>
+				</ColorItem>				
+			</ColorItems>
+		</Category>
+
+
+		<!-- 三大类一级、二级和三级地类 -->
+		<Category Name="二调三大类" Code="DLBM" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>1</Code>
+					<Name>农用地</Name>
+					<Color>255,255,100</Color>
+				</ColorItem>
+
+
+				<ColorItem>
+					<Code>2</Code>
+					<Name>建设用地</Name>
+					<Color>220,100,120</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>3</Code>
+					<Name>未利用地</Name>
+					<Color>150,240,255</Color>
+				</ColorItem>
+
+			</ColorItems>
+		</Category>
+
+		<Category Name="二调农用地" Code="DLBM" desc="">
+			<ColorItems>
+
+				<ColorItem>
+					<Code>11</Code>
+					<Name>耕地</Name>
+					<Color>255,255,100</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>111</Code>
+					<Name>水田</Name>
+					<Color>255,255,100</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>112</Code>
+					<Name>水浇地</Name>
+					<Color>255,255,150</Color>
+				</ColorItem>
+
+
+				<ColorItem>
+					<Code>113</Code>
+					<Name>旱地</Name>
+					<Color>255,255,200</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>12</Code>
+					<Name>园地</Name>
+					<Color>245,210,40</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>121</Code>
+					<Name>果园</Name>
+					<Color>245,210,40</Color>
+				</ColorItem>
+
+
+				<ColorItem>
+					<Code>122</Code>
+					<Name>茶园</Name>
+					<Color>255,200,80</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>123</Code>
+					<Name>其它园地</Name>
+					<Color>250,185,20</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>13</Code>
+					<Name>林地</Name>
+					<Color>40,140,0</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>131</Code>
+					<Name>有林地</Name>
+					<Color>40,140,0</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>132</Code>
+					<Name>灌木林地</Name>
+					<Color>85,180,100</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>133</Code>
+					<Name>其它林地</Name>
+					<Color>140,215,130</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>14</Code>
+					<Name>牧草地</Name>
+					<Color>170,190,30</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>141</Code>
+					<Name>天然牧草地</Name>
+					<Color>170,190,30</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>142</Code>
+					<Name>人工牧草地</Name>
+					<Color>150,210,50</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>15</Code>
+					<Name>其他农用地</Name>
+					<Color>200,190,170</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>151</Code>
+					<Name>农村道路</Name>
+					<Color>170,85,80</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>152</Code>
+					<Name>坑塘水面</Name>
+					<Color>160,205,240</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>153</Code>
+					<Name>沟渠</Name>
+					<Color>160,205,240</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>154</Code>
+					<Name>设施农用地</Name>
+					<Color>220,180,130</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>155</Code>
+					<Name>田坎</Name>
+					<Color>240,110,125</Color>
+				</ColorItem>
+
+			</ColorItems>
+		</Category>
+
+		<Category Name="二调建设用地" Code="DLBM" desc="">
+			<ColorItems>
+
+				<ColorItem>
+					<Code>20</Code>
+					<Name>城镇村及工矿用地</Name>
+					<Color>220,100,120</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>201</Code>
+					<Name>城市</Name>
+					<Color>220,100,120</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>202</Code>
+					<Name>建制镇</Name>
+					<Color>220,100,120</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>203</Code>
+					<Name>村庄</Name>
+					<Color>230,140,160</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>204</Code>
+					<Name>采矿用地</Name>
+					<Color>230,120,130</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>205</Code>
+					<Name>风景名胜及特殊用地</Name>
+					<Color>230,120,130</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>26</Code>
+					<Name>交通运输用地</Name>
+					<Color>178,170,176</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>261</Code>
+					<Name>铁路用地</Name>
+					<Color>178,170,176</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>262</Code>
+					<Name>公路用地</Name>
+					<Color>170,85,80</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>263</Code>
+					<Name>机场用地</Name>
+					<Color>235,130,130</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>264</Code>
+					<Name>港口码头用地</Name>
+					<Color>235,130,130</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>265</Code>
+					<Name>管道运输用地</Name>
+					<Color>235,130,130</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>27</Code>
+					<Name>水利设施用地</Name>
+					<Color>150,240,255</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>271</Code>
+					<Name>水库水面</Name>
+					<Color>150,240,255</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>272</Code>
+					<Name>水工建筑用地</Name>
+					<Color>230,130,100</Color>
+				</ColorItem>
+
+			</ColorItems>
+		</Category>
+
+		<Category Name="二调未利用地" Code="DLBM" desc="">
+			<ColorItems>
+
+				<ColorItem>
+					<Code>31</Code>
+					<Name>水域及水利设施用地</Name>
+					<Color>150,240,255</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>311</Code>
+					<Name>河流水面</Name>
+					<Color>150,240,255</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>312</Code>
+					<Name>湖泊水面</Name>
+					<Color>150,240,255</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>313</Code>
+					<Name>沿海滩涂</Name>
+					<Color>215,255,255</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>314</Code>
+					<Name>内陆滩涂</Name>
+					<Color>215,255,255</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>315</Code>
+					<Name>冰川及永久积雪</Name>
+					<Color>135,205,240</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>32</Code>
+					<Name>其他</Name>
+					<Color>200,220,100</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>321</Code>
+					<Name>其它草地</Name>
+					<Color>200,220,100</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>322</Code>
+					<Name>盐碱地</Name>
+					<Color>200,205,200</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>323</Code>
+					<Name>沼泽地</Name>
+					<Color>185,185,190</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>324</Code>
+					<Name>沙地</Name>
+					<Color>200,190,170</Color>
+				</ColorItem>
+
+				<ColorItem>	
+					<Code>325</Code>
+					<Name>裸地</Name>
+					<Color>215,200,185</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Name>年内增加</Name>
+					<Code />
+					<Color>142,196,65</Color>
+				</ColorItem>
+				<ColorItem>
+					<Name>年内减少</Name>
+					<Code />
+					<Color>27,157,222</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Name>水域</Name>
+					<Code />
+					<Color>150,240,255</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+
+
+		<Category Name="基本农田分类" Code="DLBM" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>01</Code>
+					<Name>耕地</Name>
+					<Color>255,255,100</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>02</Code>
+					<Name>其他地类</Name>
+					<Color>220,100,120</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+
+		<Category Name="沙地分类" Code="DLBM" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>01</Code>
+					<Name>流动沙地（丘）</Name>
+					<Color>236, 210, 24</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>011</Code>
+					<Name>半固定沙地（丘）</Name>
+					<Color>233, 229, 154</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>012</Code>
+					<Name>固定沙地（丘）</Name>
+					<Color>182, 248, 153</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>013</Code>
+					<Name>露沙地</Name>
+					<Color>182, 245, 1</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>02</Code>
+					<Name>沙化耕地</Name>
+					<Color>247, 217, 215</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>021</Code>
+					<Name>非生物治沙工程地</Name>
+					<Color>129, 212, 189</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>022</Code>
+					<Name>风蚀残丘</Name>
+					<Color>215, 106, 2</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>023</Code>
+					<Name>风蚀劣地</Name>
+					<Color>248, 207, 156</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>03</Code>
+					<Name>戈壁</Name>
+					<Color>164, 162, 163</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>031</Code>
+					<Name>有明显沙化趋势的土地</Name>
+					<Color>83, 226, 95</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>9</Code>
+					<Name>非沙化土地</Name>
+					<Color>170, 200, 95</Color>
+				</ColorItem>
+
+			</ColorItems>
+		</Category>
+
+		<Category Name="湿地分类" Code="DLBM" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>011</Code>
+					<Name>近海与海岸湿地</Name>
+					<Color>1, 115, 186</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>012</Code>
+					<Name>河流湿地</Name>
+					<Color>0, 165, 197</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>011</Code>
+					<Name>湖泊湿地</Name>
+					<Color>123, 191, 200</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>012</Code>
+					<Name>沼泽湿地</Name>
+					<Color>0, 204, 47</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>012</Code>
+					<Name>人工湿地</Name>
+					<Color>0, 0, 172</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+
+		<Category Name="地面沉降分类" Code="DLBM" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>011</Code>
+					<Name>轻微或稳定区</Name>
+					<Color>118, 161, 36</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>012</Code>
+					<Name>一般沉降区</Name>
+					<Color>223, 249, 203</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>013</Code>
+					<Name>较严重沉降区</Name>
+					<Color>255, 198, 202</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>021</Code>
+					<Name>严重沉降区</Name>
+					<Color>240, 4, 70</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+
+		<Category Name="岩溶塌陷分类" Code="DLBM" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>011</Code>
+					<Name>高易发区</Name>
+					<Color>240, 4, 70</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>012</Code>
+					<Name>中易发区</Name>
+					<Color>255, 198, 202</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>013</Code>
+					<Name>低易发区</Name>
+					<Color>223, 249, 203</Color>
+				</ColorItem>
+
+			</ColorItems>
+		</Category>
+
+		<Category Name="滑坡崩塌分类" Code="DLBM" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>011</Code>
+					<Name>低易发区</Name>
+					<Color>223, 249, 203</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>012</Code>
+					<Name>中易发区</Name>
+					<Color>255, 198, 202</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>013</Code>
+					<Name>高易发区</Name>
+					<Color>240, 4, 70</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+
+		<Category Name="活动断层分类" Code="DLBM" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>011</Code>
+					<Name>严重影响</Name>
+					<Color>240, 4, 70</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>012</Code>
+					<Name>较严重影响</Name>
+					<Color>255, 198, 202</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>013</Code>
+					<Name>轻微影响</Name>
+					<Color>223, 249, 203</Color>
+				</ColorItem>
+
+			</ColorItems>
+		</Category>
+
+		<Category Name="地质遗迹分类" Code="DLBM" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>011</Code>
+					<Name>缓冲区2×2Km</Name>
+					<Color>240, 4, 70</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>012</Code>
+					<Name>缓冲区4×4Km</Name>
+					<Color>255, 198, 202</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>013</Code>
+					<Name>缓冲区6×6Km</Name>
+					<Color>223, 249, 203</Color>
+				</ColorItem>
+
+			</ColorItems>
+		</Category>
+		<Category Name="矿山占地分类" Code="DLBM" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>011</Code>
+					<Name>中转场地、矿山建筑</Name>
+					<Color>223, 249, 203</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>012</Code>
+					<Name>采场</Name>
+					<Color>255, 198, 202</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>013</Code>
+					<Name>塌陷地、固体废弃物</Name>
+					<Color>240, 4, 70</Color>
+				</ColorItem>
+
+			</ColorItems>
+		</Category>
+		<!-- 双评价分析 -->
+		<!-- 双评价成果 -->
+		<Category Name="生态保护重要性成果" Code="Value" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>1</Code>
+					<Name>一般重要</Name>
+					<Color>255, 255, 255</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>2</Code>
+					<Name>重要</Name>
+					<Color>49,173,105</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>3</Code>
+					<Name>极重要</Name>
+					<Color>240, 4, 70</Color>
+				</ColorItem>
+
+			</ColorItems>
+		</Category>
+		<Category Name="畜牧业生产适宜性成果" Code="Value" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>-1</Code>
+					<Name>生态极重要</Name>
+					<Color>25,179,177</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0</Code>
+					<Name>不适宜</Name>
+					<Color>255, 255, 255</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1</Code>
+					<Name>一般适宜</Name>
+					<Color>85,255,0</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>2</Code>
+					<Name>适宜</Name>
+					<Color>220, 37, 67</Color>
+				</ColorItem>
+
+			</ColorItems>
+		</Category>
+		<Category Name="种植业生产适宜性成果" Code="Value" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>0</Code>
+					<Name>生态极重要</Name>
+					<Color>25,179,177</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1</Code>
+					<Name>不适宜</Name>
+					<Color>255, 255, 255</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>2</Code>
+					<Name>一般适宜</Name>
+					<Color>85,255,0</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>3</Code>
+					<Name>适宜</Name>
+					<Color>220, 37, 67</Color>
+				</ColorItem>
+
+			</ColorItems>
+		</Category>
+		<Category Name="城镇建设适宜性成果" Code="Value" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>-1</Code>
+					<Name>生态极重要</Name>
+					<Color>25,179,177</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0</Code>
+					<Name>靶区范围外</Name>
+					<Color>225, 225, 225</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1</Code>
+					<Name>不适宜</Name>
+					<Color>255, 255, 255</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>2</Code>
+					<Name>一般适宜</Name>
+					<Color>85,255,0</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>3</Code>
+					<Name>适宜</Name>
+					<Color>220, 37, 67</Color>
+				</ColorItem>
+
+			</ColorItems>
+		</Category>
+		<!-- 双评价数据集-->
+		<Category Name="生物多样性维护功能重要性因子" Code="Value" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>1</Code>
+					<Name>一般重要</Name>
+					<Color>255, 255, 255</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>2</Code>
+					<Name>重要</Name>
+					<Color>49,173,105</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>3</Code>
+					<Name>极重要</Name>
+					<Color>240, 4, 70</Color>
+				</ColorItem>
+
+			</ColorItems>
+		</Category>
+		<Category Name="水源涵养功能重要性因子" Code="Value" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>1</Code>
+					<Name>一般重要</Name>
+					<Color>255, 255, 255</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>2</Code>
+					<Name>重要</Name>
+					<Color>49,173,105</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>3</Code>
+					<Name>极重要</Name>
+					<Color>240, 4, 70</Color>
+				</ColorItem>
+
+			</ColorItems>
+		</Category>
+		<Category Name="水土保持功能重要性因子" Code="Value" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>1</Code>
+					<Name>一般重要</Name>
+					<Color>255, 255, 255</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>2</Code>
+					<Name>重要</Name>
+					<Color>49,173,105</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>3</Code>
+					<Name>极重要</Name>
+					<Color>240, 4, 70</Color>
+				</ColorItem>
+
+			</ColorItems>
+		</Category>
+		<Category Name="防风固沙功能重要性因子" Code="Value" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>1</Code>
+					<Name>一般重要</Name>
+					<Color>255, 255, 255</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>2</Code>
+					<Name>重要</Name>
+					<Color>49,173,105</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>3</Code>
+					<Name>极重要</Name>
+					<Color>240, 4, 70</Color>
+				</ColorItem>
+
+			</ColorItems>
+		</Category>
+		<Category Name="生态服务功能重要性因子" Code="Value" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>1</Code>
+					<Name>一般重要</Name>
+					<Color>255, 255, 255</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>2</Code>
+					<Name>重要</Name>
+					<Color>49,173,105</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>3</Code>
+					<Name>极重要</Name>
+					<Color>240, 4, 70</Color>
+				</ColorItem>
+
+			</ColorItems>
+		</Category>
+		<Category Name="生态敏感性重要性因子" Code="Value" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>1</Code>
+					<Name>不敏感</Name>
+					<Color>255, 255, 255</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>2</Code>
+					<Name>一般敏感</Name>
+					<Color>49,173,105</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>3</Code>
+					<Name>敏感</Name>
+					<Color>240, 4, 70</Color>
+				</ColorItem>
+
+			</ColorItems>
+		</Category>
+		<Category Name="沙化敏感性因子" Code="Value" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>1</Code>
+					<Name>不敏感</Name>
+					<Color>255, 255, 255</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>2</Code>
+					<Name>一般敏感</Name>
+					<Color>49,173,105</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>3</Code>
+					<Name>敏感</Name>
+					<Color>240, 4, 70</Color>
+				</ColorItem>
+
+			</ColorItems>
+		</Category>
+		<Category Name="石漠化敏感性因子" Code="Value" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>1</Code>
+					<Name>不敏感</Name>
+					<Color>255, 255, 255</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>2</Code>
+					<Name>一般敏感</Name>
+					<Color>49,173,105</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>3</Code>
+					<Name>敏感</Name>
+					<Color>240, 4, 70</Color>
+				</ColorItem>
+
+			</ColorItems>
+		</Category>
+		<Category Name="水土流失敏感性因子" Code="Value" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>1</Code>
+					<Name>不敏感</Name>
+					<Color>255, 255, 255</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>2</Code>
+					<Name>一般敏感</Name>
+					<Color>49,173,105</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>3</Code>
+					<Name>敏感</Name>
+					<Color>240, 4, 70</Color>
+				</ColorItem>
+
+			</ColorItems>
+		</Category>
+
+		<!-- 永久基本农田图表应用-->
+		<Category Name="永久基本农田按工作分类" Code="DLBM" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>01</Code>
+					<Name>耕地</Name>
+					<Color>255,255,100</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>02</Code>
+					<Name>非耕地</Name>
+					<Color>220,100,120</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0101</Code>
+					<Name>水田</Name>
+					<Color>248,208,114</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0102</Code>
+					<Name>水浇地</Name>
+					<Color>252,234,158</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0103</Code>
+					<Name>旱地</Name>
+					<Color>255,251,177</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>其他农用地</Name>
+					<Color>232,221,6</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>05H1,0508,0601,0602,0603,0701,0702,08H1,08H2,08H2A,0809,0810,0810A,09,1001,1002,1003,1004,1005,1007,1008,1009,1109,1201</Code>
+					<Name>建设用地</Name>
+					<Color>229,103,102</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0404,1101,1102,1105,1106,1108,1110,1204,1205,1206,1207</Code>
+					<Name>未利用地</Name>
+					<Color>215,200,185</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+
+		<Category Name="永久基本农田按三大类" Code="DLBM" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>0101,0102,0103,0201,0201K,0202,0202K,0203,0203K,0204,0204K,0301,0301K,0302,0302K,0303,0304,0305,0306,0307,0307K,0401,0402,0403,0403K,1006,1103,1104,1104A,1104K,1107,1107A,1202,1203</Code>
+					<Name>农用地</Name>
+					<Color>0,153,102</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>05H1,0508,0601,0602,0603,0701,0702,08H1,08H2,08H2A,0809,0810,0810A,09,1001,1002,1003,1004,1005,1007,1008,1009,1109,1201</Code>
+					<Name>建设用地</Name>
+					<Color>229,103,102</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0404,1101,1102,1105,1106,1108,1110,1204,1205,1206,1207</Code>
+					<Name>未利用地</Name>
+					<Color>215,200,185</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>01</Code>
+					<Name>耕地</Name>
+					<Color>255,255,100</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>其他农用地</Name>
+					<Color>232,221,6</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>20</Code>
+					<Name>城镇村及工矿用地</Name>
+					<Color>220,100,120</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1001,1002,1003,1004,1005,1006,1007,1008,1009</Code>
+					<Name>交通运输用地</Name>
+					<Color>209,201,211</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>其他建设用地</Name>
+					<Color>226,161,149</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+
+		<Category Name="永久基本农田耕地质量等别" Code="ZLDJ" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code></Code>
+					<Name>低</Name>
+					<Color>118, 161, 36</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>中</Name>
+					<Color>223, 249, 203</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>高</Name>
+					<Color>255, 198, 202</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>优</Name>
+					<Color>240, 4, 70</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+
+		<Category Name="东北黑土地土壤类型" Code="tulei" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code></Code>
+					<Name>暗棕壤</Name>
+					<Color>157,132,50</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>白浆土</Name>
+					<Color>173,201,213</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>草甸土</Name>
+					<Color>41,219,168</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>黑钙土</Name>
+					<Color>148,151,60</Color>
+
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>黑土</Name>
+					<Color>232,225,219</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>水稻土</Name>
+					<Color>88,238,79</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>棕壤</Name>
+					<Color>230,139,85</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+
+		<Category Name="永久基本农田耕地分等定级" Code="ZLDJ" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code></Code>
+					<Name>1</Name>
+					<Color>250,250,100</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>2</Name>
+					<Color>252,237,93</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>3</Name>
+					<Color>252,219,86</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>4</Name>
+					<Color>252,203,78</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>5</Name>
+					<Color>252,189,71</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>6</Name>
+					<Color>252,1,5,66</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>7</Name>
+					<Color>252,160,61</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>8</Name>
+					<Color>250,141,52</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>9</Name>
+					<Color>250,128,47</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>10</Name>
+					<Color>247,114,42</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>11</Name>
+					<Color>245,99,37</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>12</Name>
+					<Color>242,81,31</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>13</Name>
+					<Color>240,67,29</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>14</Name>
+					<Color>237,45,24</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>15</Name>
+					<Color>232,21,21</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+		<Category Name="永久基本农田恢复属性详情" Code="ZLDJ" desc="">
+			<ColorItems>
+			</ColorItems>
+		</Category>
+
+		<!-- 草地图表应用-->
+		<Category Name="草地分类" Code="DLBM" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>04</Code>
+					<Name>草地</Name>
+					<Color>170,190,30</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0401</Code>
+					<Name>天然牧草地</Name>
+					<Color>131,194,56</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0403,0403K</Code>
+					<Name>人工牧草地</Name>
+					<Color>154,206,127</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0404</Code>
+					<Name>其他草地</Name>
+					<Color>200,227,160</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0403K</Code>
+					<Name>可调整人工牧草地</Name>
+					<Color>154,206,127</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0403K</Code>
+					<Name>可调整人工牧草地</Name>
+					<Color>154,206,127</Color>
+				</ColorItem>
+			</ColorItems>							
+		</Category>
+		<!-- 种植园用地图表应用-->
+		<Category Name="种植园用地分类" Code="DLBM" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>02</Code>
+					<Name>种植园用地</Name>
+					<Color>214,167,201</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0201,0201K</Code>
+					<Name>果园</Name>
+					<Color>214,167,201</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0202,0202K</Code>
+					<Name>茶园</Name>
+					<Color>213,167,176</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0203,0203K</Code>
+					<Name>橡胶园</Name>
+					<Color>231,204,226</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0204,0204K</Code>
+					<Name>其他园地</Name>
+					<Color>231,204,226</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>02</Code>
+					<Name>可调整园地</Name>
+					<Color>214,167,201</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0201K</Code>
+					<Name>可调整果园</Name>
+					<Color>214,167,201</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0202K</Code>
+					<Name>可调整茶园</Name>
+					<Color>213,167,176</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0203K</Code>
+					<Name>可调整橡胶园</Name>
+					<Color>231,204,226</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0204K</Code>
+					<Name>可调整其他园地</Name>
+					<Color>231,204,226</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+		<!-- 土地利用现状图表应用-->
+		<Category Name="三调地类分类" Code="DLBM" desc="">
+			<ColorItems>
+
+				<ColorItem>
+					<Code>0303,0304,0306,0402,0603,1105,1106,1108</Code>
+					<Name>湿地</Name>
+					<Color>185,224,202</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>0101,0102,0103</Code>
+					<Name>耕地</Name>
+					<Color>255,251,177</Color>
+				</ColorItem>			
+				<ColorItem>
+					<Code>0201,0201K,0202,0202K,0203,0203K,0204,0204K</Code>
+					<Name>种植园用地</Name>
+					<Color>214,167,201</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>0301,0302,0305,0307,0301K,0302K,0307K</Code>
+					<Name>林地</Name>
+					<Color>49,173,105</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>0401,0403,0404,0403K</Code>
+					<Name>草地</Name>
+					<Color>131,194,56</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>05H1,0508</Code>
+					<Name>商业服务业用地</Name>
+					<Color>226,161,149</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>0601,0602</Code>
+					<Name>工矿用地</Name>
+					<Color>197,154,140</Color>
+				</ColorItem>      
+
+				<ColorItem>
+					<Code>0701,0702</Code>
+					<Name>住宅用地</Name>
+					<Color>229,103,102</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>08H1,08H2,0809,0810,08H2A,0810A</Code>
+					<Name>公共管理与公共服务用地</Name>
+					<Color>241,165,180</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>09</Code>
+					<Name>特殊用地</Name>
+					<Color>193,114,97</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>1001,1002,1003,1004,1005,1006,1007,1008,1009</Code>
+					<Name>交通运输用地</Name>
+					<Color>210,216,201</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>1101,1102,1103,1104,1107,1109,1110,1104A,1104K,1107A</Code>
+					<Name>水域及水利设施用地</Name>
+					<Color>163,214,245</Color>
+				</ColorItem>		
+
+				<ColorItem>
+					<Code>1201,1202,1203,1204,1205,1206,1207</Code>
+					<Name>其他土地</Name>
+					<Color>200,190,170</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>0101,0102,0103,0201,0201K,0202,0202K,0203,0203K,0204,0204K,0301,0301K,0302,0302K,0303,0304,0305,0306,0307,0307K,0401,0402,0403,0403K,1006,1103,1104,1104A,1104K,1107,1107A,1202,1203</Code>
+					<Name>农用地</Name>
+					<Color>0,153,102</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>05H1,0508,0601,0602,0603,0701,0702,08H1,08H2,08H2A,0809,0810,0810A,09,1001,1002,1003,1004,1005,1007,1008,1009,1109,1201</Code>
+					<Name>建设用地</Name>
+					<Color>255,102,0</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0404,1101,1102,1105,1106,1108,1110,1204,1205,1206,1207</Code>
+					<Name>未利用地</Name>
+					<Color>255,255,102</Color>
+				</ColorItem>
+
+			</ColorItems>
+		</Category>
+
+		<!-- 林地图表应用-->
+		<Category Name="林地分类" Code="DLBM" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>0301,0302,0305,0307,0301K,0302K,0307K</Code>
+					<Name>林地</Name>
+					<Color>49,173,105</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0301,0301K</Code>
+					<Name>乔木林地</Name>
+					<Color>49,173,105</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0302,0302K</Code>
+					<Name>竹林地</Name>
+					<Color>49,173,105</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0305</Code>
+					<Name>灌木林地</Name>
+					<Color>100,185,104</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0307,0307K</Code>
+					<Name>其他林地</Name>
+					<Color>151,207,178</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0301K</Code>
+					<Name>可调整乔木林地</Name>
+					<Color>49,173,105</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0302K</Code>
+					<Name>可调整竹林地</Name>
+					<Color>49,173,105</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0307K</Code>
+					<Name>可调整其他林地</Name>
+					<Color>151,207,178</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+
+		<Category Name="湿地公约口径分类" Code="DLBM" desc="">
+			<ColorItems>
+
+				<ColorItem>
+					<Code>0303,0304,0306,0402,0603,1105,1106,1108</Code>
+					<Name>湿地</Name>
+					<Color>185,224,202</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>11</Code>
+					<Name>水域及水利设施用地</Name>
+					<Color>163,214,245</Color>
+				</ColorItem>			
+
+
+			</ColorItems>
+		</Category>
+
+		<Category Name="水域及水利设施用地分类" Code="DLBM" desc="">
+			<ColorItems>	
+				<ColorItem>
+					<Code>1101</Code>
+					<Name>河流水面</Name>
+					<Color>163,214,245</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1102</Code>
+					<Name>湖泊水面</Name>
+					<Color>163,214,245</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1103</Code>
+					<Name>水库水面</Name>
+					<Color>163,214,245</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1104</Code>
+					<Name>坑塘水面</Name>
+					<Color>144,170,207</Color>
+				</ColorItem>      
+				<ColorItem>
+					<Code>1107</Code>
+					<Name>沟渠</Name>
+					<Color>160,205,240</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1107A</Code>
+					<Name>干渠</Name>
+					<Color>160,205,240</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1104A</Code>
+					<Name>养殖坑塘</Name>
+					<Color>144,170,207</Color>
+				</ColorItem>  
+				<ColorItem>
+					<Code>1109</Code>
+					<Name>水工建筑用地</Name>
+					<Color>230,130,100</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1110</Code>
+					<Name>冰川及永久积雪</Name>
+					<Color>215,237,251</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1104K</Code>
+					<Name>可调整养殖坑塘</Name>
+					<Color>144,170,207</Color>
+				</ColorItem> 
+			</ColorItems>
+		</Category>
+		<Category Name="权属" Code="QSXZ" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code/>
+					<Name>国有</Name>
+					<Color>247,48,18</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code/>
+					<Name>集体</Name>
+					<Color>12,182,228</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+		<Category Name="耕地类型" Code="GDLX" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code/>
+					<Name>平地</Name>
+					<Color>220,233,156</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>PD</Code>
+					<Name>坡地</Name>
+					<Color>160,218,67</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>TT</Code>
+					<Name>梯田</Name>
+					<Color>49,181,115</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+		<Category Name="田坎系数数字" Code="TKXS" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code></Code>
+					<Name>≤5%</Name>
+					<Color>85,145,0</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>5%-10%</Name>
+					<Color>164,196,0</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>10%-15%</Name>
+					<Color>255,255,0</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>15%-25%</Name>
+					<Color>255,119,0</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>>25%</Name>
+					<Color>255,38,0</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+		<Category Name="公路宽度" Code="TKXS" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code></Code>
+					<Name>≤5m</Name>
+					<Color>255,248,225</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>5-10m</Name>
+					<Color>255,236,179</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>10-20m</Name>
+					<Color>255,213,79</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>20-50m</Name>
+					<Color>255,193,7</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>50-100m</Name>
+					<Color>255,160,0</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>>100m</Name>
+					<Color>255,111,0</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+		<Category Name="河流宽度" Code="TKXS" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code></Code>
+					<Name>≤5米</Name>
+					<Color>130,177,255</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>5-10米</Name>
+					<Color>187,222,251</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>10-20米</Name>
+					<Color>144,202,249</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>20-50米</Name>
+					<Color>100,181,246</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>50-100米</Name>
+					<Color>33,150,243</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>100-200米</Name>
+					<Color>25,118,210</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>>200米</Name>
+					<Color>13,71,161</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+
+		<!-- 流量分析图表应用-->
+		<Category Name="二三调一级分类" Code="DLBM" desc="">
+			<ColorItems>
+
+				<ColorItem>
+					<Code>0303,0304,0306,0402,0603,1105,1106,1108</Code>
+					<Name>湿地</Name>
+					<Color>185,224,202</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>0101,0102,0103</Code>
+					<Name>耕地</Name>
+					<Color>255,251,177</Color>
+				</ColorItem>			
+				<ColorItem>
+					<Code>0201,0201K,0202,0202K,0203,0203K,0204,0204K</Code>
+					<Name>种植园用地</Name>
+					<Color>214,167,201</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>0301,0302,0305,0307,0301K,0302K,0307K</Code>
+					<Name>林地</Name>
+					<Color>49,173,105</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>0401,0403,0404,0403K</Code>
+					<Name>草地</Name>
+					<Color>131,194,56</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>05H1,0508</Code>
+					<Name>商业服务业用地</Name>
+					<Color>226,161,149</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>0601,0602</Code>
+					<Name>工矿用地</Name>
+					<Color>197,154,140</Color>
+				</ColorItem>      
+
+				<ColorItem>
+					<Code>0701,0702</Code>
+					<Name>住宅用地</Name>
+					<Color>229,103,102</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>08H1,08H2,0809,0810,08H2A,0810A</Code>
+					<Name>公共管理与公共服务用地</Name>
+					<Color>241,165,180</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>09</Code>
+					<Name>特殊用地</Name>
+					<Color>193,114,97</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>1001,1002,1003,1004,1005,1006,1007,1008,1009</Code>
+					<Name>交通运输用地</Name>
+					<Color>210,216,201</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>1101,1102,1103,1104,1107,1109,1110,1104A,1104K,1107A</Code>
+					<Name>水域及水利设施用地</Name>
+					<Color>163,214,245</Color>
+				</ColorItem>		
+
+				<ColorItem>
+					<Code>1101,1102,1103,1104,1107,1109,1110,1104A,1104K,1107A</Code>
+					<Name>水域</Name>
+					<Color>163,214,245</Color>
+				</ColorItem>	
+
+				<ColorItem>
+					<Code>1201,1202,1203,1204,1205,1206,1207</Code>
+					<Name>其他土地</Name>
+					<Color>200,190,170</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>02</Code>
+					<Name>园地</Name>
+					<Color>245,210,40</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>20</Code>
+					<Name>城镇村及工矿用地</Name>
+					<Color>220,100,120</Color>
+				</ColorItem>	
+				<ColorItem>
+					<Code>20</Code>
+					<Name>建设用地</Name>
+					<Color>220,100,120</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1109</Code>
+					<Name>水工建筑用地</Name>
+					<Color>230,130,100</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+
+		<Category Name="二三调一级分类变化" Code="DLBM" desc="">
+			<ColorItems>
+
+				<ColorItem>
+					<Code>0303,0304,0306,0402,0603,1105,1106,1108</Code>
+					<Name>湿地</Name>
+					<Color>185,224,202</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>0101,0102,0103</Code>
+					<Name>耕地</Name>
+					<Color>255,251,177</Color>
+				</ColorItem>			
+				<ColorItem>
+					<Code>0201,0201K,0202,0202K,0203,0203K,0204,0204K</Code>
+					<Name>种植园用地</Name>
+					<Color>214,167,201</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>0301,0302,0305,0307,0301K,0302K,0307K</Code>
+					<Name>林地</Name>
+					<Color>49,173,105</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>0401,0403,0404,0403K</Code>
+					<Name>草地</Name>
+					<Color>131,194,56</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>05H1,0508</Code>
+					<Name>商业服务业用地</Name>
+					<Color>226,161,149</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>0601,0602</Code>
+					<Name>工矿用地</Name>
+					<Color>197,154,140</Color>
+				</ColorItem>      
+
+				<ColorItem>
+					<Code>0701,0702</Code>
+					<Name>住宅用地</Name>
+					<Color>229,103,102</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>08H1,08H2,0809,0810,08H2A,0810A</Code>
+					<Name>公共管理与公共服务用地</Name>
+					<Color>241,165,180</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>09</Code>
+					<Name>特殊用地</Name>
+					<Color>193,114,97</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>1001,1002,1003,1004,1005,1006,1007,1008,1009</Code>
+					<Name>交通运输用地</Name>
+					<Color>210,216,201</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>1101,1102,1103,1104,1107,1109,1110,1104A,1104K,1107A</Code>
+					<Name>水域及水利设施用地</Name>
+					<Color>163,214,245</Color>
+				</ColorItem>		
+
+				<ColorItem>
+					<Code>1101,1102,1103,1104,1107,1109,1110,1104A,1104K,1107A</Code>
+					<Name>水域</Name>
+					<Color>163,214,245</Color>
+				</ColorItem>	
+
+				<ColorItem>
+					<Code>1201,1202,1203,1204,1205,1206,1207</Code>
+					<Name>其他土地</Name>
+					<Color>200,190,170</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>02</Code>
+					<Name>园地</Name>
+					<Color>214,167,201</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>20</Code>
+					<Name>城镇村及工矿用地</Name>
+					<Color>220,100,120</Color>
+				</ColorItem>	
+			</ColorItems>
+		</Category>
+
+		<Category Name="二三调二级分类" Code="DLBM" desc="">
+			<ColorItems>		
+				<ColorItem>
+					<Code>0303</Code>
+					<Name>红树林地</Name>
+					<Color>49,173,105</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0304</Code>
+					<Name>森林沼泽</Name>
+					<Color>49,173,105</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0306</Code>
+					<Name>灌丛沼泽</Name>
+					<Color>100,185,104</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0402</Code>
+					<Name>沼泽草地</Name>
+					<Color>131,194,56</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0603</Code>
+					<Name>盐田</Name>
+					<Color>0,147,221</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1105</Code>
+					<Name>沿海滩涂</Name>
+					<Color>179,222,248</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1106</Code>
+					<Name>内陆滩涂</Name>
+					<Color>179,222,248</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1108</Code>
+					<Name>沼泽地</Name>
+					<Color>175,200,220</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>0101</Code>
+					<Name>水田</Name>
+					<Color>248,208,114</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0102</Code>
+					<Name>水浇地</Name>
+					<Color>252,234,158</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0103</Code>
+					<Name>旱地</Name>
+					<Color>255,251,177</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>0201,0201K</Code>
+					<Name>果园</Name>
+					<Color>214,167,201</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0202,0202K</Code>
+					<Name>茶园</Name>
+					<Color>213,167,176</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0203,0203K</Code>
+					<Name>橡胶园</Name>
+					<Color>231,204,226</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0204,0204K</Code>
+					<Name>其他园地</Name>
+					<Color>231,204,226</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>023</Code>
+					<Name>其它园地</Name>
+					<Color>250,185,20</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0301,0301K</Code>
+					<Name>乔木林地</Name>
+					<Color>49,173,105</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0302,0302K</Code>
+					<Name>竹林地</Name>
+					<Color>49,173,105</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0305</Code>
+					<Name>灌木林地</Name>
+					<Color>100,185,104</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0307,0307K</Code>
+					<Name>其他林地</Name>
+					<Color>151,207,178</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>0401</Code>
+					<Name>天然牧草地</Name>
+					<Color>131,194,56</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0403,0403K</Code>
+					<Name>人工牧草地</Name>
+					<Color>154,206,127</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0404</Code>
+					<Name>其他草地</Name>
+					<Color>200,227,160</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>05H1</Code>
+					<Name>商业服务业设施用地</Name>
+					<Color>226,161,149</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0508</Code>
+					<Name>物流仓储用地</Name>
+					<Color>197,154,140</Color>
+				</ColorItem>		
+
+				<ColorItem>
+					<Code>0601</Code>
+					<Name>工业用地</Name>
+					<Color>197,154,140</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0602</Code>
+					<Name>采矿用地</Name>
+					<Color>197,154,140</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>0701</Code>
+					<Name>城镇住宅用地</Name>
+					<Color>229,103,102</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0702</Code>
+					<Name>农村宅基地</Name>
+					<Color>236,137,138</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>08H1</Code>
+					<Name>机关团体新闻出版用地</Name>
+					<Color>241,165,180</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>08H2,08H2A</Code>
+					<Name>科教文卫用地</Name>
+					<Color>241,165,180</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0809</Code>
+					<Name>公用设施用地</Name>
+					<Color>241,165,180</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0810,0810A</Code>
+					<Name>公园与绿地</Name>
+					<Color>129,195,93</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>09</Code>
+					<Name>特殊用地</Name>
+					<Color>193,114,97</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>1001</Code>
+					<Name>铁路用地</Name>
+					<Color>178,170,176</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1002</Code>
+					<Name>轨道交通用地</Name>
+					<Color>209,201,211</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1003</Code>
+					<Name>公路用地</Name>
+					<Color>210,216,201</Color>
+				</ColorItem>      
+				<ColorItem>
+					<Code>1004</Code>
+					<Name>城镇村道路用地</Name>
+					<Color>222,222,221</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1005</Code>
+					<Name>交通服务场站用地</Name>
+					<Color>170,169,169</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1006</Code>
+					<Name>农村道路</Name>
+					<Color>194,193,193</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1007</Code>
+					<Name>机场用地</Name>
+					<Color>235,137,126</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1008</Code>
+					<Name>港口码头用地</Name>
+					<Color>235,137,126</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1009</Code>
+					<Name>管道运输用地</Name>
+					<Color>235,137,126</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>1101</Code>
+					<Name>河流水面</Name>
+					<Color>163,214,245</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1102</Code>
+					<Name>湖泊水面</Name>
+					<Color>163,214,245</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1103</Code>
+					<Name>水库水面</Name>
+					<Color>163,214,245</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1104,1104A,1104K</Code>
+					<Name>坑塘水面</Name>
+					<Color>144,170,207</Color>
+				</ColorItem>      
+				<ColorItem>
+					<Code>1107,1107A</Code>
+					<Name>沟渠</Name>
+					<Color>160,205,240</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1109</Code>
+					<Name>水工建筑用地</Name>
+					<Color>230,130,100</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1110</Code>
+					<Name>冰川及永久积雪</Name>
+					<Color>215,237,251</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>1201</Code>
+					<Name>空闲地</Name>
+					<Color>225,220,225</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1202</Code>
+					<Name>设施农用地</Name>
+					<Color>220,180,130</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1203</Code>
+					<Name>田坎</Name>
+					<Color>200,182,178</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1204</Code>
+					<Name>盐碱地</Name>
+					<Color>200,204,210</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1205</Code>
+					<Name>沙地</Name>
+					<Color>200,190,170</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1206</Code>
+					<Name>裸土地</Name>
+					<Color>215,200,185</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1207</Code>
+					<Name>裸岩石砾地</Name>
+					<Color>222,221,214</Color>
+				</ColorItem>	
+				<ColorItem>
+					<Code>031</Code>
+					<Name>有林地</Name>
+					<Color>40,140,0</Color>
+				</ColorItem>	
+				<ColorItem>
+					<Code>103</Code>
+					<Name>街巷用地</Name>
+					<Color>180,80,30</Color>
+				</ColorItem>				
+				<ColorItem>
+					<Code>127</Code>
+					<Name>裸地</Name>
+					<Color>215,200,185</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>201</Code>
+					<Name>城市</Name>
+					<Color>220,100,120</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>202</Code>
+					<Name>建制镇</Name>
+					<Color>220,100,120</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>203</Code>
+					<Name>村庄</Name>
+					<Color>230,140,160</Color>
+				</ColorItem>				
+
+				<ColorItem>
+					<Code>205</Code>
+					<Name>风景名胜及特殊用地</Name>
+					<Color>230,120,130</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>20</Code>
+					<Name>城镇村及工矿用地</Name>
+					<Color>220,100,120</Color>
+				</ColorItem>	
+				<ColorItem>
+					<Code>1001,1002,1003,1004,1005,1006,1007,1008,1009</Code>
+					<Name>交通运输用地</Name>
+					<Color>210,216,201</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1109</Code>
+					<Name>水工建筑用地</Name>
+					<Color>230,130,100</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+
+		<Category Name="三调一二级分类" Code="DLBM" desc="">
+			<ColorItems>	
+
+				<ColorItem>
+					<Code>0303,0304,0306,0402,0603,1105,1106,1108</Code>
+					<Name>湿地</Name>
+					<Color>185,224,202</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>0101,0102,0103</Code>
+					<Name>耕地</Name>
+					<Color>255,251,177</Color>
+				</ColorItem>			
+				<ColorItem>
+					<Code>0201,0201K,0202,0202K,0203,0203K,0204,0204K</Code>
+					<Name>种植园用地</Name>
+					<Color>214,167,201</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>0301,0302,0305,0307,0301K,0302K,0307K</Code>
+					<Name>林地</Name>
+					<Color>49,173,105</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>0401,0403,0404,0403K</Code>
+					<Name>草地</Name>
+					<Color>131,194,56</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>05H1,0508</Code>
+					<Name>商业服务业用地</Name>
+					<Color>226,161,149</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>0601,0602</Code>
+					<Name>工矿用地</Name>
+					<Color>197,154,140</Color>
+				</ColorItem>      
+
+				<ColorItem>
+					<Code>0701,0702</Code>
+					<Name>住宅用地</Name>
+					<Color>229,103,102</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>08H1,08H2,0809,0810,08H2A,0810A</Code>
+					<Name>公共管理与公共服务用地</Name>
+					<Color>241,165,180</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>09</Code>
+					<Name>特殊用地</Name>
+					<Color>193,114,97</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>1001,1002,1003,1004,1005,1006,1007,1008,1009</Code>
+					<Name>交通运输用地</Name>
+					<Color>210,216,201</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>1101,1102,1103,1104,1107,1109,1110,1104A,1104K,1107A</Code>
+					<Name>水域及水利设施用地</Name>
+					<Color>163,214,245</Color>
+				</ColorItem>		
+
+				<ColorItem>
+					<Code>1201,1202,1203,1204,1205,1206,1207</Code>
+					<Name>其他土地</Name>
+					<Color>200,190,170</Color>
+				</ColorItem>
+			
+				<ColorItem>
+					<Code>0303</Code>
+					<Name>红树林地</Name>
+					<Color>49,173,105</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0304</Code>
+					<Name>森林沼泽</Name>
+					<Color>49,173,105</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0306</Code>
+					<Name>灌丛沼泽</Name>
+					<Color>100,185,104</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0402</Code>
+					<Name>沼泽草地</Name>
+					<Color>131,194,56</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0603</Code>
+					<Name>盐田</Name>
+					<Color>0,147,221</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1105</Code>
+					<Name>沿海滩涂</Name>
+					<Color>179,222,248</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1106</Code>
+					<Name>内陆滩涂</Name>
+					<Color>179,222,248</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1108</Code>
+					<Name>沼泽地</Name>
+					<Color>175,200,220</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>0101</Code>
+					<Name>水田</Name>
+					<Color>248,208,114</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0102</Code>
+					<Name>水浇地</Name>
+					<Color>252,234,158</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0103</Code>
+					<Name>旱地</Name>
+					<Color>255,251,177</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>0201,0201K</Code>
+					<Name>果园</Name>
+					<Color>214,167,201</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0202,0202K</Code>
+					<Name>茶园</Name>
+					<Color>213,167,176</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0203,0203K</Code>
+					<Name>橡胶园</Name>
+					<Color>231,204,226</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0204,0204K</Code>
+					<Name>其他园地</Name>
+					<Color>231,204,226</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>0301,0301K</Code>
+					<Name>乔木林地</Name>
+					<Color>49,173,105</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0302,0302K</Code>
+					<Name>竹林地</Name>
+					<Color>49,173,105</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0305</Code>
+					<Name>灌木林地</Name>
+					<Color>100,185,104</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0307,0307K</Code>
+					<Name>其他林地</Name>
+					<Color>151,207,178</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>0401</Code>
+					<Name>天然牧草地</Name>
+					<Color>131,194,56</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0403,0403K</Code>
+					<Name>人工牧草地</Name>
+					<Color>154,206,127</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0404</Code>
+					<Name>其他草地</Name>
+					<Color>200,227,160</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>05H1</Code>
+					<Name>商业服务业设施用地</Name>
+					<Color>226,161,149</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0508</Code>
+					<Name>物流仓储用地</Name>
+					<Color>197,154,140</Color>
+				</ColorItem>		
+
+				<ColorItem>
+					<Code>0601</Code>
+					<Name>工业用地</Name>
+					<Color>197,154,140</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0602</Code>
+					<Name>采矿用地</Name>
+					<Color>197,154,140</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>0701</Code>
+					<Name>城镇住宅用地</Name>
+					<Color>229,103,102</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0702</Code>
+					<Name>农村宅基地</Name>
+					<Color>236,137,138</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>08H1</Code>
+					<Name>机关团体新闻出版用地</Name>
+					<Color>241,165,180</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>08H2,08H2A</Code>
+					<Name>科教文卫用地</Name>
+					<Color>241,165,180</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0809</Code>
+					<Name>公用设施用地</Name>
+					<Color>241,165,180</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>0810,0810A</Code>
+					<Name>公园与绿地</Name>
+					<Color>129,195,93</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>09</Code>
+					<Name>特殊用地</Name>
+					<Color>193,114,97</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>1001</Code>
+					<Name>铁路用地</Name>
+					<Color>178,170,176</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1002</Code>
+					<Name>轨道交通用地</Name>
+					<Color>209,201,211</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1003</Code>
+					<Name>公路用地</Name>
+					<Color>210,216,201</Color>
+				</ColorItem>      
+				<ColorItem>
+					<Code>1004</Code>
+					<Name>城镇村道路用地</Name>
+					<Color>222,222,221</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1005</Code>
+					<Name>交通服务场站用地</Name>
+					<Color>170,169,169</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1006</Code>
+					<Name>农村道路</Name>
+					<Color>194,193,193</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1007</Code>
+					<Name>机场用地</Name>
+					<Color>235,137,126</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1008</Code>
+					<Name>港口码头用地</Name>
+					<Color>235,137,126</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1009</Code>
+					<Name>管道运输用地</Name>
+					<Color>235,137,126</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>1101</Code>
+					<Name>河流水面</Name>
+					<Color>163,214,245</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1102</Code>
+					<Name>湖泊水面</Name>
+					<Color>163,214,245</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1103</Code>
+					<Name>水库水面</Name>
+					<Color>163,214,245</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1104,1104A,1104K</Code>
+					<Name>坑塘水面</Name>
+					<Color>144,170,207</Color>
+				</ColorItem>      
+				<ColorItem>
+					<Code>1107,1107A</Code>
+					<Name>沟渠</Name>
+					<Color>160,205,240</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1109</Code>
+					<Name>水工建筑用地</Name>
+					<Color>230,130,100</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1110</Code>
+					<Name>冰川及永久积雪</Name>
+					<Color>215,237,251</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code>1201</Code>
+					<Name>空闲地</Name>
+					<Color>225,220,225</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1202</Code>
+					<Name>设施农用地</Name>
+					<Color>220,180,130</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1203</Code>
+					<Name>田坎</Name>
+					<Color>200,182,178</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1204</Code>
+					<Name>盐碱地</Name>
+					<Color>200,204,210</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1205</Code>
+					<Name>沙地</Name>
+					<Color>200,190,170</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1206</Code>
+					<Name>裸土地</Name>
+					<Color>215,200,185</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>1207</Code>
+					<Name>裸岩石砾地</Name>
+					<Color>222,221,214</Color>
+				</ColorItem>		
+			</ColorItems>
+		</Category>
+		
+		<Category Name="耕地变化" Code="DLBM" desc="">
+			<ColorItems>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>新增耕地</Name>
+					<Color>255,251,177</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>减少耕地</Name>
+					<Color>255,251,177</Color>
+				</ColorItem>			
+				<ColorItem>
+					<Code></Code>
+					<Name>新增水田</Name>
+					<Color>248,208,114</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>减少水田</Name>
+					<Color>248,208,114</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>新增水浇地</Name>
+					<Color>252,234,158</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>减少水浇地</Name>
+					<Color>252,234,158</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>新增旱地</Name>
+					<Color>255,251,177</Color>
+				</ColorItem>      
+
+				<ColorItem>
+					<Code></Code>
+					<Name>减少旱地</Name>
+					<Color>255,251,177</Color>
+				</ColorItem>			
+			</ColorItems>
+		</Category>
+
+		<Category Name="年降水范围" Code="DATA" desc="">
+			<ColorItems>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>年降水&lt;50</Name>
+					<Color>243,243,194</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>年降水50-200</Name>
+					<Color>180,225,185</Color>
+				</ColorItem>			
+				<ColorItem>
+					<Code></Code>
+					<Name>年降水200-400</Name>
+					<Color>103,196,190</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>年降水400-600</Name>
+					<Color>57,160,191</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>年降水600-800</Name>
+					<Color>43,112,177</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>年降水&gt;800</Name>
+					<Color>37,52,148</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>&gt;400mm</Name>
+					<Color>43,112,177</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>0-200mm</Name>
+					<Color>180,225,185</Color>
+				</ColorItem>			
+				<ColorItem>
+					<Code></Code>
+					<Name>200-400mm</Name>
+					<Color>103,196,190</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+
+		<Category Name="年降水范围简写" Code="DATA" desc="">
+			<ColorItems>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>&lt;50</Name>
+					<Color>243,243,194</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>&lt;200</Name>
+					<Color>243,243,194</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>&lt;200</Name>
+					<Color>243,243,194</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>50-200</Name>
+					<Color>180,225,185</Color>
+				</ColorItem>			
+				<ColorItem>
+					<Code></Code>
+					<Name>200-400</Name>
+					<Color>103,196,190</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>400-600</Name>
+					<Color>103,196,190</Color>
+				</ColorItem>
+
+
+
+				<ColorItem>
+					<Code></Code>
+					<Name>600-800</Name>
+					<Color>43,112,177</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>&gt;800</Name>
+					<Color>37,52,148</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>&gt;400</Name>
+					<Color>43,112,177</Color>
+				</ColorItem>
+
+
+
+			</ColorItems>
+		</Category>
+		<Category Name="年降水范围简写带年降水" Code="DATA" desc="">
+			<ColorItems>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>年降水&lt;50</Name>
+					<Color>243,243,194</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>年降水&lt;200</Name>
+					<Color>243,243,194</Color>
+				</ColorItem>						
+
+				<ColorItem>
+					<Code></Code>
+					<Name>年降水50-200</Name>
+					<Color>180,225,185</Color>
+				</ColorItem>			
+				<ColorItem>
+					<Code></Code>
+					<Name>年降水200-400</Name>
+					<Color>103,196,190</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>年降水400-600</Name>
+					<Color>103,196,190</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>年降水400-800</Name>
+					<Color>57,160,191</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>年降水600-800</Name>
+					<Color>57,160,191</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>年降水&gt;800</Name>
+					<Color>0,51,205</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>年降水&gt;400</Name>
+					<Color>57,160,191</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>年降水&lt;400</Name>
+					<Color>180,225,185</Color>
+				</ColorItem>		
+
+			</ColorItems>
+		</Category>
+		<Category Name="年降水范围简写2" Code="DATA" desc="">
+			<ColorItems>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>&lt;50</Name>
+					<Color>177,255,255</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>&lt;200</Name>
+					<Color>148,215,254</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>&lt;400</Name>
+					<Color>120,204,255</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>50-200</Name>
+					<Color>92,193,255</Color>
+				</ColorItem>			
+				<ColorItem>
+					<Code></Code>
+					<Name>200-400</Name>
+					<Color>63,183,255</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>400-600</Name>
+					<Color>35,172,255</Color>
+				</ColorItem>
+
+
+
+				<ColorItem>
+					<Code></Code>
+					<Name>600-800</Name>
+					<Color>7,162,254</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>&gt;400</Name>
+					<Color>0,146,233</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>&gt;800</Name>
+					<Color>0,128,205</Color>
+				</ColorItem>
+
+
+
+			</ColorItems>
+		</Category>
+
+		<Category Name="10°年积温范围" Code="DATA" desc="">
+			<ColorItems>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>10°年积温&lt;1600</Name>
+					<Color>26,150,65</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>寒温带</Name>
+					<Color>26,150,65</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>10°年积温1600-3400</Name>
+					<Color>166,217,106</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>中温带</Name>
+					<Color>166,217,106</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>10°年积温3400-4500</Name>
+					<Color>255,255,192</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>暖温带</Name>
+					<Color>255,255,192</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>10°年积温4500-8000</Name>
+					<Color>253,174,97</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>亚热带</Name>
+					<Color>253,174,97</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>10°年积温&gt;8000</Name>
+					<Color>215,25,28</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>热带</Name>
+					<Color>215,25,28</Color>
+				</ColorItem>
+
+			</ColorItems>
+		</Category>
+
+		<Category Name="10°年积温范围简称" Code="DATA" desc="">
+			<ColorItems>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>&lt;1600</Name>
+					<Color>26,150,65</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>寒温带</Name>
+					<Color>26,150,65</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>1600-3400</Name>
+					<Color>166,217,106</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>中温带</Name>
+					<Color>166,217,106</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>3400-4500</Name>
+					<Color>255,255,192</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>暖温带</Name>
+					<Color>255,255,192</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>4500-8000</Name>
+					<Color>253,174,97</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>亚热带</Name>
+					<Color>253,174,97</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>&gt;8000</Name>
+					<Color>215,25,28</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>热带</Name>
+					<Color>215,25,28</Color>
+				</ColorItem>
+
+			</ColorItems>
+		</Category>
+
+		<Category Name="干燥度" Code="DATA" desc="">
+			<ColorItems>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>极湿润</Name>
+					<Color>8,104,172</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>湿润</Name>
+					<Color>67,162,202</Color>
+				</ColorItem>			
+				<ColorItem>
+					<Code></Code>
+					<Name>半湿润</Name>
+					<Color>171,221,164</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>干旱</Name>
+					<Color>253,174,97</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>半干旱</Name>
+					<Color>255,255,191</Color>
+				</ColorItem>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>极干旱</Name>
+					<Color>238,110,14</Color>
+				</ColorItem>
+
+			</ColorItems>
+		</Category>
+
+		<Category Name="难以稳定利用耕地细化" Code="TBXHDM" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code></Code>
+					<Name>25度以上坡地</Name>
+					<Color>255,117,35</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>HDGD</Code>
+					<Name>河道耕地</Name>
+					<Color>180,235,247</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>HQGD</Code>
+					<Name>湖区耕地</Name>
+					<Color>123,228,249</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>LQGD</Code>
+					<Name>林区耕地</Name>
+					<Color>3,166,5</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>MQGD</Code>
+					<Name>牧区耕地</Name>
+					<Color>191,254,97</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>SHGD</Code>
+					<Name>沙荒耕地</Name>
+					<Color>206,196,102</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>SMGD</Code>
+					<Name>石漠化耕地</Name>
+					<Color>243,221,221</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>YJGD</Code>
+					<Name>盐碱耕地</Name>
+					<Color>200,204,210</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+
+		<Category Name="新增质量差耕地" Code="GDPDJB" desc="">
+			<ColorItems>
+
+				<ColorItem>
+					<Code>3,4</Code>
+					<Name>>15°</Name>
+					<Color>255,153,92</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>5</Code>
+					<Name>>25°</Name>
+					<Color>255,117,35</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>撂荒耕地</Name>
+					<Color>243,69,66</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+
+		<Category Name="自然保护区功能分区" Code="" desc="">
+			<ColorItems>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>核心区</Name>
+					<Color>255,173,179</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>缓冲区</Name>
+					<Color>188,243,184</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>实验区</Name>
+					<Color>174,224,241</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>外围保护地</Name>
+					<Color>252,189,160</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>保护区</Name>
+					<Color>21,167,3</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>湿地保护区</Name>
+					<Color>32,135,253</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+
+		<Category Name="三调林地与林地一张图" Code="" desc="">
+			<ColorItems>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>均为林地</Name>
+					<Color>49,173,105</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>三调非林地</Name>
+					<Color>255,223,32</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>林地一张图非林地</Name>
+					<Color>255,48,48</Color>
+				</ColorItem>	
+				<ColorItem>
+					<Code></Code>
+					<Name>林地一张图</Name>
+					<Color>40,140,0</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>三调林地</Name>
+					<Color>49,173,105</Color>
+				</ColorItem>	
+				<ColorItem>
+					<Code></Code>
+					<Name>乔木林地</Name>
+					<Color>49,173,105</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>竹林地</Name>
+					<Color>49,173,105</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>灌木林地</Name>
+					<Color>100,185,104</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>其他林地</Name>
+					<Color>151,207,178</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>乔木林</Name>
+					<Color>0,170,36</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>红树林</Name>
+					<Color>49,173,105</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>竹林</Name>
+					<Color>49,173,105</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>疏林地</Name>
+					<Color>190,255,111</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>特灌林地</Name>
+					<Color>255,255,119</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>其他灌木林地</Name>
+					<Color>214,200,78</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>未成林造林地</Name>
+					<Color>234,216,166</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>未成林封育地</Name>
+					<Color>236,221,97</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>苗圃地</Name>
+					<Color>0,255,77</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>采伐迹地</Name>
+					<Color>155,155,155</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>火烧迹地</Name>
+					<Color>252,174,165</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>其他无立木林地</Name>
+					<Color>225,240,210</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>宜林荒山荒地</Name>
+					<Color>126,173,228</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>宜林沙荒地</Name>
+					<Color>40,88,129</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>其他宜林地</Name>
+					<Color>80,227,194</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>林业辅助生产用地</Name>
+					<Color>204,204,204</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>其他地类</Name>
+					<Color>217,217,217</Color>
+				</ColorItem>				
+			</ColorItems>
+		</Category>
+		<Category Name="三调草地与草地一张图" Code="" desc="">
+			<ColorItems>
+
+				<ColorItem>
+					<Code></Code>
+					<Name>均为草地</Name>
+					<Color>49,173,105</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>三调非草地</Name>
+					<Color>255,223,32</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>草地一调非草地</Name>
+					<Color>255,48,48</Color>
+				</ColorItem>				
+			</ColorItems>
+		</Category>
+		<Category Name="农用地分等定级自然等" Code="" StyleID="NYDFD_GJZRD" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>1</Code>
+					<Name>1</Name>
+					<Color>250,250,100</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>2</Code>
+					<Name>2</Name>
+					<Color>252,237,93</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>3</Code>
+					<Name>3</Name>
+					<Color>252,219,86</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>4</Code>
+					<Name>4</Name>
+					<Color>252,203,78</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>5</Code>
+					<Name>5</Name>
+					<Color>252,189,71</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>6</Code>
+					<Name>6</Name>
+					<Color>252,175,66</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>7</Code>
+					<Name>7</Name>
+					<Color>252,160,61</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>8</Code>
+					<Name>8</Name>
+					<Color>250,141,52</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>9</Code>
+					<Name>9</Name>
+					<Color>250,128,47</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>10</Code>
+					<Name>10</Name>
+					<Color>247,114,427</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>11</Code>
+					<Name>11</Name>
+					<Color>245,99,37</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>12</Code>
+					<Name>12</Name>
+					<Color>242,81,31</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>13</Code>
+					<Name>13</Name>
+					<Color>240,67,29</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>14</Code>
+					<Name>14</Name>
+					<Color>237,45,24</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>15</Code>
+					<Name>15</Name>
+					<Color>232,21,21</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+		
+		<Category Name="农用地分等定级经济等" Code="" StyleID="NYDFD_GJJJD" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>1</Code>
+					<Name>1</Name>
+					<Color>250,250,100</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>2</Code>
+					<Name>2</Name>
+					<Color>252,237,93</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>3</Code>
+					<Name>3</Name>
+					<Color>252,219,86</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>4</Code>
+					<Name>4</Name>
+					<Color>252,203,78</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>5</Code>
+					<Name>5</Name>
+					<Color>252,189,71</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>6</Code>
+					<Name>6</Name>
+					<Color>252,175,66</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>7</Code>
+					<Name>7</Name>
+					<Color>252,160,61</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>8</Code>
+					<Name>8</Name>
+					<Color>250,141,52</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>9</Code>
+					<Name>9</Name>
+					<Color>250,128,47</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>10</Code>
+					<Name>10</Name>
+					<Color>247,114,427</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>11</Code>
+					<Name>11</Name>
+					<Color>245,99,37</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>12</Code>
+					<Name>12</Name>
+					<Color>242,81,31</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>13</Code>
+					<Name>13</Name>
+					<Color>240,67,29</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>14</Code>
+					<Name>14</Name>
+					<Color>237,45,24</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>15</Code>
+					<Name>15</Name>
+					<Color>232,21,21</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+		
+		<Category Name="农用地分等定级利用等" Code="" StyleID="NYDFD_GJLYD" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>1</Code>
+					<Name>1</Name>
+					<Color>250,250,100</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>2</Code>
+					<Name>2</Name>
+					<Color>252,237,93</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>3</Code>
+					<Name>3</Name>
+					<Color>252,219,86</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>4</Code>
+					<Name>4</Name>
+					<Color>252,203,78</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>5</Code>
+					<Name>5</Name>
+					<Color>252,189,71</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>6</Code>
+					<Name>6</Name>
+					<Color>252,175,66</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>7</Code>
+					<Name>7</Name>
+					<Color>252,160,61</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>8</Code>
+					<Name>8</Name>
+					<Color>250,141,52</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>9</Code>
+					<Name>9</Name>
+					<Color>250,128,47</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>10</Code>
+					<Name>10</Name>
+					<Color>247,114,427</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>11</Code>
+					<Name>11</Name>
+					<Color>245,99,37</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>12</Code>
+					<Name>12</Name>
+					<Color>242,81,31</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>13</Code>
+					<Name>13</Name>
+					<Color>240,67,29</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>14</Code>
+					<Name>14</Name>
+					<Color>237,45,24</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>15</Code>
+					<Name>15</Name>
+					<Color>232,21,21</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+
+		<Category Name="永久基本农田" Code="" StyleID="JBNTBHTB" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>1</Code>
+					<Name>基本农田</Name>
+					<Color>255,255,0</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>2</Code>
+					<Name>其他地类</Name>
+					<Color>220,100,120</Color>
+				</ColorItem>			
+			</ColorItems>
+		</Category>
+		<Category Name="地表温度" Code="" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>1</Code>
+					<Name>＞30℃</Name>
+					<Color>246,4,3</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>2</Code>
+					<Name>25-30℃</Name>
+					<Color>255,82,3</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>3</Code>
+					<Name>20-25℃</Name>
+					<Color>255,128,14</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>4</Code>
+					<Name>15-20℃</Name>
+					<Color>251,192,0</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>5</Code>
+					<Name>10-15℃</Name>
+					<Color>246,242,0</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>6</Code>
+					<Name>5-10℃</Name>
+					<Color>236,255,65</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>7</Code>
+					<Name>0-5℃</Name>
+					<Color>199,251,114</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>8</Code>
+					<Name>-5-0℃</Name>
+					<Color>156,255,168</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>9</Code>
+					<Name>-10--5℃</Name>
+					<Color>100,255,227</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>10</Code>
+					<Name>-15--10℃</Name>
+					<Color>29,237,250</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>11</Code>
+					<Name>-20--15℃</Name>
+					<Color>63,175,251</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>12</Code>
+					<Name>-25--20℃</Name>
+					<Color>61,121,251</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>13</Code>
+					<Name>-30--25℃</Name>
+					<Color>44,72,245</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>14</Code>
+					<Name>＜-30℃</Name>
+					<Color>0,1,251</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+		
+		<Category Name="海洋表面温度" Code="" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>1</Code>
+					<Name>＞30℃</Name>
+					<Color>246,4,3</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>2</Code>
+					<Name>25-30℃</Name>
+					<Color>255,82,3</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>3</Code>
+					<Name>20-25℃</Name>
+					<Color>255,128,14</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>4</Code>
+					<Name>15-20℃</Name>
+					<Color>251,192,0</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>5</Code>
+					<Name>10-15℃</Name>
+					<Color>246,242,0</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>6</Code>
+					<Name>5-10℃</Name>
+					<Color>236,255,65</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>7</Code>
+					<Name>0-5℃</Name>
+					<Color>199,251,114</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>8</Code>
+					<Name>-5-0℃</Name>
+					<Color>156,255,168</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>9</Code>
+					<Name>-10--5℃</Name>
+					<Color>100,255,227</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+		
+		<Category Name="土壤水分" Code="" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>1</Code>
+					<Name>0-5%</Name>
+					<Color>161,218,237</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>2</Code>
+					<Name>5-10%</Name>
+					<Color>142,202,237</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>3</Code>
+					<Name>10-15%</Name>
+					<Color>100,170,232</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>4</Code>
+					<Name>15-20%</Name>
+					<Color>100,170,232</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>5</Code>
+					<Name>20-25%</Name>
+					<Color>50,138,227</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>6</Code>
+					<Name>25-30%</Name>
+					<Color>33,123,219</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>7</Code>
+					<Name>30-35%</Name>
+					<Color>33,102,207</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>8</Code>
+					<Name>35-40%</Name>
+					<Color>33,84,194</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>9</Code>
+					<Name>40-50%</Name>
+					<Color>29,64,181</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>10</Code>
+					<Name>50-60%</Name>
+					<Color>25,47,168</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>11</Code>
+					<Name>60-100%</Name>
+					<Color>9,9,145</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+		
+		<Category Name="全地类坡度" Code="" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>1</Code>
+					<Name>≤2°</Name>
+					<Color>60,159,170</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>2</Code>
+					<Name>2°~6°</Name>
+					<Color>166,217,106</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>3</Code>
+					<Name>6°~15°</Name>
+					<Color>255,255,192</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>4</Code>
+					<Name>15°~25°</Name>
+					<Color>253,174,97</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>5</Code>
+					<Name>>25°</Name>
+					<Color>215,25,28</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+		
+		<Category Name="耕地后备资源" Code="" StyleID="GDHB_HBTC" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>1</Code>
+					<Name>其他草地</Name>
+					<Color>200,220,100</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>2</Code>
+					<Name>沿海滩涂</Name>
+					<Color>215,255,255</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>3</Code>
+					<Name>内陆滩涂</Name>
+					<Color>215,255,255</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>4</Code>
+					<Name>盐碱地</Name>
+					<Color>200,205,200</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>5</Code>
+					<Name>沼泽地</Name>
+					<Color>185,185,190</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>6</Code>
+					<Name>沙地</Name>
+					<Color>200,190,170</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>7</Code>
+					<Name>裸地</Name>
+					<Color>215,200,185</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>8</Code>
+					<Name>采矿用地</Name>
+					<Color>230,120,130</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>9</Code>
+					<Name>历史遗留工矿废弃地</Name>
+					<Color>230,110,110</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+		
+		<Category Name="后备新增耕地" Code="" StyleID="GDHB_XZTC" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>1</Code>
+					<Name>单位自行开垦</Name>
+					<Color>215,255,255</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>2</Code>
+					<Name>个人自行开垦</Name>
+					<Color>200,220,100</Color>
+				</ColorItem>			
+			</ColorItems>
+		</Category>
+		
+		<Category Name="市级建设用地管制区" Code="" StyleID="GHQY_SHI_JSYDGZQ" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>1</Code>
+					<Name>允许建设用地区</Name>
+					<Color>220,100,120</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>2</Code>
+					<Name>有条件建设用地区</Name>
+					<Color>255,210,125</Color>
+				</ColorItem>
+                     <ColorItem>
+					<Code>3</Code>
+					<Name>限制建设用地区</Name>
+					<Color>164,255,115</Color>
+				</ColorItem>
+                    <ColorItem>
+					<Code>4</Code>
+					<Name>禁止建设用地区</Name>
+					<Color>60,180,70</Color>
+				</ColorItem>					
+			</ColorItems>
+		</Category>
+		
+		<Category Name="县级建设用地管制区" Code="" StyleID="GHQY_XIAN_JSYDGZQ" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>1</Code>
+					<Name>允许建设用地区</Name>
+					<Color>220,100,120</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>2</Code>
+					<Name>有条件建设用地区</Name>
+					<Color>255,210,125</Color>
+				</ColorItem>
+                     <ColorItem>
+					<Code>3</Code>
+					<Name>限制建设用地区</Name>
+					<Color>164,255,115</Color>
+				</ColorItem>
+                    <ColorItem>
+					<Code>4</Code>
+					<Name>禁止建设用地区</Name>
+					<Color>60,180,70</Color>
+				</ColorItem>					
+			</ColorItems>
+		</Category>
+		
+		<Category Name="乡镇级建设用地管制区" Code="" StyleID="GHQY_XIANG_JSYDGZQ" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>1</Code>
+					<Name>允许建设用地区</Name>
+					<Color>220,100,120</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>2</Code>
+					<Name>有条件建设用地区</Name>
+					<Color>255,210,125</Color>
+				</ColorItem>
+                     <ColorItem>
+					<Code>3</Code>
+					<Name>限制建设用地区</Name>
+					<Color>164,255,115</Color>
+				</ColorItem>
+                    <ColorItem>
+					<Code>4</Code>
+					<Name>禁止建设用地区</Name>
+					<Color>60,180,70</Color>
+				</ColorItem>					
+			</ColorItems>
+		</Category>
+		
+		<Category Name="人口" Code="" StyleID="" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>1</Code>
+					<Name>0人/平方公里</Name>
+					<Color>245,245,0</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>2</Code>
+					<Name>0-50人/平方公里</Name>
+					<Color>245,216,0</Color>
+				</ColorItem>
+                     <ColorItem>
+					<Code>3</Code>
+					<Name>50-100人/平方公里</Name>
+					<Color>245,188,0</Color>
+				</ColorItem>
+                    <ColorItem>
+					<Code>4</Code>
+					<Name>100-150人/平方公里</Name>
+					<Color>245,163,0</Color>
+				</ColorItem>
+                    <ColorItem>
+					<Code>5</Code>
+					<Name>150-250人/平方公里</Name>
+					<Color>245,135,0</Color>
+				</ColorItem>		
+                    <ColorItem>
+					<Code>6</Code>
+					<Name>250-350人/平方公里</Name>
+					<Color>245,106,0</Color>
+				</ColorItem>	
+                    <ColorItem>
+					<Code>7</Code>
+					<Name>350-500人/平方公里</Name>
+					<Color>245,82,0</Color>
+				</ColorItem>	
+                    <ColorItem>
+					<Code>8</Code>
+					<Name>500-700人/平方公里</Name>
+					<Color>245,53,0</Color>
+				</ColorItem>
+                    <ColorItem>
+					<Code>9</Code>
+					<Name>700-1000人/平方公里</Name>
+					<Color>245,24,0</Color>
+				</ColorItem>		
+                    <ColorItem>
+					<Code>10</Code>
+					<Name>1000-100000人/平方公里</Name>
+					<Color>245,0,0</Color>
+				</ColorItem>						
+			</ColorItems>
+		</Category>
+		
+		<Category Name="市级土地利用功能分区" Code="" StyleID="GHQY_SHI_TDLYGNFQ" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>1</Code>
+					<Name>基本农田保护区</Name>
+					<Color>250,255,50</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>2</Code>
+					<Name>一般农用地</Name>
+					<Color>245,255,125</Color>
+				</ColorItem>
+                     <ColorItem>
+					<Code>3</Code>
+					<Name>城镇建设用地区</Name>
+					<Color>240,110,125</Color>
+				</ColorItem>
+                    <ColorItem>
+					<Code>4</Code>
+					<Name>牧业用地区</Name>
+					<Color>209,255,115</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>5</Code>
+					<Name>独立工矿用地区</Name>
+					<Color>210,160,120</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>6</Code>
+					<Name>风景旅游用地区</Name>
+					<Color>0,135,255</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>7</Code>
+					<Name>生态环境安全控制区</Name>
+					<Color>40,115,25</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>8</Code>
+					<Name>自然与文化遗产保护区</Name>
+					<Color>20,230,0</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>9</Code>
+					<Name>林业用地区</Name>
+					<Color>120,219,120</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>10</Code>
+					<Name>其他用地</Name>
+					<Color>217,217,217</Color>
+				</ColorItem>		
+			</ColorItems>
+		</Category>
+		
+		<Category Name="县级土地用途区" Code="" StyleID="GHQY_XIANG_TDYTQ" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>1</Code>
+					<Name>基本农田保护区</Name>
+					<Color>250,255,50</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>2</Code>
+					<Name>一般农用地</Name>
+					<Color>245,255,125</Color>
+				</ColorItem>
+                     <ColorItem>
+					<Code>3</Code>
+					<Name>城镇建设用地区</Name>
+					<Color>240,110,125</Color>
+				</ColorItem>
+                    <ColorItem>
+					<Code>4</Code>
+					<Name>牧业用地区</Name>
+					<Color>209,255,115</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>5</Code>
+					<Name>独立工矿用地区</Name>
+					<Color>210,160,120</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>6</Code>
+					<Name>风景旅游用地区</Name>
+					<Color>0,135,255</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>7</Code>
+					<Name>生态环境安全控制区</Name>
+					<Color>40,115,25</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>8</Code>
+					<Name>自然与文化遗产保护区</Name>
+					<Color>20,230,0</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>9</Code>
+					<Name>林业用地区</Name>
+					<Color>120,219,120</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>10</Code>
+					<Name>其他用地</Name>
+					<Color>217,217,217</Color>
+				</ColorItem>		
+			</ColorItems>
+		</Category>
+		
+		<Category Name="乡镇级土地用途区" Code="" StyleID="GHQY_XIANG_TDYTQ" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>1</Code>
+					<Name>基本农田保护区</Name>
+					<Color>250,255,50</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>2</Code>
+					<Name>一般农用地</Name>
+					<Color>245,255,125</Color>
+				</ColorItem>
+                     <ColorItem>
+					<Code>3</Code>
+					<Name>城镇建设用地区</Name>
+					<Color>240,110,125</Color>
+				</ColorItem>
+                    <ColorItem>
+					<Code>4</Code>
+					<Name>牧业用地区</Name>
+					<Color>209,255,115</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>5</Code>
+					<Name>独立工矿用地区</Name>
+					<Color>210,160,120</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>6</Code>
+					<Name>风景旅游用地区</Name>
+					<Color>0,135,255</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>7</Code>
+					<Name>生态环境安全控制区</Name>
+					<Color>40,115,25</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>8</Code>
+					<Name>自然与文化遗产保护区</Name>
+					<Color>20,230,0</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>9</Code>
+					<Name>林业用地区</Name>
+					<Color>120,219,120</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>10</Code>
+					<Name>其他用地</Name>
+					<Color>217,217,217</Color>
+				</ColorItem>		
+			</ColorItems>
+		</Category>
+		
+		<Category Name="乡镇级土地规划地类" Code="" StyleID="GHQY_XIANG_TDGHDL" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>1</Code>
+					<Name>耕地</Name>
+					<Color>245,255,125</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>2</Code>
+					<Name>林地</Name>
+					<Color>120,220,120</Color>
+				</ColorItem>
+                     <ColorItem>
+					<Code>3</Code>
+					<Name>园地</Name>
+					<Color>175,255,150</Color>
+				</ColorItem>
+                    <ColorItem>
+					<Code>4</Code>
+					<Name>牧草地</Name>
+					<Color>210,255,115</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>5</Code>
+					<Name>城镇用地</Name>
+					<Color>210,90,90</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>6</Code>
+					<Name>水域用地</Name>
+					<Color>115,225,255</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>7</Code>
+					<Name>水库水面</Name>
+					<Color>115,225,255</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>8</Code>
+					<Name>交通水利用地</Name>
+					<Color>250,150,50</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>9</Code>
+					<Name>其他独立建设</Name>
+					<Color>210,160,120</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>10</Code>
+					<Name>农村居民点用地</Name>
+					<Color>245,140,140</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>11</Code>
+					<Name>坑塘水面</Name>
+					<Color>115,225,255</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>12</Code>
+					<Name>农田水利用地</Name>
+					<Color>70,130,180</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>13</Code>
+					<Name>水工建筑用地</Name>
+					<Color>225,115,255</Color>
+				</ColorItem>
+                     <ColorItem>
+					<Code>14</Code>
+					<Name>交通运输用地</Name>
+					<Color>170,85,80</Color>
+				</ColorItem>
+                    <ColorItem>
+					<Code>15</Code>
+					<Name>滩涂</Name>
+					<Color>170,85,80</Color>
+				</ColorItem>
+                    <ColorItem>
+					<Code>16</Code>
+					<Name>盐田</Name>
+					<Color>220,110,150</Color>
+				</ColorItem>
+                    <ColorItem>
+					<Code>17</Code>
+					<Name>采矿用地</Name>
+					<Color>210,160,120</Color>
+				</ColorItem>
+                     <ColorItem>
+					<Code>18</Code>
+					<Name>特殊用地</Name>
+					<Color>220,110,150</Color>
+				</ColorItem>
+                     <ColorItem>
+					<Code>19</Code>
+					<Name>自然保留地</Name>
+					<Color>180,180,180</Color>
+				</ColorItem>
+                    <ColorItem>
+					<Code>20</Code>
+					<Name>风景名胜</Name>
+					<Color>220,110,150</Color>
+				</ColorItem>				
+			</ColorItems>
+		</Category>
+		
+		<Category Name="新增不稳定耕地" Code="" StyleID="GDHB_BWTC" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>1</Code>
+					<Name>河道防洪泄洪区内</Name>
+					<Color>200,220,100</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>2</Code>
+					<Name>湖泊防洪泄洪区内</Name>
+					<Color>141,255,201</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>2</Code>
+					<Name>林区内林业职工自行开垦</Name>
+					<Color>40,140,0</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>2</Code>
+					<Name>草原过度开垦</Name>
+					<Color>200,220,100</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>2</Code>
+					<Name>受土地荒漠化、沙化及其他因素影响</Name>
+					<Color>200,190,170</Color>
+				</ColorItem>
+			</ColorItems>
+		</Category>
+		
+		<Category Name="集体所有权宗地" Code="" StyleID="ZD_SYQ" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code>1</Code>
+					<Name>国有土地</Name>
+					<Color>40,140,0</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code>2</Code>
+					<Name>划拨</Name>
+					<Color>50,205,50</Color>
+				</ColorItem>
+                    <ColorItem>
+					<Code>3</Code>
+					<Name>出让</Name>
+					<Color>85,180,100</Color>
+				</ColorItem>
+                    <ColorItem>
+					<Code>4</Code>
+					<Name>入股</Name>
+					<Color>146,208,80</Color>
+				</ColorItem>
+                    <ColorItem>
+					<Code>5</Code>
+					<Name>联营</Name>
+					<Color>215,255,255</Color>
+				</ColorItem>	
+                    <ColorItem>
+					<Code>6</Code>
+					<Name>授权经营</Name>
+					<Color>173,255,47</Color>
+				</ColorItem>
+                    <ColorItem>
+					<Code>7</Code>
+					<Name>国有家庭承包</Name>
+					<Color>0,255,127</Color>
+				</ColorItem>
+                     <ColorItem>
+					<Code>8</Code>
+					<Name>国有其他方式承包</Name>
+					<Color>152,251,152</Color>
+				</ColorItem>
+                     <ColorItem>
+					<Code>9</Code>
+					<Name>集体土地</Name>
+					<Color>255,255,100</Color>
+				</ColorItem>
+                     <ColorItem>
+					<Code>10</Code>
+					<Name>集体家庭承包</Name>
+					<Color>170,190,30</Color>
+				</ColorItem>
+                     <ColorItem>
+					<Code>11</Code>
+					<Name>集体其他方式承包</Name>
+					<Color>150,240,255</Color>
+				</ColorItem>
+                    <ColorItem>
+					<Code>12</Code>
+					<Name>批准拨用</Name>
+					<Color>176,196,222</Color>
+				</ColorItem>
+                     <ColorItem>
+					<Code>13</Code>
+					<Name>作价出资入股</Name>
+					<Color>0,255,0</Color>
+				</ColorItem>
+                   <ColorItem>
+					<Code>14</Code>
+					<Name>国有土地租赁</Name>
+					<Color>127,255,0</Color>
+				</ColorItem>
+                    <ColorItem>
+					<Code>15</Code>
+					<Name>其他</Name>
+					<Color>135,185,131</Color>
+				</ColorItem>					
+			</ColorItems>
+		</Category>
+		<Category Name="稳定与不稳定耕地分类" Code="" desc="">
+			<ColorItems>
+				<ColorItem>
+					<Code></Code>
+					<Name>稳定耕地</Name>
+					<Color>255,251,177</Color>
+				</ColorItem>
+				<ColorItem>
+					<Code></Code>
+					<Name>不稳定耕地</Name>
+					<Color>245,166,35</Color>
+				</ColorItem>								
+			</ColorItems>
+		</Category>
+	</Categorys>
+</ColorConfig>
+

@@ -1,0 +1,135 @@
+{
+  "key": "永久基本农田土地利用现状->耕地",
+  "name": "全国永久基本农田土地利用现状",
+  "xAxis": [
+    "地类"
+  ],
+  "yAxis": [
+    "面积",
+    "占比"
+  ],
+  "colors": null,
+  "units": [
+    {
+      "type": "area",
+      "dataUnit": "公顷",
+      "defaultUnit": "万亩",
+      "unitOptions": [
+        "亩",
+        "公顷",
+        "平方千米",
+        "万亩",
+        "万公顷"
+      ],
+      "unitOptionsExtend": [
+        {
+          "name": "亩",
+          "decimalDigits": 2
+        },
+        {
+          "name": "公顷",
+          "decimalDigits": 2
+        },
+        {
+          "name": "平方千米",
+          "decimalDigits": 2
+        },
+        {
+          "name": "万亩",
+          "decimalDigits": 2
+        },
+        {
+          "name": "万公顷",
+          "decimalDigits": 2
+        }
+      ]
+    },
+    {
+      "type": "percent",
+      "dataUnit": "%",
+      "defaultUnit": "%",
+      "unitOptions": [
+        "%"
+      ],
+      "unitOptionsExtend": [
+        {
+          "name": "%",
+          "decimalDigits": 2
+        }
+      ]
+    }
+  ],
+  "dictionary": {},
+  "data": [
+    {
+      "地类": "水田",
+      "一级地类名": "耕地",
+      "面积": 23863071.98,
+      "占比": 21.10
+    },
+    {
+      "地类": "水浇地",
+      "一级地类名": "耕地",
+      "面积": 20152782.49,
+      "占比": 17.82
+    },
+    {
+      "地类": "旱地",
+      "一级地类名": "耕地",
+      "面积": 40484332.14,
+      "占比": 35.80
+    }
+  ],
+  "xColors": [
+    {
+      "keys": {
+        "地类": "耕地"
+      },
+      "color": "rgb(255,255,100)"
+    },
+    {
+      "keys": {
+        "地类": "非耕地"
+      },
+      "color": "rgb(220,100,120)"
+    },
+    {
+      "keys": {
+        "地类": "水田"
+      },
+      "color": "rgb(248,208,114)"
+    },
+    {
+      "keys": {
+        "地类": "水浇地"
+      },
+      "color": "rgb(252,234,158)"
+    },
+    {
+      "keys": {
+        "地类": "旱地"
+      },
+      "color": "rgb(255,251,177)"
+    },
+    {
+      "keys": {
+        "地类": "其他农用地"
+      },
+      "color": "rgb(232,221,6)"
+    },
+    {
+      "keys": {
+        "地类": "建设用地"
+      },
+      "color": "rgb(229,103,102)"
+    },
+    {
+      "keys": {
+        "地类": "未利用地"
+      },
+      "color": "rgb(215,200,185)"
+    }
+  ],
+  "canClick": false,
+  "titleSelect": true
+}
